@@ -9,4 +9,5 @@ rules:
   - info-contact
   - contact-properties
 image: /images/starter-icon.png  
+discussion: https://github.com/postman-open-technologies/linting-rules/discussions/8
 ...

@@ -6,4 +6,5 @@ rules:
   - no-eval-in-descriptions
   - tag-description
 image: /images/description-icon.png
+discussion: https://github.com/postman-open-technologies/linting-rules/discussions/6
 ...
