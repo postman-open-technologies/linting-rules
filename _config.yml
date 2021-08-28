@@ -1,0 +1,32 @@
+title: Linting Rules
+description: [Just a Proof of Concept]
+
+image: https://postman-toolboxes2.s3.amazonaws.com/assets/api.png
+url: https://postman-open-technologies.github.io/linting-rules/
+#url: /
+email: kin@postman.com
+
+github_user: postman-open-technologies
+github_repo: linting-rules
+github_branch: main
+
+version:      1.1.1
+markdown:     kramdown
+
+collections:
+  rules:    
+    permalink: /rules/:path/  
+    output: true
+  rulesets:    
+    permalink: /rulesets/:path/  
+    output: true         
+
+defaults:
+  - scope:
+      type: rules
+    values:
+      layout: rules      
+  - scope:
+      type: rulesets
+    values:
+      layout: rulesets               
