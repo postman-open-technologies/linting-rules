@@ -1,7 +1,5 @@
 {
 "rules": {
 
-"has-info-description": {"x-tags":["metadata"],"description":"API must have description #/info/description","given":"$","severity":"error","type":"style","formats":["oas3"],"then":{"field":"info.description","function":"truthy"}},
-"servers-description": {"x-tags":["metadata","it"],"description":"Servers must have a description.","formats":["oas3"],"given":["$.servers[*]","$.paths..servers"],"severity":"error","then":{"field":"description","function":"truthy"}},
-"parameter-description": {"description":"Parameters must have a description.","recommended":true,"given":"$..properties.*","then":{"field":"description","function":"truthy"}}
+"has-info-description": {"x-tags":["metadata"],"description":"API must have description #/info/description","given":"$","severity":"error","type":"style","formats":["oas3"],"then":{"field":"info.description","function":"truthy"}}
 }}
