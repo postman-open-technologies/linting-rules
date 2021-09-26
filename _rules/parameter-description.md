@@ -1,10 +1,16 @@
 ---
-name: parameter-description
-object: parameter
-description: parameter objects should have a description
-truthy: description     
+parameter-description:
+    description: Parameters must have a description.
+    recommended: true
+    given: $..properties.*
+    then:
+        field: description
+        function: truthy
 ...
-name: parameter-description
-object: parameter
-description: parameter objects should have a description
-truthy: description  
+parameter-description:
+    description: Parameters must have a description.
+    recommended: true
+    given: $..properties.*
+    then:
+        field: description
+        function: truthy
