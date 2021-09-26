@@ -3,8 +3,7 @@ servers-description:
     x-tags:
         - metadata
         - it
-    description: Servers must have a description.
-    message: Server {{path}} must have a description.
+    description: "Servers must have a description."
     given:
         - $.servers[*]
         - $.paths..servers
@@ -19,7 +18,6 @@ servers-description:
         - metadata
         - it
     description: Servers must have a description.
-    message: Server {{path}} must have a description.
     given:
         - $.servers[*]
         - $.paths..servers
