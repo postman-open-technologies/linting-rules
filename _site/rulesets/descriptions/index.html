@@ -1,6 +1,7 @@
 {
-"rules":         {
-        "has-info-description": {"x-tags":["metadata"],"description":"API must have description #/info/description","given":"$","severity":"error","recommended":true,"type":"style","formats":["oas3"],"then":{"field":"info.description","function":"truthy"}}}                                                ,                                                 {
-        "servers-description": {"x-tags":["metadata","it"],"description":"Servers must have a description.","message":"Server {{path}} must have a description.","given":["$.servers[*]","$.paths..servers"],"severity":"error","recommended":true,"then":{"field":"description","function":"truthy"}}}       ,                              {
-        "parameter-description": {"description":"Parameters must have a description.","recommended":true,"given":"$..properties.*","then":{"field":"description","function":"truthy"}}}                          
-}
+"rules": {
+
+"has-info-description": {"x-tags":["metadata"],"description":"API must have description #/info/description","given":"$","severity":"error","recommended":true,"type":"style","formats":["oas3"],"then":{"field":"info.description","function":"truthy"}},
+"servers-description": {"x-tags":["metadata","it"],"description":"Servers must have a description.","message":"Server {{path}} must have a description.","given":["$.servers[*]","$.paths..servers"],"severity":"error","recommended":true,"then":{"field":"description","function":"truthy"}},
+"parameter-description": {"description":"Parameters must have a description.","recommended":true,"given":"$..properties.*","then":{"field":"description","function":"truthy"}}
+}}

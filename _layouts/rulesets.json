@@ -2,6 +2,7 @@
 layout: none
 ---
 {
-"rules": {% assign rules = site.rules %}{% for this_rule in page.rules %}{% for rule in rules %}{% assign this_key = '' %}{% for key in rule %}{% if key != 'path' and key != 'url' and key != 'excerpt' and key != 'relative_path' and key != 'next' and key != 'content' and key != 'output' and key != 'previous' and key != 'draft' and key != 'categories' and key != 'layout' and key != 'layout' and key != 'title' and key != 'slug' and key != 'ext' and key != 'tags' and key != 'tags' and key != 'date' and key != 'collection' and key != 'id' %}{% assign this_key = key %}{% endif %}{% endfor %} {% if this_rule == this_key %}{
-        "{{ this_key }}": {{ rule[this_key] | jsonify }}}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
-}
+"rules": {
+{% assign rules = site.rules %}{% for this_rule in page.rules %}{% for rule in rules %}{% assign this_key = '' %}{% for key in rule %}{% if key != 'path' and key != 'url' and key != 'excerpt' and key != 'relative_path' and key != 'next' and key != 'content' and key != 'output' and key != 'previous' and key != 'draft' and key != 'categories' and key != 'layout' and key != 'layout' and key != 'title' and key != 'slug' and key != 'ext' and key != 'tags' and key != 'tags' and key != 'date' and key != 'collection' and key != 'id' %}{% assign this_key = key %}{% endif %}{% endfor %}{% if this_rule == this_key %}
+"{{ this_key }}": {{ rule[this_key] | jsonify }}{% endif %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+}}
