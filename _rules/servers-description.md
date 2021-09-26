@@ -4,6 +4,8 @@ servers-description:
         - metadata
         - it
     description: "Servers must have a description."
+    formats:
+        - oas3
     given:
         - $.servers[*]
         - $.paths..servers
@@ -17,6 +19,8 @@ servers-description:
         - metadata
         - it
     description: Servers must have a description.
+    formats:
+        - oas3    
     given:
         - $.servers[*]
         - $.paths..servers

@@ -5,7 +5,6 @@ has-info-description:
     description: "API must have description #/info/description"
     given: $
     severity: error
-    recommended: true
     type: style
     formats:
         - oas3
@@ -19,7 +18,6 @@ has-info-description:
     description: "API must have description #/info/description"
     given: $
     severity: error
-    recommended: true
     type: style
     formats:
         - oas3

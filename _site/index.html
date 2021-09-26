@@ -324,7 +324,6 @@ Person:
     description: “API must have description #/info/description”
     given: $
     severity: error
-    recommended: true
     type: style
     formats:
         - oas3
@@ -1661,6 +1660,8 @@ components:
         - metadata
         - it
     description: Servers must have a description.
+    formats:
+        - oas3  &lt;br /&gt;
     given:
         - $.servers[*]
         - $.paths..servers
