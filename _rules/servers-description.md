@@ -8,7 +8,6 @@ servers-description:
         - $.servers[*]
         - $.paths..servers
     severity: error
-    recommended: true
     then:
         field: description
         function: truthy    
@@ -22,7 +21,6 @@ servers-description:
         - $.servers[*]
         - $.paths..servers
     severity: error
-    recommended: true
     then:
         field: description
         function: truthy  
