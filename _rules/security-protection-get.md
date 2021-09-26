@@ -40,8 +40,8 @@ security-protection-get:
         - $.paths.*.get
     then:
         - field: security
-        function: schema
-        functionOptions:
+          function: schema
+          functionOptions:
             schema:
             items:
                 type: object
@@ -90,11 +90,11 @@ security-protection-get:
         - $.paths.*.get
     then:
         - field: security
-        function: schema
-        functionOptions:
+          function: schema
+          functionOptions:
             schema:
             items:
                 type: object
                 minProperties: 1
             minItems: 1
-            type: array   
+            type: array    

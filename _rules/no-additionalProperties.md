@@ -47,7 +47,7 @@ no-additionalProperties:
         - $.[?(@.type=="object" && @.additionalProperties==true)]
     then:
         - field: additionalProperties
-        function: falsy    
+          function: falsy    
 ...
 no-additionalProperties:
     description: |-
@@ -97,4 +97,4 @@ no-additionalProperties:
         - $.[?(@.type=="object" && @.additionalProperties==true)]
     then:
         - field: additionalProperties
-        function: falsy 
+          function: falsy  

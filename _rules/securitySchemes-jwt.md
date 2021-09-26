@@ -23,10 +23,10 @@ securitySchemes-jwt:
         - $.[securitySchemes][?(@.bearerFormat=="jwt" || @.bearerFormat=="JWT")]
     then:
         - field: description
-        function: truthy
+          function: truthy
         - field: description
-        function: pattern
-        functionOptions:
+          function: pattern
+          functionOptions:
             match: .*RFC8725.*     
 ...
 securitySchemes-jwt:
@@ -53,8 +53,8 @@ securitySchemes-jwt:
         - $.[securitySchemes][?(@.bearerFormat=="jwt" || @.bearerFormat=="JWT")]
     then:
         - field: description
-        function: truthy
+          function: truthy
         - field: description
-        function: pattern
-        functionOptions:
-            match: .*RFC8725.* 
+          function: pattern
+          functionOptions:
+            match: .*RFC8725.*   

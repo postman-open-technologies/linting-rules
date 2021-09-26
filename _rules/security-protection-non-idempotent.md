@@ -41,8 +41,8 @@ security-protection-non-idempotent:
         - $.paths.*[?(@property.match(/^(post|put|patch|delete)/))]
     then:
         - field: security
-        function: schema
-        functionOptions:
+          function: schema
+          functionOptions:
             schema:
             items:
                 type: object
@@ -92,11 +92,11 @@ security-protection-non-idempotent:
         - $.paths.*[?(@property.match(/^(post|put|patch|delete)/))]
     then:
         - field: security
-        function: schema
-        functionOptions:
+          function: schema
+          functionOptions:
             schema:
             items:
                 type: object
                 minProperties: 1
             minItems: 1
-            type: array       
+            type: array      

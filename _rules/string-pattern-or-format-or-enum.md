@@ -27,8 +27,7 @@ string-pattern-or-format-or-enum:
     severity: hint
     recommended: true
     given:
-        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format
-        !="date-time" )]
+        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format!="date-time" )]
     then:
         function: schema
         functionOptions:

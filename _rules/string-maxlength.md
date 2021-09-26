@@ -27,11 +27,10 @@ string-maxlength:
     severity: warn
     recommended: true
     given:
-        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format
-        !="date-time" )]
+        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format!="date-time" )]
     then:
         - field: maxLength
-        function: defined 
+          function: defined 
 ...
 string-maxlength:
     description: |-
@@ -61,8 +60,7 @@ string-maxlength:
     severity: warn
     recommended: true
     given:
-        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format
-        !="date-time" )]
+        - $.[?(@.type=="string" && !@.enum && @.format!="date" && @.format!="date-time" )]
     then:
         - field: maxLength
-        function: defined 
+          function: defined 

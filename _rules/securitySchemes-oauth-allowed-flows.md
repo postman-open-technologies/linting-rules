@@ -11,9 +11,9 @@ securitySchemes-oauth-allowed-flows:
         - $.[?(@.type=="oauth2")].flows
     then:
         - field: implicit
-        function: falsy
+          function: falsy
         - field: password
-        function: falsy
+          function: falsy
 ...
 securitySchemes-oauth-allowed-flows:
     description: >-
@@ -27,6 +27,6 @@ securitySchemes-oauth-allowed-flows:
         - $.[?(@.type=="oauth2")].flows
     then:
         - field: implicit
-        function: falsy
+          function: falsy
         - field: password
-        function: falsy 
+          function: falsy

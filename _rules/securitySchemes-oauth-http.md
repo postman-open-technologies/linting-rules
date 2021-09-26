@@ -10,8 +10,8 @@ securitySchemes-oauth-http:
         - $.[securitySchemes][?(@.type=="oauth2")][*].[?(@property.match(/url$/i))]
     then:
         - field: value
-        function: pattern
-        functionOptions:
+          function: pattern
+          functionOptions:
             match: ^https://
 ...
 securitySchemes-oauth-http:
@@ -25,6 +25,6 @@ securitySchemes-oauth-http:
         - $.[securitySchemes][?(@.type=="oauth2")][*].[?(@property.match(/url$/i))]
     then:
         - field: value
-        function: pattern
-        functionOptions:
+          function: pattern
+          functionOptions:
             match: ^https://

@@ -24,7 +24,6 @@ layout: default
 
       <div>
         {% assign rules = site.rules %}
-        {% assign rulesets = site.rulesets %}
 
         <hr><br>
         <h3>Rulesets</h3>
@@ -59,14 +58,21 @@ layout: default
         <hr><br>
         <h3>Rules</h3>
         <p>These are a list of the rules.</p>
-        {% for rule in rules %}
-            <div class="row collection">
-               <div class="col-md-8" style="border: 0px solid #000;">
-                  <span style="font-size: 18px; font-weight: bold;">{{ rule.name }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">Link</a>) - {{ rule.description | escape }}</p>
-                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | escape | replace: "&lt;p&gt;","" | replace: "&lt;/p&gt;","" | replace: "&lt;ul&gt;","" | replace: "&lt;li&gt;","- " | replace: "&lt;/li&gt;","" | replace: "&lt;/ul&gt;","" }}</code></pre>                  
-               </div>
-            </div>            
-         {% endfor %}                    
+        {% assign rulesets = site.rulesets %}
+        {% for rule in rules %}  
+               <div class="row collection">
+                  {% assign this_key = '' %}
+                  {% for key in rule %}                  
+                     {% if key != 'path' and key != 'url' and key != 'excerpt' and key != 'relative_path' and key != 'next' and key != 'content' and key != 'output' and key != 'previous' and key != 'draft' and key != 'categories' and key != 'layout' and key != 'layout' and key != 'title' and key != 'slug' and key != 'ext' and key != 'tags' and key != 'tags' and key != 'date' and key != 'collection' and key != 'id' %}
+                     {% assign this_key = key %}
+                     {% endif %}
+                  {% endfor %}                   
+                  <div class="col-md-8" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">{{ this_key }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">Link</a>) - {{ rule[this_key].description | escape }}</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | escape | replace: "&lt;p&gt;","" | replace: "&lt;/p&gt;","" | replace: "&lt;ul&gt;","" | replace: "&lt;li&gt;","- " | replace: "&lt;/li&gt;","" | replace: "&lt;/ul&gt;","" }}</code></pre>                  
+                  </div>
+               </div>                                         
+         {% endfor %}            
    </div>
 </div>
 
