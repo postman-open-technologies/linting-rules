@@ -4,7 +4,7 @@ has-info-description:
     message: "Missing the {{property}}"
     given: "$"
     then:
-        ield: "description"
+        field: "description"
         function: truthy  
 ...
 has-info-description:
@@ -12,5 +12,5 @@ has-info-description:
     message: "Missing the {{property}}"
     given: "$"
     then:
-        ield: "description"
+        field: "description"
         function: truthy  
