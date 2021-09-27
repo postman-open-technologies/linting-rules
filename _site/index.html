@@ -317,18 +317,29 @@ Person:
                   
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">has-info-description</span> (<a href="http://localhost:4000//rules/has-info-description/" style="color:#000">Link</a>) - API must have description #/info/description</p>
+                     <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/has-info-description/" style="color:#000">Link</a>) - </p>
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">has-info-description:
-    x-tags:
-        - metadata
-    description: “API must have description #/info/description”
-    given: $
-    severity: error
-    type: style
-    formats:
-        - oas3
+    description: API must have a info description.
+    message: “Missing the “
+    given: “$”
     then:
-        field: info.description
+    - field: “description”
+        function: truthy
+</code></pre>                  
+                  </div>
+               </div>                                         
+           
+               <div class="row collection">
+                  
+                                     
+                  <div class="col-md-8" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/has-info-title/" style="color:#000">Link</a>) - </p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">has-info-title:
+    description: API must have a info title.
+    message: “Missing the “
+    given: “$”
+    then:
+    - field: “description”
         function: truthy
 </code></pre>                  
                   </div>
