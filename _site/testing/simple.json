@@ -1,7 +1,7 @@
 {
   "rules": {
     "has-info-description": {
-      "description": "API must have description #/info/description",
+      "description": "API must have description #/info/description.",
       "given": "$.info",
       "severity": "error",
       "then": {
