@@ -1,100 +1,13 @@
 {
   "rules": {
-    "operation-short-summary": {
-      "description": "Operation summary should be short and sweet, no full stops, and less than 20 characters",
-      "recommended": true,
-      "type": "style",
-      "given": "$.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]",
+    "no-empty-description": {
+      "message": "Description must not be empty",
+      "given": "$..description",
       "then": [
         {
-          "field": "summary",
-          "function": "pattern",
-          "functionOptions": {
-            "notMatch": "\\."
-          }
-        },
-        {
-          "field": "summary",
-          "function": "length",
-          "functionOptions": {
-            "max": 20
-          }
+          "function": "truthy"
         }
       ]
-    },
-    "schema-names-pascal-case": {
-      "description": "Schema names MUST be written in PascalCase",
-      "message": "{{property}} is not PascalCase: {{error}}",
-      "recommended": true,
-      "type": "style",
-      "given": "$.components.schemas.*~",
-      "then": {
-        "function": "pattern",
-        "functionOptions": {
-          "match": "^[A-Z][a-zA-Z0-9]*$"
-        }
-      }
-    },
-    "operationIds-kebab-case": {
-      "description": "Operation IDs MUST be written in kebab-case",
-      "message": "{{property}} is not kebab-case: {{error}}",
-      "recommended": true,
-      "type": "style",
-      "given": "$.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]",
-      "then": {
-        "field": "operationId",
-        "function": "pattern",
-        "functionOptions": {
-          "match": "^([a-z0-9-]+)$"
-        }
-      }
-    },
-    "parameter-description": {
-      "description": "Parameters must have a description.",
-      "recommended": true,
-      "given": "$..properties.*",
-      "then": {
-        "field": "description",
-        "function": "truthy"
-      }
-    },
-    "paths-kebab-case": {
-      "description": "Should paths be kebab-case.",
-      "message": "{{property}} is not kebab-case: {{error}}",
-      "severity": "warn",
-      "recommended": true,
-      "given": "$.paths[*]~",
-      "then": {
-        "function": "pattern",
-        "functionOptions": {
-          "match": "^(/[a-z0-9-{}]+)+$"
-        }
-      }
-    },
-    "request-GET-noaccept-body": {
-      "description": "A 'GET' request MUST NOT accept a 'body` parameter",
-      "severity": "error",
-      "given": "$.paths..get.parameters..in",
-      "then": {
-        "function": "pattern",
-        "functionOptions": {
-          "notMatch": "/^body$/"
-        }
-      }
-    },
-    "headers-all-hyphenated-pascal-case": {
-      "description": "All `HTTP` headers MUST use `Hyphenated-Pascal-Case` notation",
-      "severity": "error",
-      "given": "$..parameters[?(@.in == 'header')].name",
-      "message": "'HTTP' headers MUST follow 'Hyphenated-Pascal-Case' notation",
-      "recommended": true,
-      "type": "style",
-      "then": {
-        "function": "pattern",
-        "functionOptions": {
-          "match": "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"
-        }
-      }
     }
   }
 }
