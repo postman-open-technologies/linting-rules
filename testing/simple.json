@@ -3,7 +3,7 @@
     "spectral:oas"
   ],
   "formats": [
-    "oas3"
+    "oas3.0"
   ],  
   "rules": {
     "operation-short-summary": {
