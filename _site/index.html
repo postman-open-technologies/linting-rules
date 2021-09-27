@@ -340,14 +340,9 @@ Person:
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;">has-tag-description</span> (<a href="http://localhost:4000//rules/has-tag-description/" style="color:#000">Link</a>) - Tags must have a description.</p>
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">has-tag-description:
-    x-tags:
-        - metadata
     description: “Tags must have a description.”
     given: $.tags[*]
     severity: error
-    type: style
-    formats:
-        - oas3
     then:
         field: description
         function: truthy
