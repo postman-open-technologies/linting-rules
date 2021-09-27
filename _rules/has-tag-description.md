@@ -1,0 +1,26 @@
+---
+has-tag-description:
+    x-tags:
+        - metadata
+    description: "Tags must have a description."
+    given: $.tags[*]
+    severity: error
+    type: style
+    formats:
+        - oas3
+    then:
+        field: description
+        function: truthy    
+...
+has-tag-description:
+    x-tags:
+        - metadata
+    description: "Tags must have a description."
+    given: $.tags[*]
+    severity: error
+    type: style
+    formats:
+        - oas3
+    then:
+        field: description
+        function: truthy  
