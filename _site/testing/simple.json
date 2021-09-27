@@ -2,14 +2,10 @@
   "rules": {
     "has-info-description": {
       "description": "API must have description #/info/description",
-      "given": "$",
+      "given": "$.info",
       "severity": "error",
-      "type": "style",
-      "formats": [
-        "oas3"
-      ],
       "then": {
-        "field": "info.description",
+        "field": "description",
         "function": "truthy"
       }
     }
