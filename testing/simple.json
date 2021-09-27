@@ -1,11 +1,15 @@
 {
   "rules": {
-    "my-rule-name": {
-      "description": "Tags must have a description.",
-      "given": "$.tags[*]",
+    "has-info-description": {
+      "description": "API must have description #/info/description",
+      "given": "$",
       "severity": "error",
+      "type": "style",
+      "formats": [
+        "oas3"
+      ],
       "then": {
-        "field": "description",
+        "field": "info.description",
         "function": "truthy"
       }
     }
