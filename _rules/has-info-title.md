@@ -4,13 +4,13 @@ has-info-title:
     message: "Missing the {{property}}"
     given: "$"
     then:
-        - field: "description"
-          function: truthy  
+        field: "title"
+        function: truthy  
 ...
 has-info-title:
     description: API must have a info title.
     message: "Missing the {{property}}"
     given: "$"
     then:
-    - field: "description"
+        field: "title"
         function: truthy  
