@@ -2,7 +2,7 @@
 has-info-description:
     description: API must have a info description.
     message: "Missing the {{property}}"
-    given: "$"
+    given: "$.info"
     then:
         field: "description"
         function: truthy  
@@ -10,7 +10,7 @@ has-info-description:
 has-info-description:
     description: API must have a info description.
     message: "Missing the {{property}}"
-    given: "$"
+    given: "$.info"
     then:
         field: "description"
         function: truthy  
