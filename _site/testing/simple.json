@@ -1,25 +1,13 @@
 {
   "rules": {
-    "has-tag-description": {
-      "description": "Tags must have a description.",
-      "given": "$.tags[*]",
+    "must-have-info-contact-name": {
+      "message": "Missing `info.contact.name`.",
+      "description": "MUST contain API meta information [218]",
+      "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#218",
       "severity": "error",
+      "given": "$.info",
       "then": {
-        "field": "description",
-        "function": "truthy"
-      }
-    }
-  }
-}
-
-{
-  "rules": {
-    "my-rule-name": {
-      "description": "Tags must have a description.",
-      "given": "$.tags[*]",
-      "severity": "error",
-      "then": {
-        "field": "description",
+        "field": "contact.name",
         "function": "truthy"
       }
     }
