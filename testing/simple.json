@@ -2,7 +2,7 @@
   "rules": {
     "my-rule-name": {
       "description": "Tags must have a description.",
-      "given": "$.tags[*]",
+      "given": "$.info",
       "severity": "error",
       "then": {
         "field": "description",
