@@ -7,7 +7,7 @@ message: Error responses should support RFC7807 in {{path}}.
 formats:
 - oas3
 severity: error
-given: $.paths.[*].responses[?(@property.match(/^(4|5|default)/))].content.*~
+given: $.paths.[*].responses['?(@property.match(/^(4|5|default)/))'].content.*~
 then:
   function: enumeration
   functionOptions:
@@ -23,7 +23,7 @@ message: Error responses should support RFC7807 in {{path}}.
 formats:
 - oas3
 severity: error
-given: $.paths.[*].responses[?(@property.match(/^(4|5|default)/))].content.*~
+given: $.paths.[*].responses['?(@property.match(/^(4|5|default)/))'].content.*~
 then:
   function: enumeration
   functionOptions:
