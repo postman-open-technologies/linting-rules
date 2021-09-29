@@ -1,0 +1,13 @@
+  rules:
+    has-title:
+      message: "The API must have a title
+        #/info/title."
+      given: $
+      severity: error
+      recommended: true
+      type: style
+      formats:
+        - oas3
+      then:
+        field: info.title
+        function: truthy

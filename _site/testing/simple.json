@@ -1,16 +1,10 @@
 {
   "rules": {
-    "important-fields": {
-      "description": "Absolutely must have a title and a description",
-      "message": "Missing the {{property}}",
-      "given": "$",
+    "no-empty-description": {
+      "message": "Description must not be empty",
+      "given": "$..description",
       "then": [
         {
-          "field": "title",
-          "function": "truthy"
-        },
-        {
-          "field": "description",
           "function": "truthy"
         }
       ]

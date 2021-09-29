@@ -18,7 +18,7 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">Linting Rules</h2>
-            <p>This is project for managing linting rules that can be used via a linting API as well natively as a collection in a modular way that can be can be evolve using Github. You can find <a href="https://www.postman.com/postman/workspace/openapi-linting/overview">two separate collections in this OpenAPI workspace</a> where you can use these rules to lint an OpenAPI. </p>        
+            <p>This is project for managing linting rules that can be applied as part of API governance at design, develop, and build time. You can find <a href="https://www.postman.com/postman/workspace/openapi-linting/overview">a collection in this public workspace</a> where you can use these rules to lint an OpenAPI. </p>        
          </div>
       </div>
 
@@ -63,7 +63,7 @@ layout: default
                <div class="row collection">
                   {% assign this_key = '' %}
                   {% for key in rule %}                  
-                     {% if key != 'path' and key != 'url' and key != 'excerpt' and key != 'relative_path' and key != 'next' and key != 'content' and key != 'output' and key != 'previous' and key != 'draft' and key != 'categories' and key != 'layout' and key != 'layout' and key != 'title' and key != 'slug' and key != 'ext' and key != 'tags' and key != 'tags' and key != 'date' and key != 'collection' and key != 'id' %}
+                     {% if key != 'path' and key != 'url' and key != 'excerpt' and key != 'relative_path' and key != 'next' and key != 'content' and key != 'output' and key != 'previous' and key != 'draft' and key != 'categories' and key != 'layout' and key != 'layout' and key != 'title' and key != 'slug' and key != 'ext' and key != 'tags' and key != 'tags' and key != 'date' and key != 'collection' and key != 'id' and key != 'then' and key != 'severity' and key != 'recommended' and key != 'type' and key != 'message' and key != 'given' and key != 'description' and key != 'formats' %}
                      {% assign this_key = key %}
                      {% endif %}
                   {% endfor %}                   

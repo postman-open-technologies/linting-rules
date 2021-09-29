@@ -1,15 +1,19 @@
+formats:
+  - oas3
+extends:
+  - 'spectral:oas'
 rules:
-  has-info-title:
-      description: API must have a info title.
-      message: "Missing the {{property}}"
-      given: "$.info"
-      then:
-          field: "title"
-          function: truthy  
-  has-info-description:
-      description: API must have a info description.
-      message: "Missing the {{property}}"
-      given: "$.info"
-      then:
-          field: "description"
-          function: truthy          
+  operation-short-summary:
+    description: 'Operation summary should be short and sweet, no full stops, and less than 20 characters'
+    recommended: true
+    type: style
+    given: '$.paths.*[?( @property === ''get'' || @property === ''put'' || @property === ''post'' || @property === ''delete'' || @property === ''options'' || @property === ''head'' || @property === ''patch'' || @property === ''trace'' )]'
+    then:
+      - field: summary
+        function: pattern
+        functionOptions:
+          notMatch: \.
+      - field: summary
+        function: length
+        functionOptions:
+          max: 20

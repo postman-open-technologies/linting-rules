@@ -1,30 +1,27 @@
 ---
-servers-description:
-    x-tags:
-        - metadata
-        - it
-    description: "Servers must have a description."
-    formats:
-        - oas3
-    given:
-        - $.servers[*]
-        - $.paths..servers
-    severity: error
-    then:
-        field: description
-        function: truthy    
-...
-servers-description:
-    x-tags:
-        - metadata
-        - it
-    description: Servers must have a description.
-    formats:
-        - oas3    
-    given:
-        - $.servers[*]
-        - $.paths..servers
-    severity: error
-    then:
-        field: description
-        function: truthy  
+x-tags:
+- metadata
+- it
+description: Servers must have a description.
+message: Server {{path}} must have a description.
+given:
+- $.servers[*]
+- $.paths..servers
+severity: error
+recommended: true
+then:
+  field: description
+  function: truthy
+...x-tags:
+- metadata
+- it
+description: Servers must have a description.
+message: Server {{path}} must have a description.
+given:
+- $.servers[*]
+- $.paths..servers
+severity: error
+recommended: true
+then:
+  field: description
+  function: truthy

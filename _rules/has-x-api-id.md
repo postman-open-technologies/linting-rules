@@ -1,34 +1,31 @@
 ---
-has-x-api-id:
-    x-tags:
-        - it
-        - metadata
-    message: "API must have an unique identifier in x-api-id in #/info/x-api-id."
-    description: |-
-        The `#/info/x-api-id` field can be used to associate an identifier
-        to an API.
-        This is useful to track an API even when its `#/info/title` changes.
-    given: $
-    severity: error
-    recommended: true
-    type: style
-    then:
-        field: info.x-api-id
-        function: truthy
-...
-has-x-api-id:
-    x-tags:
-        - it
-        - metadata
-    message: "API must have an unique identifier in x-api-id in #/info/x-api-id."
-    description: |-
-        The `#/info/x-api-id` field can be used to associate an identifier
-        to an API.
-        This is useful to track an API even when its `#/info/title` changes.
-    given: $
-    severity: error
-    recommended: true
-    type: style
-    then:
-        field: info.x-api-id
-        function: truthy
+x-tags:
+- it
+- metadata
+message: 'API must have an unique identifier in x-api-id in #/info/x-api-id.'
+description: |-
+  The `#/info/x-api-id` field can be used to associate an identifier
+  to an API.
+  This is useful to track an API even when its `#/info/title` changes.
+given: $
+severity: error
+recommended: true
+type: style
+then:
+  field: info.x-api-id
+  function: truthy
+...x-tags:
+- it
+- metadata
+message: 'API must have an unique identifier in x-api-id in #/info/x-api-id.'
+description: |-
+  The `#/info/x-api-id` field can be used to associate an identifier
+  to an API.
+  This is useful to track an API even when its `#/info/title` changes.
+given: $
+severity: error
+recommended: true
+type: style
+then:
+  field: info.x-api-id
+  function: truthy
