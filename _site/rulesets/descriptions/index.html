@@ -2,6 +2,5 @@
 "rules": {
 
 "has-info-title": {"description":"API must have a info title.","message":"Missing the {{property}}","given":"$.info","then":{"field":"title","function":"truthy"}},
-"has-info-description": {"description":"API must have a info description.","message":"Missing the {{property}}","given":"$.info","then":{"field":"description","function":"truthy"}},
-"servers-description": {"x-tags":["metadata","it"],"description":"Servers must have a description.","formats":["oas3"],"given":["$.servers[*]","$.paths..servers"],"severity":"error","then":{"field":"description","function":"truthy"}},,,
+"has-info-description": {"description":"API must have a info description.","message":"Missing the {{property}}","given":"$.info","then":{"field":"description","function":"truthy"}},,,,
 }}
