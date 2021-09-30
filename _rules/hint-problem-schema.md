@@ -1,23 +1,5 @@
 ---
-description: |2-
-
-  WARN: This rule is under implementation and just provides an hint.
-
-  Error management is a key enabler of a resilient API ecosystem.
-  Enforcing a consistent schema for errors between different APIs,
-  enables client to properly implement an error management strategy,
-  with positive impacts for users.
-
-  Errors should return RFC7807 objects. Instead, this schema
-  seems to use non standard properties such as:
-  `message`, `msg` and `code`.
-  
-  Returning an URI in `type`, instead of an opaque `code` can help
-  the client in better identifying the error; moreover the URI
-  though it should not be dereferenced automatically, can return
-  an actual resource providing guidance in addressing the issue.
-
-  See recommendation RAC_REST_NAME_007.
+description: This rule is under implementation and just provides an hint. Error management is a key enabler of a resilient API ecosystem. Enforcing a consistent schema for errors between different APIs, enables client to properly implement an error management strategy, with positive impacts for users.
 message: Error response doesn't seem to match RFC7807. Are you sure it is ok? {{path}}
 formats:
 - oas3

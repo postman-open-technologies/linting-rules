@@ -23,11 +23,13 @@ layout: default
       </div>
 
       <div>
-        {% assign rules = site.rules %}
+        
 
         <hr><br>
         <h3>Rulesets</h3>
         <p>These are a list of the rulesets.</p>
+        {% assign rulesets = site.rulesets %}
+        {% assign rules = site.rules %}
         {% for ruleset in rulesets %}
             <div class="row collection">
                <div class="col-md-1" style="border: 0px solid #000;">
@@ -58,7 +60,7 @@ layout: default
         <hr><br>
         <h3>Rules</h3>
         <p>These are a list of the rules.</p>
-        {% assign rulesets = site.rulesets %}
+        
         {% for rule in rules %}  
                <div class="row collection">
                   {% assign this_key = '' %}

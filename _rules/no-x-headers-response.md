@@ -1,7 +1,7 @@
 ---
 x-tags:
 - standards
-description: '''HTTP'' headers SHOULD NOT start with ''X-'' RFC6648.'
+description: 'HTTP headers SHOULD NOT start with X- RFC6648.'
 severity: warn
 given:
 - $.[responses][*].headers.*~
@@ -12,7 +12,8 @@ then:
   function: pattern
   functionOptions:
     match: /^([^x]|.[^-])|RateLimit-/i
-...x-tags:
+...
+x-tags:
 - standards
 description: '''HTTP'' headers SHOULD NOT start with ''X-'' RFC6648.'
 severity: warn

@@ -10,23 +10,6 @@ description: |-
 
   A constrained string using the `date` format.
 
-  ```
-  ConstrainedString:
-    type: string
-    format: date
-  ```
-
-  Another constrained string using `maxLength`.
-  You can always add further constraints using a
-  `pattern` or a `format`.
-
-  ```
-  ZipCode:
-    type: string
-    maxLength: 5
-    pattern: '[0-9]{5}'
-  ```
-
   For further security, you can always limit string length even
   in conjunction with `format` and `pattern`.
 message: Strings (non enum) must specify a maximum length. {{path}} {{error}}
@@ -39,7 +22,8 @@ given:
 then:
 - field: maxLength
   function: defined
-...description: |-
+...
+description: |-
   String length should be limited to avoid an attacker
   to send very long strings to your service.
 

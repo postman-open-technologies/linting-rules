@@ -10,16 +10,7 @@ description: |-
   This rule inspects the schema returned by an error response and
   verifies whether it contains the main properties defined in RFC7807:
   `status`, `title` and `detail`.
-
-  An example of a valid payload is
-  ```
-  {
-   "title": "Not Found",
-   "status": 404,
-   "detail": "Book does not exist; id: 123"
-  }
-  ```
-
+  
   See recommendation RAC_REST_NAME_007.
 message: Your schema doesn't seem to match RFC7807. Are you sure it is ok? {{path}}
 formats:
@@ -39,7 +30,8 @@ then:
           type: string
         detail:
           type: string
-...description: |-
+...
+description: |-
   WARN: This rule is under implementation and just provides an hint.
 
   Error management is a key enabler of a resilient API ecosystem.
