@@ -70,17 +70,16 @@
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/adidas-definitions-camelCase-alphanumeric/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: All YAML/JSON definitions MUST follow fields-camelCase and be ASCII alphanumeric
-  characters or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;.
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: ‘All YAML/JSON definitions MUST follow fields-camelCase and be ASCII alphanumeric
+  characters.’
 given: $.definitions[&lt;em&gt;]~
-message: ‘ MUST follow camelCase and be ASCII alphanumeric characters
-  or &lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;$&lt;/code&gt;.’
+message: ‘ MUST follow camelCase and be ASCII alphanumeric characters.’
 recommended: true
 severity: error
 then:
   function: pattern
   functionOptions:
-    match: /^[a-z$_]{1}[A-Z09$_]&lt;/em&gt;/
+    match: ‘/^[a-z$_]{1}[A-Z09$_]&lt;/em&gt;/’
 </code></pre>                  
                   </div>
                </div>                                         
@@ -427,30 +426,10 @@ function: falsy
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/adidas-oas3-response-success-OK/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: All success responses MUST be of media type &lt;code class=&quot;highlighter-rouge&quot;&gt;application/hal+json&lt;/code&gt; or
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: All success responses MUST be of media type &lt;code class=&quot;highlighter-rouge&quot;&gt;application/hal+json&lt;/code&gt; or
   &lt;code class=&quot;highlighter-rouge&quot;&gt;application/problem+json&lt;/code&gt;
 formats:
 
-  - oas3
-given: $.paths..responses[?( @property == 200 )].content[*]~
-message: ‘Response documents MUST be of application/hal+json or application/problem+json
-media types: ‘
-recommended: true
-severity: error
-then:
-function: enumeration
-functionOptions:
-  values:
-    
-      - application/hal+json
-      - application/problem+json
-…
-description: All success responses MUST be of media type &lt;code class=&quot;highlighter-rouge&quot;&gt;application/hal+json&lt;/code&gt; or
-&lt;code class=&quot;highlighter-rouge&quot;&gt;application/problem+json&lt;/code&gt;
-formats:
-    
-  
   - oas3
 given: $.paths..responses[?( @property == 200 )].content[*]~
 message: ‘Response documents MUST be of application/hal+json or application/problem+json
@@ -1814,64 +1793,11 @@ functionOptions:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/cache-control-parameter-undocumented/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
-  Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
   to avoid data leaks or the usage of stale data.
-
-This rule should ensure in some way that the api provider
-  documented extensively the cache usage to avoid data leaks
-  or usage of stale data.
-
-For now this ruleset tests:
-
-  - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-  - that one and only one between Expires and Cache-Control is used.
-
-
-&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-  because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-  Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-  like described in RFC7234.
 message: Cache usage SHOULD be documented when used.
 formats:
 
-  - oas3
-severity: warn
-recommended: true
-given: $..[parameters][?(@.in == “header” &amp;amp;&amp;amp; @.name.match(/Cache-Control/i))]
-then:
-  - field: description
-function: truthy
-  - 
-    field: description
-function: pattern
-functionOptions:
-  match: .&lt;em&gt;(max-age|private|no-store|no-cache).&lt;/em&gt;
-…
-description: |-
-Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
-to avoid data leaks or the usage of stale data.
-
-    This rule should ensure in some way that the api provider
-documented extensively the cache usage to avoid data leaks
-or usage of stale data.
-
-    For now this ruleset tests:
-    
-      - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-      - that one and only one between Expires and Cache-Control is used.
-    
-
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-like described in RFC7234.
-message: Cache usage SHOULD be documented when used.
-formats:
-  
   - oas3
 severity: warn
 recommended: true
@@ -1893,64 +1819,12 @@ functionOptions:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/cache-responses-indeterminate-behavior/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
   to avoid data leaks or the usage of stale data.
-
-This rule should ensure in some way that the api provider
-  documented extensively the cache usage to avoid data leaks
-  or usage of stale data.
-
-For now this ruleset tests:
-
-  - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-  - that one and only one between Expires and Cache-Control is used.
-
-
-&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-  because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-  Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-  like described in RFC7234.
 message: ‘’
 formats:
 
-  - oas3
-severity: info
-recommended: true
-given: $.[responses][?(@property[0] == “2” )][headers]
-then:
-  - function: xor
-functionOptions:
-  properties:
-    
-      - Expires
-      - Cache-Control
-…
-description: |-
-Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
-to avoid data leaks or the usage of stale data.
-    
-
-    This rule should ensure in some way that the api provider
-documented extensively the cache usage to avoid data leaks
-or usage of stale data.
-
-    For now this ruleset tests:
-    
-      - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-      - that one and only one between Expires and Cache-Control is used.
-    
-
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-like described in RFC7234.
-message: ‘’
-formats:
-  
   - oas3
 severity: info
 recommended: true
@@ -1974,65 +1848,10 @@ functionOptions:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/cache-responses-undocumented/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
   to avoid data leaks or the usage of stale data.
-
-This rule should ensure in some way that the api provider
-  documented extensively the cache usage to avoid data leaks
-  or usage of stale data.
-
-For now this ruleset tests:
-
-  - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-  - that one and only one between Expires and Cache-Control is used.
-
-
-&lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-  because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-  Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-  like described in RFC7234.
 message: Cache usage in responses SHOULD be documented in Cache-Control and/or Expires.
-
-formats:
-
-  - oas3
-severity: info
-recommended: true
-given: $.[responses][?(@property[0] == “2” )][headers].[?(@property.match(/Cache-Control|Expires/i))]]
-then:
-  - field: description
-function: truthy
-  - 
-    field: description
-function: pattern
-functionOptions:
-  match: .&lt;em&gt;(max-age|private|no-store|no-cache).&lt;/em&gt;
-…
-description: |-
-Cache usage SHOULD be extensively detailed in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; property
-to avoid data leaks or the usage of stale data.
-
-    This rule should ensure in some way that the api provider
-documented extensively the cache usage to avoid data leaks
-or usage of stale data.
-
-    For now this ruleset tests:
-    
-      - the presence of following keywords
-in the &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;private&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-store&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;no-cache&lt;/code&gt;.
-      - that one and only one between Expires and Cache-Control is used.
-    
-
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; should not be used in conjuction,
-because &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; overrides &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; when &lt;code class=&quot;highlighter-rouge&quot;&gt;max-age&lt;/code&gt; is set.
-Instead if neither &lt;code class=&quot;highlighter-rouge&quot;&gt;Cache-Control&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;Expires&lt;/code&gt; are set, clients MAY use euristic cache
-like described in RFC7234.
-message: Cache usage in responses SHOULD be documented in Cache-Control and/or Expires.
-  
-
 
 formats:
 
@@ -5383,25 +5202,12 @@ then:
                   
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/must-use-normalized-paths-without-empty-path-segments/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-message: Empty path segments are not allowed
+                     <span style="font-size: 18px; font-weight: bold;">documentationUrl</span> (<a href="http://localhost:4000//rules/must-use-normalized-paths-without-empty-path-segments/" style="color:#000">Link</a>) - </p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">message: Empty path segments are not allowed
 description: MUST use normalized paths without empty path segments and trailing slashes
-  [136]
 documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
 severity: error
-given: $.paths.&lt;em&gt;~
-then:
-  function: pattern
-  functionOptions:
-    notMatch: //
-…
-message: Empty path segments are not allowed
-description: MUST use normalized paths without empty path segments and trailing slashes
-  [136]
-documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
-severity: error
-given: $.paths.&lt;/em&gt;~
+given: $.paths.*~
 then:
   function: pattern
   functionOptions:
@@ -5414,25 +5220,12 @@ then:
                   
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/must-use-normalized-paths-without-trailing-slash/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-message: Path with trailing slash is not allowed
+                     <span style="font-size: 18px; font-weight: bold;">documentationUrl</span> (<a href="http://localhost:4000//rules/must-use-normalized-paths-without-trailing-slash/" style="color:#000">Link</a>) - </p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">message: Path with trailing slash is not allowed
 description: MUST use normalized paths without empty path segments and trailing slashes
-  [136]
 documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
 severity: error
-given: $.paths.&lt;em&gt;~
-then:
-  function: pattern
-  functionOptions:
-    notMatch: /$
-…
-message: Path with trailing slash is not allowed
-description: MUST use normalized paths without empty path segments and trailing slashes
-  [136]
-documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
-severity: error
-given: $.paths.&lt;/em&gt;~
+given: $.paths.*~
 then:
   function: pattern
   functionOptions:
@@ -5747,101 +5540,18 @@ function: truthy
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/no-additionalProperties/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   By default, jsonschema allows additionalProperties. This means
   that schema validators can be bypassed using further, unspecified
-  fields.
-
-While forbidding additionalProperties can create rigidity and hinder
+  fields. While forbidding additionalProperties can create rigidity and hinder
   the evolution of an API - eg making it hard to accept new parameters
   or fields - it is possible that this flexibility can be used
   to bypass the schema validator and force the application to process
   unwanted information.
-
-Disable &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Person:
-    type: object
-    additionalProperties: false
-    properties:
-      given_name:
-        type: string
-        pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-Or constraint them using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxProperties&lt;/code&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Person:
-    type: object
-    additionalProperties:
-      type: string
-      pattern: /+39[0-9]{,14}/
-    maxProperties: 3
-    properties:
-      given_name:
-        type: string
-        pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-  - no additionalProperties
-  - constrained additionalProperties
 message: ‘Objects should not allow additionalProperties. Disable them with &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties:
   false&lt;/code&gt; or constraint them.’
 formats:
-  - oas3
-severity: warn
-recommended: true
-given:
-  - $.[?(@.type==”object” &amp;amp;&amp;amp; @.additionalProperties==true)]
-then:
-  - 
-    field: additionalProperties
-function: falsy
-…
-description: |-
-By default, jsonschema allows additionalProperties. This means
-that schema validators can be bypassed using further, unspecified
-fields.
 
-    While forbidding additionalProperties can create rigidity and hinder
-the evolution of an API - eg making it hard to accept new parameters
-or fields - it is possible that this flexibility can be used
-to bypass the schema validator and force the application to process
-unwanted information.
-
-    Disable &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Person:
-  type: object
-  additionalProperties: false
-  properties:
-    given_name:
-      type: string
-      pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    Or constraint them using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxProperties&lt;/code&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Person:
-  type: object
-  additionalProperties:
-    type: string
-    pattern: /+39[0-9]{,14}/
-  maxProperties: 3
-  properties:
-    given_name:
-      type: string
-      pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    
-      - no additionalProperties
-      - constrained additionalProperties
-message: ‘Objects should not allow additionalProperties. Disable them with &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties:
-false&lt;/code&gt; or constraint them.’
-formats:
-    
-  
   - oas3
 severity: warn
 recommended: true
@@ -5860,101 +5570,18 @@ function: falsy
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/no-default-additionalProperties/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   By default, jsonschema allows additionalProperties. This means
   that schema validators can be bypassed using further, unspecified
-  fields.
-
-While forbidding additionalProperties can create rigidity and hinder
+  fields. While forbidding additionalProperties can create rigidity and hinder
   the evolution of an API - eg making it hard to accept new parameters
   or fields - it is possible that this flexibility can be used
   to bypass the schema validator and force the application to process
   unwanted information.
-
-Disable &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Person:
-    type: object
-    additionalProperties: false
-    properties:
-      given_name:
-        type: string
-        pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-Or constraint them using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxProperties&lt;/code&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  Person:
-    type: object
-    additionalProperties:
-      type: string
-      pattern: /+39[0-9]{,14}/
-    maxProperties: 3
-    properties:
-      given_name:
-        type: string
-        pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-  - no additionalProperties
-  - constrained additionalProperties
 message: ‘Objects should not allow additionalProperties. Disable them with &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties:
   false&lt;/code&gt; or constraint them.’
 formats:
-  - oas3
-severity: warn
-recommended: true
-given:
-  - $.[?(@.type==”object” &amp;amp;&amp;amp; ! @.additionalProperties)]
-then:
-  - 
-    field: additionalProperties
-function: defined
-…
-description: |-
-By default, jsonschema allows additionalProperties. This means
-that schema validators can be bypassed using further, unspecified
-fields.
 
-    While forbidding additionalProperties can create rigidity and hinder
-the evolution of an API - eg making it hard to accept new parameters
-or fields - it is possible that this flexibility can be used
-to bypass the schema validator and force the application to process
-unwanted information.
-
-    Disable &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;false&lt;/code&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Person:
-  type: object
-  additionalProperties: false
-  properties:
-    given_name:
-      type: string
-      pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    Or constraint them using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxProperties&lt;/code&gt;
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Person:
-  type: object
-  additionalProperties:
-    type: string
-    pattern: /+39[0-9]{,14}/
-  maxProperties: 3
-  properties:
-    given_name:
-      type: string
-      pattern: [a-zA-Z ]{24}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    
-      - no additionalProperties
-      - constrained additionalProperties
-message: ‘Objects should not allow additionalProperties. Disable them with &lt;code class=&quot;highlighter-rouge&quot;&gt;additionalProperties:
-false&lt;/code&gt; or constraint them.’
-formats:
-    
-  
   - oas3
 severity: warn
 recommended: true
@@ -6278,39 +5905,13 @@ then:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/number-boundaries/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   Numeric values should be limited in size to mitigate resource exhaustion
   using &lt;code class=&quot;highlighter-rouge&quot;&gt;maximum&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;minimum&lt;/code&gt;.
 
 If you delegate input validation to a library or framework,
   be sure to test it thoroughly.
 message: Schema of type number or integer must specify a maximum and a minimum.
-
-formats:
-
-  - oas3
-severity: warn
-recommended: true
-given:
-  - $.[?(@.type==”number”)]
-  - $.[?(@.type==”integer”)]
-then:
-  - field: maximum
-function: defined
-  - 
-    field: minimum
-function: defined
-…
-description: |-
-Numeric values should be limited in size to mitigate resource exhaustion
-using &lt;code class=&quot;highlighter-rouge&quot;&gt;maximum&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;minimum&lt;/code&gt;.
-
-    If you delegate input validation to a library or framework,
-be sure to test it thoroughly.
-message: Schema of type number or integer must specify a maximum and a minimum.
-  
-
 
 formats:
 
@@ -9700,83 +9301,13 @@ then:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/string-maxlength/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
   String length should be limited to avoid an attacker
-  to send very long strings to your service.
-
-You can do this in different ways:
-
-  - specify a &lt;code class=&quot;highlighter-rouge&quot;&gt;maxLength&lt;/code&gt;
-  - constraint the possible values with an &lt;code class=&quot;highlighter-rouge&quot;&gt;enum&lt;/code&gt;
-  - use a constrained &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt; like &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;date-time&lt;/code&gt;.
-
-
-A constrained string using the &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; format.
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ConstrainedString:
-    type: string
-    format: date
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-Another constrained string using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxLength&lt;/code&gt;.
-  You can always add further constraints using a
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;pattern&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt;.
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  ZipCode:
-    type: string
-    maxLength: 5
-    pattern: &#39;[0-9]{5}&#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-For further security, you can always limit string length even
+  to send very long strings to your service.For further security, you can always limit string length even
   in conjunction with &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;pattern&lt;/code&gt;.
 message: Strings (non enum) must specify a maximum length.&lt;br /&gt;
 formats:
 
-  - oas3
-severity: warn
-recommended: true
-given:
-  - $.[?(@.type==”string” &amp;amp;&amp;amp; !@.enum &amp;amp;&amp;amp; @.format!=”date” &amp;amp;&amp;amp; @.format !=”date-time” )]
-then:
-  - 
-    field: maxLength
-function: defined
-…
-description: |-
-String length should be limited to avoid an attacker
-to send very long strings to your service.
-
-    You can do this in different ways:
-    
-      - specify a &lt;code class=&quot;highlighter-rouge&quot;&gt;maxLength&lt;/code&gt;
-      - constraint the possible values with an &lt;code class=&quot;highlighter-rouge&quot;&gt;enum&lt;/code&gt;
-      - use a constrained &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt; like &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;date-time&lt;/code&gt;.
-    
-
-    A constrained string using the &lt;code class=&quot;highlighter-rouge&quot;&gt;date&lt;/code&gt; format.
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ConstrainedString:
-  type: string
-  format: date
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    Another constrained string using &lt;code class=&quot;highlighter-rouge&quot;&gt;maxLength&lt;/code&gt;.
-You can always add further constraints using a
-&lt;code class=&quot;highlighter-rouge&quot;&gt;pattern&lt;/code&gt; or a &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt;.
-
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ZipCode:
-  type: string
-  maxLength: 5
-  pattern: &#39;[0-9]{5}&#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    For further security, you can always limit string length even
-in conjunction with &lt;code class=&quot;highlighter-rouge&quot;&gt;format&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;pattern&lt;/code&gt;.
-message: Strings (non enum) must specify a maximum length.&lt;br /&gt;
-formats:
-  
   - oas3
 severity: warn
 recommended: true
@@ -10100,33 +9631,14 @@ functionOptions:
                                      
                   <div class="col-md-8" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;"></span> (<a href="http://localhost:4000//rules/use-problem-schema/" style="color:#000">Link</a>) - </p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">&lt;hr /&gt;
-description: |-
-  WARN: This rule is under implementation and just provides an hint.
-
-Error management is a key enabler of a resilient API ecosystem.
-  Enforcing a consistent schema for errors between different APIs,
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">description: |-
+  WARN: This rule is under implementation and just provides an hint. Error management is a key enabler of a resilient API ecosystem. Enforcing a consistent schema for errors between different APIs,
   enables client to properly implement an error management strategy,
   with positive impacts for users.
-
-This rule inspects the schema returned by an error response and
-  verifies whether it contains the main properties defined in RFC7807:
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;status&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;detail&lt;/code&gt;.
-
-An example of a valid payload is
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  {
-   &quot;title&quot;: &quot;Not Found&quot;,
-   &quot;status&quot;: 404,
-   &quot;detail&quot;: &quot;Book does not exist; id: 123&quot;
-  }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-See recommendation RAC_REST_NAME_007.
 message: Your schema doesn’t seem to match RFC7807. Are you sure it is ok? 
 formats:
 
-  - 
-    oas3
+  - oas3
 severity: hint
 recommended: false
 given: $.paths.[*].responses[?(@property.match(/^(4|5|default)/))][[schema]]
@@ -10142,49 +9654,6 @@ functionOptions:
         type: string
       detail:
         type: string
-…
-description: |-
-WARN: This rule is under implementation and just provides an hint.
-
-    Error management is a key enabler of a resilient API ecosystem.
-Enforcing a consistent schema for errors between different APIs,
-enables client to properly implement an error management strategy,
-with positive impacts for users.
-
-    This rule inspects the schema returned by an error response and
-verifies whether it contains the main properties defined in RFC7807:
-&lt;code class=&quot;highlighter-rouge&quot;&gt;status&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;detail&lt;/code&gt;.
-
-    An example of a valid payload is
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
- &quot;title&quot;: &quot;Not Found&quot;,
- &quot;status&quot;: 404,
- &quot;detail&quot;: &quot;Book does not exist; id: 123&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-
-    See recommendation RAC_REST_NAME_007.
-message: Your schema doesn’t seem to match RFC7807. Are you sure it is ok? 
-formats:
-  
-  - 
-    oas3
-severity: hint
-recommended: false
-given: $.paths.[*].responses[?(@property.match(/^(4|5|default)/))][[schema]]
-then:
-function: schema
-functionOptions:
-  schema:
-    type: object
-    properties:
-      status:
-        type: integer
-      title:
-        type: string
-      detail:
-        type: string
-  
 
 </code></pre>                  
                   </div>
