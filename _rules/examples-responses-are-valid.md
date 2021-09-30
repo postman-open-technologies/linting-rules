@@ -7,7 +7,8 @@ then:
   functionOptions:
     field: $.examples.*.value
     schemaPath: $.schema
-...message: '{{error}}'
+...
+message: '{{error}}'
 severity: error
 given: $..responses..[?(@property !== 'properties' && @.examples)]
 then:

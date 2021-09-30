@@ -1,10 +1,9 @@
 ---
 description: |-
   Numeric values should be limited in size to mitigate resource exhaustion
-  using `maximum` and `minimum`. If you delegate input validation to a library or framework,
+  using `maximum` and `minimum`.  If you delegate input validation to a library or framework,
   be sure to test it thoroughly.
-message: Schema of type number or integer must specify a maximum and a minimum. {{path}}
-  {{error}}
+message: Schema of type number or integer must specify a maximum and a minimum. {{path}} {{error}}
 formats:
 - oas3
 severity: warn

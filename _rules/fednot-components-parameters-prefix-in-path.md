@@ -1,6 +1,6 @@
 ---
 description: Parameters should be 'in' a location matching the prefix (Path.)
-message: '''{{value}}'' does not match the parameter prefix. {{description}}. Fix
+message: {{value}} does not match the parameter prefix. {{description}}. Fix
   by assigning the correct ''in'' value, eg. header -> path.'
 given: $.components.parameters..[?(@property.match(/^Path\./))]
 severity: error
@@ -9,7 +9,8 @@ then:
   function: pattern
   functionOptions:
     match: ^path$
-...description: Parameters should be 'in' a location matching the prefix (Path.)
+...
+description: Parameters should be 'in' a location matching the prefix (Path.)
 message: '''{{value}}'' does not match the parameter prefix. {{description}}. Fix
   by assigning the correct ''in'' value, eg. header -> path.'
 given: $.components.parameters..[?(@property.match(/^Path\./))]

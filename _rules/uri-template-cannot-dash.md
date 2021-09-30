@@ -9,7 +9,8 @@ then:
   function: pattern
   functionOptions:
     notMatch: /-/
-...description: The 'URI' template (RFC 6570 - https://tools.ietf.org/html/rfc6570) cannot
+...
+description: The 'URI' template (RFC 6570 - https://tools.ietf.org/html/rfc6570) cannot
   contain a '-' character
 severity: error
 recommended: true

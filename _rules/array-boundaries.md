@@ -1,6 +1,13 @@
 ---
 description: |-
-  Array size should be limited to mitigate resource exhaustion attacks. This can be done using `maxItems` and `minItems`, like in the example below. You should ensure that the schema referenced in  `items` is constrained too. If you delegate input validation to a library or framework, be sure to test it thoroughly and ensure that it verifies `maxItems`.
+  Array size should be limited to mitigate resource exhaustion attacks.
+  This can be done using `maxItems` and `minItems`, like in the example
+  below.
+
+  You should ensure that the schema referenced in  `items` is constrained too.
+
+  If you delegate input validation to a library or framework,
+  be sure to test it thoroughly and ensure that it verifies `maxItems`.
 message: Schema of type array must specify maxItems and minItems. {{path}} {{error}}
 formats:
 - oas3
@@ -15,7 +22,23 @@ then:
   function: defined
 ...
 description: |-
-  Array size should be limited to mitigate resource exhaustion attacks. This can be done using `maxItems` and `minItems`, like in the example below. You should ensure that the schema referenced in  `items` is constrained too. If you delegate input validation to a library or framework, be sure to test it thoroughly and ensure that it verifies `maxItems`.
+  Array size should be limited to mitigate resource exhaustion attacks.
+  This can be done using `maxItems` and `minItems`, like in the example
+  below.
+
+  ```
+  Limited:
+    type: array
+    maxItems: 10
+    items:
+      type: string
+      format: date
+  ```
+
+  You should ensure that the schema referenced in  `items` is constrained too.
+
+  If you delegate input validation to a library or framework,
+  be sure to test it thoroughly and ensure that it verifies `maxItems`.
 message: Schema of type array must specify maxItems and minItems. {{path}} {{error}}
 formats:
 - oas3

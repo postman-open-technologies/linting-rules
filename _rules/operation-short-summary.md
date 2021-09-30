@@ -3,9 +3,7 @@ description: Operation summary should be short and sweet, no full stops, and les
   than 20 characters
 recommended: true
 type: style
-given: $.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post'
-  || @property === 'delete' || @property === 'options' || @property === 'head' ||
-  @property === 'patch' || @property === 'trace' )]
+given: $.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]
 then:
 - field: summary
   function: pattern
@@ -15,13 +13,12 @@ then:
   function: length
   functionOptions:
     max: 20
-...description: Operation summary should be short and sweet, no full stops, and less
+...
+description: Operation summary should be short and sweet, no full stops, and less
   than 20 characters
 recommended: true
 type: style
-given: $.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post'
-  || @property === 'delete' || @property === 'options' || @property === 'head' ||
-  @property === 'patch' || @property === 'trace' )]
+given: $.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]
 then:
 - field: summary
   function: pattern

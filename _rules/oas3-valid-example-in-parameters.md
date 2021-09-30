@@ -13,7 +13,8 @@ then:
   functionOptions:
     field: example
     schemaPath: $
-...description: Examples must be valid against their defined schema.
+...
+description: Examples must be valid against their defined schema.
 message: '{{error}}'
 recommended: true
 formats:

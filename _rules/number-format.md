@@ -18,7 +18,8 @@ given: $.[?(@.type=="number")]
 then:
   field: format
   function: truthy
-...x-tags:
+...
+x-tags:
 - it
 - RAC_REST_FORMAT_004
 description: |-

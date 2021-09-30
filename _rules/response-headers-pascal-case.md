@@ -3,8 +3,6 @@ x-tags:
 - it
 description: |
   Headers should be pascal-case.
-
-  See Italian recommendation RAC_REST_NAME_003.
 message: 'Header {{error}}: {{path}}'
 severity: hint
 recommended: true
@@ -16,12 +14,11 @@ then:
     type: pascal
     separator:
       char: '-'
-...x-tags:
+...
+x-tags:
 - it
 description: |
   Headers should be pascal-case.
-
-  See Italian recommendation RAC_REST_NAME_003.
 message: 'Header {{error}}: {{path}}'
 severity: hint
 recommended: true

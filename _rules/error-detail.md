@@ -10,7 +10,8 @@ then:
   function: truthy
 - field: content.application/problem+json.schema.properties.detail
   function: truthy
-...severity: error
+...
+severity: error
 description: Errors must be problem+JSON and include a "detail" field
 given: $..responses.[?(@property.toString().startsWith("4") || @property.toString()
   === "500")]

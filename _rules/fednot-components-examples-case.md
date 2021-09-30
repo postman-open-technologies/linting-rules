@@ -1,6 +1,6 @@
 ---
 description: All examples should be named with UpperCamelCase
-message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
+message: {{property}} is not UpperCamelCase. {{description}}. Fix by renaming
   the example, eg. object -> Object.'
 given: $.components.examples
 severity: error
@@ -12,7 +12,8 @@ then:
     separator:
       char: .
       allowLeading: false
-...description: All examples should be named with UpperCamelCase
+...
+description: All examples should be named with UpperCamelCase
 message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
   the example, eg. object -> Object.'
 given: $.components.examples

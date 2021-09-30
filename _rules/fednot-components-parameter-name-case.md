@@ -1,6 +1,6 @@
 ---
 description: All parameter names should be lowerCamelCase
-message: '''{{value}}'' is not lowerCamelCase. {{description}}. Fix by renaming the
+message: {{value}} is not lowerCamelCase. {{description}}. Fix by renaming the
   parameter, eg. ParameterName -> parameterName.'
 given: $.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]
 severity: warn
@@ -9,7 +9,8 @@ then:
   function: casing
   functionOptions:
     type: camel
-...description: All parameter names should be lowerCamelCase
+...
+description: All parameter names should be lowerCamelCase
 message: '''{{value}}'' is not lowerCamelCase. {{description}}. Fix by renaming the
   parameter, eg. ParameterName -> parameterName.'
 given: $.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]

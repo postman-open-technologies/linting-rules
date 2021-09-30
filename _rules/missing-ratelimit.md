@@ -9,15 +9,7 @@ description: |-
   - `X-RateLimit-Limit`: number of total requests in a give time window
   - `X-RateLimit-Remaining`: remaining requests in the current window
   - `X-RateLimit-Reset`: number of seconds before the window resets
-
-  An example set of headers is the following
-
-  ```
-  X-Ratelimit-Limit: 100
-  X-Ratelimit-Remaining: 40
-  X-Ratelimit-Reset: 12
-  ```
-
+  
   A standardization proposal for ratelimit headers is ongoning
   inside the IETF HTTPAPI Workgroup.
   See [the draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/)

@@ -14,8 +14,7 @@ then:
     values:
     - application/hal+json
     - application/problem+json
-...
-description: All success responses MUST be of media type `application/hal+json` or
+...description: All success responses MUST be of media type `application/hal+json` or
   `application/problem+json`
 formats:
 - oas3

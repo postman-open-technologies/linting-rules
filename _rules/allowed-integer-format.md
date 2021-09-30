@@ -2,8 +2,11 @@
 x-tags:
 - it
 - RAC_REST_FORMAT_004
-description: To improve interoperability, integer and number formats are constrained
+description: |-
+  To improve interoperability, integer and number formats are constrained
   to a shared subset.
+
+  See recommendation RAC_REST_FORMAT_004.
 message: Type format is "{{value}}", expected one of [int32, int64]. {{path}}
 formats:
 - oas3
@@ -18,12 +21,14 @@ then:
     values:
     - int32
     - int64
-...
-x-tags:
+...x-tags:
 - it
 - RAC_REST_FORMAT_004
-description: To improve interoperability, integer and number formats are constrained
+description: |-
+  To improve interoperability, integer and number formats are constrained
   to a shared subset.
+
+  See recommendation RAC_REST_FORMAT_004.
 message: Type format is "{{value}}", expected one of [int32, int64]. {{path}}
 formats:
 - oas3

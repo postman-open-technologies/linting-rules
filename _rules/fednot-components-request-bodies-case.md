@@ -1,6 +1,6 @@
 ---
 description: All definitions should be named with UpperCamelCase
-message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
+message: {{property}} is not UpperCamelCase. {{description}}. Fix by renaming
   the definition, eg. object -> Object.'
 given: $.components.requestBodies
 severity: error
@@ -12,7 +12,8 @@ then:
     separator:
       char: .
       allowLeading: false
-...description: All definitions should be named with UpperCamelCase
+...
+description: All definitions should be named with UpperCamelCase
 message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
   the definition, eg. object -> Object.'
 given: $.components.requestBodies

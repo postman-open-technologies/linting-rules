@@ -1,6 +1,6 @@
 ---
 description: All parameters should be named with UpperCamelCase
-message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
+message: {{property}} is not UpperCamelCase. {{description}}. Fix by renaming
   the definition, eg. object -> Object.'
 given: $.components.parameters
 severity: error
@@ -12,7 +12,8 @@ then:
     separator:
       char: .
       allowLeading: false
-...description: All parameters should be named with UpperCamelCase
+...
+description: All parameters should be named with UpperCamelCase
 message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
   the definition, eg. object -> Object.'
 given: $.components.parameters

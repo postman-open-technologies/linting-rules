@@ -1,6 +1,6 @@
 ---
 description: The client ID should be an 'apiKey' in a 'header' with the name 'X-Ibm-Client-Id'
-message: '''{{property}}: {{value}}'' does not match the value expected by the gateway.'
+message: {{property}} {{value}} does not match the value expected by the gateway.'
 given: $.components.securitySchemes[Keys.ClientId]
 severity: error
 then:
@@ -16,7 +16,8 @@ then:
   function: pattern
   functionOptions:
     match: ^X-Ibm-Client-Id$
-...description: The client ID should be an 'apiKey' in a 'header' with the name 'X-Ibm-Client-Id'
+...
+description: The client ID should be an 'apiKey' in a 'header' with the name 'X-Ibm-Client-Id'
 message: '''{{property}}: {{value}}'' does not match the value expected by the gateway.'
 given: $.components.securitySchemes[Keys.ClientId]
 severity: error

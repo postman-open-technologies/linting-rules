@@ -1,6 +1,6 @@
 ---
 message: Empty path segments are not allowed
-description: MUST use normalized paths without empty path segments and trailing slashes.
+description: MUST use normalized paths without empty path segments and trailing slashes
 documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
 severity: error
 given: $.paths.*~

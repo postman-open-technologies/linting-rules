@@ -1,5 +1,6 @@
 ---
-description: By default, jsonschema allows additionalProperties. This means
+description: |-
+  By default, jsonschema allows additionalProperties. This means
   that schema validators can be bypassed using further, unspecified
   fields. While forbidding additionalProperties can create rigidity and hinder
   the evolution of an API - eg making it hard to accept new parameters
@@ -19,7 +20,8 @@ then:
 - field: maxProperties
   function: defined
 ...
-description: By default, jsonschema allows additionalProperties. This means
+description: |-
+  By default, jsonschema allows additionalProperties. This means
   that schema validators can be bypassed using further, unspecified
   fields. While forbidding additionalProperties can create rigidity and hinder
   the evolution of an API - eg making it hard to accept new parameters

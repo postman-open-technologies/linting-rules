@@ -11,27 +11,7 @@ description: |2-
   Errors should return RFC7807 objects. Instead, this schema
   seems to use non standard properties such as:
   `message`, `msg` and `code`.
-
-  An error of the following form
-
-  ```
-  {
-    "msg": "Book with id: 123 does not exist.",
-    "code": 6063
-  }
-  ```
-
-  can be expressed in RFC7807 with
-
-  ```
-  {
-    "detail": "Book with id: 123 does not exist.",
-    "type": "https://api.example/v1/errors/6063",
-    "status": 404,
-    "title": "Not Found"
-  }
-  ```
-
+  
   Returning an URI in `type`, instead of an opaque `code` can help
   the client in better identifying the error; moreover the URI
   though it should not be dereferenced automatically, can return
@@ -49,7 +29,8 @@ then:
   function: pattern
   functionOptions:
     notMatch: message|code|msg
-...description: |2-
+...
+description: |2-
 
   WARN: This rule is under implementation and just provides an hint.
 

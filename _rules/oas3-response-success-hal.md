@@ -11,7 +11,8 @@ then:
   functionOptions:
     values:
     - application/json
-...description: All success responses MUST be of media type `application/hal+json`
+...
+description: All success responses MUST be of media type `application/hal+json`
 severity: error
 given: $.paths..responses[?( @property >= 200 && @property < 300 && @property != 204)].content[*]~
 recommended: true

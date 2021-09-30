@@ -1,6 +1,6 @@
 ---
 description: All callbacks should be named with UpperCamelCase
-message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
+message: {{property}} is not UpperCamelCase. {{description}}. Fix by renaming
   the callback, eg. object -> Object.'
 given: $.components.callbacks
 severity: error
@@ -12,7 +12,8 @@ then:
     separator:
       char: .
       allowLeading: false
-...description: All callbacks should be named with UpperCamelCase
+...
+description: All callbacks should be named with UpperCamelCase
 message: '''{{property}}'' is not UpperCamelCase. {{description}}. Fix by renaming
   the callback, eg. object -> Object.'
 given: $.components.callbacks
