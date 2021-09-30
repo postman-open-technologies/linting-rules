@@ -1,0 +1,18 @@
+---
+info-license:
+  description: No license information allowed because its covered by the License Agreement
+    we already negotiate with customers.
+  given: $.info
+  severity: error
+  then:
+    field: license
+    function: falsy
+...
+info-license:
+  description: No license information allowed because its covered by the License Agreement
+    we already negotiate with customers.
+  given: $.info
+  severity: error
+  then:
+    field: license
+    function: falsy

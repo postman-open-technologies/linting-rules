@@ -1,0 +1,20 @@
+---
+parameters-names-unique-oas2:
+  description: All parameter names for an operation should be case-insensitive unique.
+  message: '{{error}}'
+  severity: warn
+  formats:
+  - oas2
+  given: $.paths[*]
+  then:
+    function: unique-param-names
+...
+parameters-names-unique-oas2:
+  description: All parameter names for an operation should be case-insensitive unique.
+  message: '{{error}}'
+  severity: warn
+  formats:
+  - oas2
+  given: $.paths[*]
+  then:
+    function: unique-param-names

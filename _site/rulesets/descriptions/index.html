@@ -1,7 +1,4 @@
 {
 "rules": {
-
-"has-info-title": {"description":"API must have a info title.","message":"Missing the {{property}}","given":"$.info","then":{"field":"title","function":"truthy"}},
-"has-info-description": {"description":"API must have a info description.","message":"Missing the {{property}}","given":"$.info","then":{"field":"description","function":"truthy"}},
-"servers-description": {"x-tags":["metadata","it"],"description":"Servers must have a description.","formats":["oas3"],"given":["$.servers[*]","$.paths..servers"],"severity":"error","then":{"field":"description","function":"truthy"}},,,
+    "has-info-title": "&lt;p&gt;has-info-title:\n    description: API must have a info title.\n    message: “Missing the “\n    given: “$.info”\n    then:\n        field: “title”\n        function: truthy&lt;/p&gt;\n","has-info-description": "&lt;p&gt;has-info-description:\n    description: API must have a info description.\n    message: “Missing the “\n    given: “$.info”\n    then:\n        field: “description”\n        function: truthy&lt;/p&gt;\n","servers-description": "&lt;p&gt;servers-description:\n    x-tags:\n        - metadata\n        - it\n    description: Servers must have a description.\n    formats:\n        - oas3  &lt;br /&gt;\n    given:\n        - $.servers[*]\n        - $.paths..servers\n    severity: error\n    then:\n        field: description\n        function: truthy&lt;/p&gt;\n",
 }}

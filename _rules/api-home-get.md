@@ -1,16 +1,26 @@
----
-api-home-get:
-    description: APIs root path MUST have a GET defined, otherwise people won't know how to get it.
-    severity: warn
-    given: $.paths[/]
-    then:
-        field: get
-        function: truthy
+--- 
+api-home-get: 
+  description: "APIs root path MUST have a GET defined,."
+  formats: 
+    - oas2
+    - oas3
+  given: "$.paths[/]"
+  severity: warn
+  then: 
+    field: get
+    function: truthy
+  x-tags: 
+    - Paths      
 ...
-api-home-get:
-    description: APIs root path MUST have a GET defined, otherwise people won't know how to get it.
-    severity: warn
-    given: $.paths[/]
-    then:
-        field: get
-        function: truthy
+api-home-get: 
+  description: "APIs root path MUST have a GET defined,."
+  formats: 
+    - oas2
+    - oas3
+  given: "$.paths[/]"
+  severity: warn
+  then: 
+    field: get
+    function: truthy
+  x-tags: 
+    - Paths 

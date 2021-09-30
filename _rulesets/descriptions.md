@@ -1,13 +1,11 @@
 ---
 name: Descriptions
-description: A ruleset that focus on descriptions.
+description: A ruleset that focus on all the descriptions.
 rules:
   - has-info-title
-  - has-info-description
+  - has-info-description  
   - servers-description
-  - tag-description  
-  - rule-path-description    
-  - operation-description    
+  - properties-descriptions
 image: /images/description-icon.png
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/6
 ...
