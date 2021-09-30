@@ -1,33 +1,54 @@
 ---
-x-tags:
-- standards
-description: |-
-  The PATCH specification explicits that the request body contains
-  a "patch document" describing the changes to be applied
-  to the target resource.
-message: application/json is not an appropriate media-type for PATCH. {{path}}
-formats:
-- oas3
-severity: error
-recommended: true
-given: $.[patch][requestBody][content]
-then:
-  field: application/json
-  function: falsy
+patch-media-type:
+  x-tags:
+    - standards
+  description: >-
+    The PATCH specification explicits that the request body contains a "patch document" describing the changes to be applied to the target resource. To avoid confusion, [this errata](https://www.rfc-editor.org/errata/eid3169) explains that `application/json` is not an appropriate media-type for `PATCH`. A correct example of PATCH using eg. `application/json-patch+json` media-type defined in RFC6902.
+
+    ```
+    paths:
+      /books/{book_id}:
+        patch:
+          requestBody:
+            content:
+              application/json-patch+json:
+                schema:
+                  type: object
+                example: [{ "op": "add", "path": "/baz", "value": "qux" }]
+    ```
+  message: application/json is not an appropriate media-type for PATCH. {{path}}
+  formats:
+    - oas3
+  severity: error
+  recommended: true
+  given: $.[patch][requestBody][content]
+  then:
+    field: application/json
+    function: falsy    
 ...
-x-tags:
-- standards
-description: |-
-  The PATCH specification explicits that the request body contains
-  a "patch document" describing the changes to be applied
-  to the target resource.
-  ```
-message: application/json is not an appropriate media-type for PATCH. {{path}}
-formats:
-- oas3
-severity: error
-recommended: true
-given: $.[patch][requestBody][content]
-then:
-  field: application/json
-  function: falsy
+patch-media-type:
+  x-tags:
+    - standards
+  description: >-
+    The PATCH specification explicits that the request body contains a "patch document" describing the changes to be applied to the target resource. To avoid confusion, [this errata](https://www.rfc-editor.org/errata/eid3169) explains that `application/json` is not an appropriate media-type for `PATCH`. A correct example of PATCH using eg. `application/json-patch+json` media-type defined in RFC6902.
+
+    ```
+    paths:
+      /books/{book_id}:
+        patch:
+          requestBody:
+            content:
+              application/json-patch+json:
+                schema:
+                  type: object
+                example: [{ "op": "add", "path": "/baz", "value": "qux" }]
+    ```
+  message: application/json is not an appropriate media-type for PATCH. {{path}}
+  formats:
+    - oas3
+  severity: error
+  recommended: true
+  given: $.[patch][requestBody][content]
+  then:
+    field: application/json
+    function: falsy 
