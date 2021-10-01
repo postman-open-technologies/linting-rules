@@ -1,6 +1,6 @@
 ---
 name: Contact
-description: A set of rules centered on teh contact information.
+description: A set of rules centered on the contact information.
 rules:
   - has-info-contact
 image: /images/contact-icon.png
