@@ -4,11 +4,11 @@ info-contact-name:
   given: $.info.contact
   then:
     field: name
-    function: truth
+    function: truthy
 ...
 info-contact-name:
   description: Contact name should be Manual.
   given: $.info.contact
   then:
     field: name
-    function: truth
+    function: truthy
