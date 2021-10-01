@@ -20,6 +20,10 @@ allowed-integer-format:
       values:
         - int32
         - int64 
+  x-status: draft
+  x-tags:
+    - Numbers
+    - Formats
 ...
 allowed-integer-format:
   x-tags:
