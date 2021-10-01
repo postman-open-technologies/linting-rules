@@ -1,18 +1,32 @@
 ---
 info-license:
-  description: No license information allowed because its covered by the License Agreement
-    we already negotiate with customers.
-  given: $.info
+  description: "Mus have #/info/license."
+  given: "$.info"
   severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
   then:
-    field: license
-    function: falsy
+      field: license
+      function: truthy  
+  x-status: validated
+  x-tags:
+    - Licensing
+    - Legal
 ...
 info-license:
-  description: No license information allowed because its covered by the License Agreement
-    we already negotiate with customers.
-  given: $.info
+  description: "Mus have #/info/license."
+  given: "$.info"
   severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
   then:
-    field: license
-    function: falsy
+      field: license
+      function: truthy  
+  x-status: validated
+  x-tags:
+    - Licensing
+    - Legal     

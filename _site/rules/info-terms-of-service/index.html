@@ -5,14 +5,9 @@
 
 
     
-        
-    
-    
-
-    
             
             
-                "message": "API MUST reference the URL of the Terms of Service  in #/info/termsOfService.",
+                "description": "Mus have #/info/termsOfService.",
             
         
     
@@ -21,16 +16,7 @@
     
             
             
-                "description": "API MUST reference the URL of the Terms of Service  in `#/info/termsOfService`",
-            
-        
-    
-    
-
-    
-            
-            
-                "given": "$",
+                "given": "$.info",
             
         
     
@@ -57,7 +43,7 @@
     
             
             
-                "type": "style"
+                "type": "style",
             
         
     
@@ -72,7 +58,17 @@
 
     
           
-        "then": {"field":"info.termsOfService","function":"truthy"}
+        "then": {"field":"termsOfService","function":"truthy"}
+        
+    
+    
+
+    
+        
+    
+    
+
+    
         
     
     

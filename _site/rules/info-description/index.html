@@ -5,10 +5,6 @@
 
 
     
-            
-            
-                "description": "API must have a info description.",
-            
         
     
     
@@ -16,16 +12,7 @@
     
             
             
-                "message": "Missing the {{property}}",
-            
-        
-    
-    
-
-    
-            
-            
-                "severity": "error"
+                "description": "Mus have #/info/description.",
             
         
     
@@ -41,8 +28,47 @@
     
 
     
+            
+            
+                "severity": "error",
+            
+        
+    
+    
+
+    
+            
+            
+                "recommended": true,
+            
+        
+    
+    
+
+    
+            
+            
+                "type": "style",
+            
+        
+    
+    
+
+    
           
-        "then": {"field":"description","function":"truthy"}
+        "formats": ["oas3"]
+        
+    
+    
+
+    
+          
+        "then": {"field":"description","function":"truthy"},
+        
+    
+    
+
+    
         
     
     

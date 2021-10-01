@@ -1,16 +1,30 @@
 ---
 info-title:
-  description: API must have a info title.
-  message: "Missing the {{property}}"
+  description: "Must have a #/info/title."
   given: "$.info"
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
   then:
-      field: "title"
+      field: title
       function: truthy  
+  x-status: validated
+  x-tags:
+    - Info
 ...
 info-title:
-  description: API must have a info title.
-  message: "Missing the {{property}}"
+  description: "Must have a #/info/title."
   given: "$.info"
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
   then:
-      field: "title"
+      field: title
       function: truthy  
+  x-status: validated
+  x-tags:
+    - Info    

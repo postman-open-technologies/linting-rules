@@ -1,7 +1,5 @@
 ---
 info-contact:
-  x-tags:
-      - metadata
   description: "Mus have #/info/contact."
   given: "$.info"
   severity: error
@@ -18,8 +16,6 @@ info-contact:
     - Communication
 ...
 info-contact:
-  x-tags:
-      - metadata
   description: "Mus have #/info/contact."
   given: "$.info"
   severity: error
@@ -29,8 +25,8 @@ info-contact:
       - oas3
   then:
       field: contact
-      function: truthy   
+      function: truthy  
   x-status: validated
   x-tags:
     - Contact
-    - Communication      
+    - Communication    

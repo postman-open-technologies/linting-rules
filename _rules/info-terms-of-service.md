@@ -1,34 +1,32 @@
 ---
 info-terms-of-service:
-    x-tags:
-        - metadata
-    message: "API MUST reference the URL of the Terms of Service  in
-        #/info/termsOfService."
-    description: API MUST reference the URL of the Terms of Service  in
-        `#/info/termsOfService`
-    given: $
-    severity: error
-    recommended: true
-    type: style
-    formats:
-        - oas3
-    then:
-        field: info.termsOfService
-        function: truthy    
+  description: "Mus have #/info/termsOfService."
+  given: "$.info"
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
+  then:
+      field: termsOfService
+      function: truthy  
+  x-status: validated
+  x-tags:
+    - Terms of Service
+    - Legal
 ...
 info-terms-of-service:
-    x-tags:
-        - metadata
-    message: "API MUST reference the URL of the Terms of Service  in
-        #/info/termsOfService."
-    description: API MUST reference the URL of the Terms of Service  in
-        `#/info/termsOfService`
-    given: $
-    severity: error
-    recommended: true
-    type: style
-    formats:
-        - oas3
-    then:
-        field: info.termsOfService
-        function: truthy 
+  description: "Mus have #/info/termsOfService."
+  given: "$.info"
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      - oas3
+  then:
+      field: termsOfService
+      function: truthy  
+  x-status: validated
+  x-tags:
+    - Terms of Service
+    - Legal     

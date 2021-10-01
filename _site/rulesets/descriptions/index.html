@@ -163,9 +163,13 @@
             "info-description": {            
                 
                     
+                        
+                    
+                
+                    
                            
                             
-                                "description": "API must have a info description.",
+                                "description": "Mus have #/info/description.",
                             
                         
                     
@@ -173,7 +177,7 @@
                     
                            
                             
-                                "message": "Missing the {{property}}",
+                                "given": "$.info",
                             
                         
                     
@@ -188,15 +192,33 @@
                 
                     
                            
+                             
+                                "recommended": true,
                             
-                                "given": "$.info",
+                        
+                    
+                
+                    
+                           
+                            
+                                "type": "style",
                             
                         
                     
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"}
+                        "formats": ["oas3"],
+                        
+                    
+                
+                    
+                            
+                        "then": {"field":"description","function":"truthy"},
+                        
+                    
+                
+                    
                         
                     
                  

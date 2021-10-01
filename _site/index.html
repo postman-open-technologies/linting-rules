@@ -5765,8 +5765,6 @@ function: truthy
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info Contact</span> (<a href="http://localhost:4000//rules/info-contact/" style="color:#000">info-contact</a>)</p>
                   <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;contact:
-  x&#8211;tags:
-      &#8211; metadata
   description: “Mus have #/info/contact.”
   given: “$.info”
   severity: error
@@ -5776,7 +5774,7 @@ function: truthy
       &#8211; oas3
   then:
       field: contact
-      function: truthy 
+      function: truthy
   x&#8211;status: validated
   x&#8211;tags:
     &#8211; Contact
@@ -5793,13 +5791,22 @@ function: truthy
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info Description</span> (<a href="http://localhost:4000//rules/info-description/" style="color:#000">info-description</a>)</p>
                   <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;description:
-  description: API must have a info description.
-  message: “Missing the “
-  severity: error
+  x&#8211;tags:
+      &#8211; metadata
+  description: “Mus have #/info/description.”
   given: “$.info”
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      &#8211; oas3
   then:
-      field: “description”
-      function: truthy
+      field: description
+      function: truthy 
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Info
+    &#8211; Documentation
 </code></pre>                  
                </div>            
                <div class="col-md-1" style="border: 0px solid #000;">
@@ -5812,13 +5819,20 @@ function: truthy
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info License</span> (<a href="http://localhost:4000//rules/info-license/" style="color:#000">info-license</a>)</p>
                   <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;license:
-  description: No license information allowed because its covered by the License Agreement
-    we already negotiate with customers.
-  given: $.info
+  description: “Mus have #/info/license.”
+  given: “$.info”
   severity: error
+  recommended: true
+  type: style
+  formats:
+      &#8211; oas3
   then:
-    field: license
-    function: falsy
+      field: license
+      function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Licensing
+    &#8211; Legal
 </code></pre>                  
                </div>            
                <div class="col-md-1" style="border: 0px solid #000;">
@@ -5831,21 +5845,20 @@ function: truthy
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info Terms Of Service</span> (<a href="http://localhost:4000//rules/info-terms-of-service/" style="color:#000">info-terms-of-service</a>)</p>
                   <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;terms&#8211;of&#8211;service:
-    x&#8211;tags:
-        &#8211; metadata
-    message: “API MUST reference the URL of the Terms of Service  in
-        #/info/termsOfService.”
-    description: API MUST reference the URL of the Terms of Service  in
-        #/info/termsOfService
-    given: $
-    severity: error
-    recommended: true
-    type: style
-    formats:
-        &#8211; oas3
-    then:
-        field: info.termsOfService
-        function: truthy
+  description: “Mus have #/info/termsOfService.”
+  given: “$.info”
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      &#8211; oas3
+  then:
+      field: termsOfService
+      function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Terms of Service
+    &#8211; Legal
 </code></pre>                  
                </div>            
                <div class="col-md-1" style="border: 0px solid #000;">
@@ -5886,12 +5899,19 @@ function: truthy
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info Title</span> (<a href="http://localhost:4000//rules/info-title/" style="color:#000">info-title</a>)</p>
                   <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;title:
-  description: API must have a info title.
-  message: “Missing the “
+  description: “Must have a #/info/title.”
   given: “$.info”
+  severity: error
+  recommended: true
+  type: style
+  formats:
+      &#8211; oas3
   then:
-      field: “title”
+      field: title
       function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Info
 </code></pre>                  
                </div>            
                <div class="col-md-1" style="border: 0px solid #000;">
