@@ -1,68 +1,46 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;missing-ratelimit:<br />
+{
+"rules": {
+"missing-ratelimit":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x-tags:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "x-tags": ["it"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Ratelimiting API preserves a service and limits attack scenario [see API4:2019 Lack of Resources & Rate Limiting](https://owasp.org/www-project-api-security). APIs should use the following headers at least on successful responses:
+        "description": "Ratelimiting API preserves a service and limits attack scenario [see API4:2019 Lack of Resources & Rate Limiting](https://owasp.org/www-project-api-security). APIs should use the following headers at least on successful responses:
 - `X-RateLimit-Limit`: number of total requests in a give time window - `X-RateLimit-Remaining`: remaining requests in the current window - `X-RateLimit-Reset`: number of seconds before the window resets
 An example set of headers is the following
 ```
 X-Ratelimit-Limit: 100
 X-Ratelimit-Remaining: 40
 X-Ratelimit-Reset: 12
-``` A standardization proposal for ratelimit headers is ongoning inside the IETF HTTPAPI Workgroup. See [the draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/)<br />
+``` A standardization proposal for ratelimit headers is ongoning inside the IETF HTTPAPI Workgroup. See [the draft](https://datatracker.ietf.org/doc/draft-ietf-httpapi-ratelimit-headers/)",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Missing ratelimit headers. {{property}} {{error}} {{path}}<br />
+        "message": "Missing ratelimit headers. {{property}} {{error}} {{path}}",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formats:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "formats": ["oas3"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.[responses][?(@property[0] == "2" )][headers]<br />
+        "given": "$.[responses][?(@property[0] == "2" )][headers]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"functionOptions":{"properties":["X-RateLimit-Limit","RateLimit-Limit"]},"function":"xor"},{"functionOptions":{"properties":["X-RateLimit-Remaining","RateLimit-Remaining"]},"function":"xor"},{"functionOptions":{"properties":["X-RateLimit-Reset","RateLimit-Reset"]},"function":"xor"}]
     
  
+}
+}
+}

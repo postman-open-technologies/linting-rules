@@ -1,43 +1,39 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;request-bodies-xml:<br />
+{
+"rules": {
+"request-bodies-xml":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Payload must be in xml format<br />
+        "description": "Payload must be in xml format",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Payload must be in xml format, please correct the format for {{path}}.<br />
+        "message": "Payload must be in xml format, please correct the format for {{path}}.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: style<br />
+        "type": "style",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths.*.*.requestBody.*<br />
+        "given": "$.paths.*.*.requestBody.*",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved: false<br />
+        "resolved": "false",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"application/xml","function":"truthy"}]
     
  
+}
+}
+}

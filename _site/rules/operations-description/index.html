@@ -1,27 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;operations-description:<br />
+{
+"rules": {
+"operations-description":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Missing {{property}}at {{path}}<br />
+        "message": "Missing {{property}}at {{path}}",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths.*[get,post,patch,put,delete]<br />
+        "given": "$.paths.*[get,post,patch,put,delete]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"description","function":"truthy"}]
     
  
+}
+}
+}

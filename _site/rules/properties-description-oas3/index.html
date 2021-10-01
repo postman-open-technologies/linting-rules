@@ -1,39 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;properties-description-oas3:<br />
+{
+"rules": {
+"properties-description-oas3":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: All schema properties should have a description.<br />
+        "description": "All schema properties should have a description.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Property should have a description.<br />
+        "message": "Property should have a description.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved: false<br />
+        "resolved": "false",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..[?(@.type === 'object' && @.properties)].properties[*]<br />
+        "given": "$..[?(@.type === 'object' && @.properties)].properties[*]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: description<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: truthy<br />
-            
-         
+        "then": {"field":"description","function":"truthy"}
     
  
+}
+}
+}

@@ -1,40 +1,27 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;response-status-202-header-oas2:<br />
+{
+"rules": {
+"response-status-202-header-oas2":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: A 202 response should include an Operation-Location response header.<br />
+        "description": "A 202 response should include an Operation-Location response header.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formats:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "formats": ["oas2"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths[*][*].responses[?(@property == '202')]<br />
+        "given": "$.paths[*][*].responses[?(@property == '202')]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: headers.Operation-location<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: truthy<br />
-            
-         
+        "then": {"field":"headers.Operation-location","function":"truthy"}
     
  
+}
+}
+}

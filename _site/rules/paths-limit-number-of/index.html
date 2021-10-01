@@ -1,44 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;paths-limit-number-of:<br />
+{
+"rules": {
+"paths-limit-number-of":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{error}}<br />
+        "message": "{{error}}",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: SHOULD limit number of resource types [146]<br />
+        "description": "SHOULD limit number of resource types [146]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#146<br />
+        "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#146",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths<br />
+        "given": "$.paths",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: count-resource-types<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max: 8<br />
-                    
-                 
-            
-         
+        "then": {"function":"count-resource-types","functionOptions":{"max":8}}
     
  
+}
+}
+}

@@ -1,39 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;responses-default:<br />
+{
+"rules": {
+"responses-default":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Operation does not contain a default response<br />
+        "message": "Operation does not contain a default response",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: MUST specify success and error responses [151]<br />
+        "description": "MUST specify success and error responses [151]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#151<br />
+        "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#151",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths.*.*.responses<br />
+        "given": "$.paths.*.*.responses",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: default<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: truthy<br />
-            
-         
+        "then": {"field":"default","function":"truthy"}
     
  
+}
+}
+}

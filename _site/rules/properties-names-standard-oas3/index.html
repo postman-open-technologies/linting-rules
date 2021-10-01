@@ -1,44 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;properties-names-standard-oas3:<br />
+{
+"rules": {
+"properties-names-standard-oas3":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Property names should be camel case.<br />
+        "description": "Property names should be camel case.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Property name should be camel case.<br />
+        "message": "Property name should be camel case.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resolved: false<br />
+        "resolved": "false",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..[?(@.type === 'object' && @.properties)].properties.*~<br />
+        "given": "$..[?(@.type === 'object' && @.properties)].properties.*~",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: casing<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: camel<br />
-                    
-                 
-            
-         
+        "then": {"function":"casing","functionOptions":{"type":"camel"}}
     
  
+}
+}
+}

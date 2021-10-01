@@ -1,36 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;security-schemes-jwt:<br />
+{
+"rules": {
+"security-schemes-jwt":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Json Web Tokens RFC7519 is a compact, URL-safe means of representing claims to be transferred between two parties. JWT can be enclosed in encrypted or signed tokens like JWS and JWE. <br />
+        "description": "Json Web Tokens RFC7519 is a compact, URL-safe means of representing claims to be transferred between two parties. JWT can be enclosed in encrypted or signed tokens like JWS and JWE. ",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "given": ["$.[securitySchemes][?(@.bearerFormat==\"jwt\" || @.bearerFormat==\"JWT\")]"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: JWT usage should be detailed in `description` {{error}}.<br />
+        "message": "JWT usage should be detailed in `description` {{error}}.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"description","function":"truthy"},{"field":"description","function":"pattern","functionOptions":{"match":".*RFC8725.*"}}]
     
  
+}
+}
+}

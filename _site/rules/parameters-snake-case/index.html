@@ -1,44 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;parameters-snake-case:<br />
+{
+"rules": {
+"parameters-snake-case":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Query parameters must be snake_case<br />
+        "message": "Query parameters must be snake_case",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: MUST use snake_case (never camelCase) for query parameters [130]<br />
+        "description": "MUST use snake_case (never camelCase) for query parameters [130]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#130<br />
+        "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#130",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths.*.*.parameters[?(@.in=='query')].name<br />
+        "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^[a-z][_a-z0-9]*$<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"match":"^[a-z][_a-z0-9]*$"}}
     
  
+}
+}
+}

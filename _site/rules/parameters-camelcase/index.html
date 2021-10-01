@@ -1,36 +1,19 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;parameters-camelcase:<br />
+{
+"rules": {
+"parameters-camelcase":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Path and query parmeters must use camelCase.<br />
+        "description": "Path and query parmeters must use camelCase.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..parameters[?(@.in=="query" || @.in=="path")]<br />
+        "given": "$..parameters[?(@.in=="query" || @.in=="path")]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: name<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: casing<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: camel<br />
-                    
-                 
-            
-         
+        "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}}
     
  
+}
+}
+}

@@ -1,44 +1,27 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;components-security-schemes-prefix:<br />
+{
+"rules": {
+"components-security-schemes-prefix":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Security schemes should be prefixed with their security type (Oidc., Csh. or Keys.)<br />
+        "description": "Security schemes should be prefixed with their security type (Oidc., Csh. or Keys.)",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{property}} is not prefixed properly. {{description}}. Fix by renaming the parameter definition, eg. AccessToken -> Oidc.AccessToken.<br />
+        "message": "{{property}} is not prefixed properly. {{description}}. Fix by renaming the parameter definition, eg. AccessToken -> Oidc.AccessToken.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.components.securitySchemes<br />
+        "given": "$.components.securitySchemes",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: @key<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^Keys\.|^Oidc\.|^Csh\.<br />
-                    
-                 
-            
-         
+        "then": {"field":"@key","function":"pattern","functionOptions":{"match":"^Keys\\.|^Oidc\\.|^Csh\\."}}
     
  
+}
+}
+}

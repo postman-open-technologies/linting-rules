@@ -1,39 +1,27 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;components-security-schemes-api-key:<br />
+{
+"rules": {
+"components-security-schemes-api-key":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: The client ID should be an apiKey in a header with the name X-api-key<br />
+        "description": "The client ID should be an apiKey in a header with the name X-api-key",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{property}} {{value}} does not match the value expected by the gateway.<br />
+        "message": "{{property}} {{value}} does not match the value expected by the gateway.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.components.securitySchemes[Keys.ClientId]<br />
+        "given": "$.components.securitySchemes[Keys.ClientId]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"type","function":"pattern","functionOptions":{"match":"^apiKey$"}},{"field":"in","function":"pattern","functionOptions":{"match":"^header$"}},{"field":"name","function":"pattern","functionOptions":{"match":"^X-api-key$"}}]
     
  
+}
+}
+}

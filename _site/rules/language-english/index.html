@@ -1,23 +1,19 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;language-english:<br />
+{
+"rules": {
+"language-english":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..description<br />
+        "given": "$..description",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: english<br />
-            
-         
+        "then": {"function":"english"}
     
  
+}
+}
+}

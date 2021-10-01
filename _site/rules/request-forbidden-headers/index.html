@@ -1,55 +1,32 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;request-forbidden-headers:<br />
+{
+"rules": {
+"request-forbidden-headers":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: OAS do not allow using the following HTTP headers in a specification
-file Authorization, Content-Type and Accept. You MUST use the associate functionalities provided by OAS, instead.<br />
+        "description": "OAS do not allow using the following HTTP headers in a specification
+file Authorization, Content-Type and Accept. You MUST use the associate functionalities provided by OAS, instead.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "given": ["$..parameters[?(@.in == 'header')].name"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{error}} in {{path}} {{value}}<br />
+        "message": "{{error}} in {{path}} {{value}}",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notMatch: /^(accept|content-type|authorization)$/i<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"notMatch":"/^(accept|content-type|authorization)$/i"}},
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x-tags:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "x-tags": ["standards"]
     
  
+}
+}
+}

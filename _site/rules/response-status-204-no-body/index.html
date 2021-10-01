@@ -1,31 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;response-status-204-no-body:<br />
+{
+"rules": {
+"response-status-204-no-body":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: 204 response should have no body. Use e.g. 200 otherwise.<br />
+        "description": "204 response should have no body. Use e.g. 200 otherwise.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..responses.204<br />
+        "given": "$..responses.204",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: content<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: falsy<br />
-            
-         
+        "then": {"field":"content","function":"falsy"}
     
  
+}
+}
+}

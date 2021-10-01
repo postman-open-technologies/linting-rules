@@ -1,36 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;no-x-response-headers:<br />
+{
+"rules": {
+"no-x-response-headers":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Please do not use headers with X-<br />
+        "description": "Please do not use headers with X-",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Headers cannot start with X-, so please find a new name for {{property}}. More: https://tools.ietf.org/html/rfc6648<br />
+        "message": "Headers cannot start with X-, so please find a new name for {{property}}. More: https://tools.ietf.org/html/rfc6648",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..headers.*~<br />
+        "given": "$..headers.*~",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;notMatch: ^(x|X)-<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"notMatch":"^(x|X)-"}}
     
  
+}
+}
+}

@@ -1,11 +1,9 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;no-default-additionalProperties:<br />
+{
+"rules": {
+"no-default-additionalProperties":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: By default, jsonschema allows additionalProperties. This means
+        "description": "By default, jsonschema allows additionalProperties. This means
 that schema validators can be bypassed using further, unspecified
 fields.
 
@@ -40,45 +38,33 @@ Person:
       pattern: [a-zA-Z ]{24}
 ```
 - no additionalProperties
-- constrained additionalProperties<br />
+- constrained additionalProperties",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Objects should not allow additionalProperties. Disable them with `additionalProperties: false` or constraint them.<br />
+        "message": "Objects should not allow additionalProperties. Disable them with `additionalProperties: false` or constraint them.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formats:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "formats": ["oas3"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "given": ["$.[?(@.type==\"object\" && ! @.additionalProperties)]"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"additionalProperties","function":"defined"}]
     
  
+}
+}
+}

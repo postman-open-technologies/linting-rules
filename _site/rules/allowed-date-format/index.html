@@ -1,32 +1,19 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;allowed-date-format:<br />
+{
+"rules": {
+"allowed-date-format":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: String properties with the date format must end in Date.<br />
+        "description": "String properties with the date format must end in Date.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..properties.[?(@.format=="date" && @.type=="string")]~<br />
+        "given": "$..properties.[?(@.format=="date" && @.type=="string")]~",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ((d)|(.D))ate$<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"match":"((d)|(.D))ate$"}}
     
  
+}
+}
+}

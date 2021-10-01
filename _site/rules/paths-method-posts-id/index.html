@@ -1,31 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;paths-method-posts-id:<br />
+{
+"rules": {
+"paths-method-posts-id":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Use PUT/PATCH rather than POSTing with a user-supplied identifier<br />
+        "description": "Use PUT/PATCH rather than POSTing with a user-supplied identifier",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths.[?(@property.toString().match(/[ -_]id}$|[a-z]Id}$/))]<br />
+        "given": "$.paths.[?(@property.toString().match(/[ -_]id}$|[a-z]Id}$/))]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: post<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: falsy<br />
-            
-         
+        "then": {"field":"post","function":"falsy"}
     
  
+}
+}
+}

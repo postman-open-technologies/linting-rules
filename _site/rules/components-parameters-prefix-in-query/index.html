@@ -1,44 +1,27 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;components-parameters-prefix-in-query:<br />
+{
+"rules": {
+"components-parameters-prefix-in-query":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Parameters should be in a location matching the prefix (Query.)<br />
+        "description": "Parameters should be in a location matching the prefix (Query.)",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{value}} does not match the parameter prefix. {{description}}. Fix by assigning the correct in value, eg. header -> query.<br />
+        "message": "{{value}} does not match the parameter prefix. {{description}}. Fix by assigning the correct in value, eg. header -> query.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.components.parameters..[?(@property.match(/^Query\./))]<br />
+        "given": "$.components.parameters..[?(@property.match(/^Query\./))]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: in<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^query$<br />
-                    
-                 
-            
-         
+        "then": {"field":"in","function":"pattern","functionOptions":{"match":"^query$"}}
     
  
+}
+}
+}

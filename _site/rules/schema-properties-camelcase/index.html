@@ -1,36 +1,19 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;schema-properties-camelcase:<br />
+{
+"rules": {
+"schema-properties-camelcase":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Properties defined inline in schema must use camelCase.<br />
+        "description": "Properties defined inline in schema must use camelCase.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..[?(@.type=="object")].properties<br />
+        "given": "$..[?(@.type=="object")].properties",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: @key<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: casing<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: camel<br />
-                    
-                 
-            
-         
+        "then": {"field":"@key","function":"casing","functionOptions":{"type":"camel"}}
     
  
+}
+}
+}

@@ -1,44 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;definitions-properties-boolean-name-oas2:<br />
+{
+"rules": {
+"definitions-properties-boolean-name-oas2":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Checks for specific pattern in boolean property names.<br />
+        "description": "Checks for specific pattern in boolean property names.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: CONT03 Invalid property name for boolean type {{value}} (boolean may start with is or has and followed by capital letter or number to be more descriptive. expected isErased, hasStock)<br />
+        "message": "CONT03 Invalid property name for boolean type {{value}} (boolean may start with is or has and followed by capital letter or number to be more descriptive. expected isErased, hasStock)",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.definitions.*.properties..[?(@.type=='boolean')]~<br />
+        "given": "$.definitions.*.properties..[?(@.type=='boolean')]~",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^(is|has)[A-Z0-9][a-zA-Z0-9]*<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"match":"^(is|has)[A-Z0-9][a-zA-Z0-9]*"}}
     
  
+}
+}
+}

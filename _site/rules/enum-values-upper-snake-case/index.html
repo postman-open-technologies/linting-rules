@@ -1,44 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;enum-values-upper-snake-case:<br />
+{
+"rules": {
+"enum-values-upper-snake-case":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Enum values should be in UPPER_SNAKE_CASE format<br />
+        "message": "Enum values should be in UPPER_SNAKE_CASE format",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: SHOULD declare enum values using UPPER_SNAKE_CASE format [240]<br />
+        "description": "SHOULD declare enum values using UPPER_SNAKE_CASE format [240]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#240<br />
+        "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#240",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths..[?(@.type=='string')].[enum,x-extensible-enum].*<br />
+        "given": "$.paths..[?(@.type=='string')].[enum,x-extensible-enum].*",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^[A-Z][A-Z_0-9]*$<br />
-                    
-                 
-            
-         
+        "then": {"function":"pattern","functionOptions":{"match":"^[A-Z][A-Z_0-9]*$"}}
     
  
+}
+}
+}

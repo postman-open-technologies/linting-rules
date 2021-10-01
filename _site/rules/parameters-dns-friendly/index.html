@@ -1,31 +1,23 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;parameters-dns-friendly:<br />
+{
+"rules": {
+"parameters-dns-friendly":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Identifier parameter missing DNS-friendly pattern, e.g. ^[a-z0-9]([-a-z0-9]*[a-z0-9])?$<br />
+        "description": "Identifier parameter missing DNS-friendly pattern, e.g. ^[a-z0-9]([-a-z0-9]*[a-z0-9])?$",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..parameters[?((@.name || '').match(/^id[ -_A-Z]|[ -_]id$|[a-z0-9]Id$/))]<br />
+        "given": "$..parameters[?((@.name || '').match(/^id[ -_A-Z]|[ -_]id$|[a-z0-9]Id$/))]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: schema.pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: truthy<br />
-            
-         
+        "then": {"field":"schema.pattern","function":"truthy"}
     
  
+}
+}
+}

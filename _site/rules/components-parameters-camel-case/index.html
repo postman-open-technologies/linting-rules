@@ -1,44 +1,27 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;components-parameters-camel-case:<br />
+{
+"rules": {
+"components-parameters-camel-case":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: All parameter names should be lowerCamelCase<br />
+        "description": "All parameter names should be lowerCamelCase",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: {{value}} is not lowerCamelCase. {{description}}. Fix by renaming the parameter, eg. ParameterName -> parameterName.<br />
+        "message": "{{value}} is not lowerCamelCase. {{description}}. Fix by renaming the parameter, eg. ParameterName -> parameterName.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]<br />
+        "given": "$.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: warn<br />
+        "severity": "warn",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;field: name<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: casing<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions:<br />
-                
-                    
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: camel<br />
-                    
-                 
-            
-         
+        "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}}
     
  
+}
+}
+}

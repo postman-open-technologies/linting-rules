@@ -1,48 +1,35 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;response-headers-cache-responses-undocumented-oas3:<br />
+{
+"rules": {
+"response-headers-cache-responses-undocumented-oas3":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: Cache usage SHOULD be extensively detailed in the description propertyto avoid data leaks or the usage of stale data.This rule should ensure in some way that the api providerdocumented extensively the cache usage to avoid data leaksor usage of stale data.For now this ruleset tests* the presence of following keywords  in the description max-age, private, no-store, no-cache.* that one and only one between Expires and Cache-Control is used.Cache-Control and Expires should not be used in conjuction,because Cache-Control overrides Expires when max-age is set.Instead if neither Cache-Control or Expires are set, clients MAY use euristic cachelike described in RFC7234.<br />
+        "description": "Cache usage SHOULD be extensively detailed in the description propertyto avoid data leaks or the usage of stale data.This rule should ensure in some way that the api providerdocumented extensively the cache usage to avoid data leaksor usage of stale data.For now this ruleset tests* the presence of following keywords  in the description max-age, private, no-store, no-cache.* that one and only one between Expires and Cache-Control is used.Cache-Control and Expires should not be used in conjuction,because Cache-Control overrides Expires when max-age is set.Instead if neither Cache-Control or Expires are set, clients MAY use euristic cachelike described in RFC7234.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Cache usage in responses SHOULD be documented in Cache-Control and/or Expires. {{error}}<br />
+        "message": "Cache usage in responses SHOULD be documented in Cache-Control and/or Expires. {{error}}",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formats:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "formats": ["oas3"],
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: info<br />
+        "severity": "info",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.[responses][?(@property[0] == "2" )][headers].[?(@property.match(/Cache-Control|Expires/i))]]<br />
+        "given": "$.[responses][?(@property[0] == "2" )][headers].[?(@property.match(/Cache-Control|Expires/i))]]",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <br />
-            
-         
+        "then": [{"field":"description","function":"truthy"},{"field":"description","function":"pattern","functionOptions":{"match":".*(max-age|private|no-store|no-cache).*"}}]
     
  
+}
+}
+}

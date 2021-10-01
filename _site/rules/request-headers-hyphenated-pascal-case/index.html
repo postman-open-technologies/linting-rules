@@ -1,43 +1,31 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;request-headers-hyphenated-pascal-case:<br />
+{
+"rules": {
+"request-headers-hyphenated-pascal-case":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: All `HTTP` headers MUST use `Hyphenated-Pascal-Case` notation<br />
+        "description": "All `HTTP` headers MUST use `Hyphenated-Pascal-Case` notation",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $..parameters[?(@.in == 'header')].name<br />
+        "given": "$..parameters[?(@.in == 'header')].name",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: 'HTTP' headers MUST follow 'Hyphenated-Pascal-Case' notation<br />
+        "message": "'HTTP' headers MUST follow 'Hyphenated-Pascal-Case' notation",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: style<br />
+        "type": "style",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: /^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/<br />
-            
-         
+        "then": {"function":"pattern","functionOptions":null,"match":"/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"}
     
  
+}
+}
+}

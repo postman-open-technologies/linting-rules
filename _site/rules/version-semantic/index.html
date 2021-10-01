@@ -1,44 +1,32 @@
-
-
-
-rules:<br />
-&nbsp;&nbsp;&nbsp;&nbsp;version-semantic:<br />
+{
+"rules": {
+"version-semantic":{
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;description: The API version field should follow
-[semantic versioning](https://semver.org/#semantic-versioning-specification-semver).<br />
+        "description": "The API version field should follow
+[semantic versioning](https://semver.org/#semantic-versioning-specification-semver).",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+        "severity": "error",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;recommended: true<br />
+        "recommended": "true",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;message: Specs should follow semantic versioning. {{value}} is not a valid version.<br />
+        "message": "Specs should follow semantic versioning. {{value}} is not a valid version.",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.info.version<br />
+        "given": "$.info.version",
     
 
     
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;then:<br />
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: pattern<br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;functionOptions: <br />
-            
-        
-            
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;match: ^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?<br />
-            
-         
+        "then": {"function":"pattern","functionOptions":null,"match":"^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?"}
     
  
+}
+}
+}
