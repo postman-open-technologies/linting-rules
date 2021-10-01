@@ -11,7 +11,11 @@ info-contact:
       - oas3
   then:
       field: contact
-      function: truthy   
+      function: truthy  
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication
 ...
 info-contact:
   x-tags:
@@ -26,3 +30,7 @@ info-contact:
   then:
       field: contact
       function: truthy   
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication      

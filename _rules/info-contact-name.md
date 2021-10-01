@@ -5,6 +5,10 @@ info-contact-name:
   then:
     field: name
     function: truthy
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    
 ...
 info-contact-name:
   description: Contact name should be Manual.
@@ -12,3 +16,7 @@ info-contact-name:
   then:
     field: name
     function: truthy
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    

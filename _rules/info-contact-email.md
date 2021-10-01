@@ -5,6 +5,10 @@ info-contact-email:
   then:
     field: email
     function: truth
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    
 ...
 info-contact-email:
   description: Should have a contact email.
@@ -12,3 +16,7 @@ info-contact-email:
   then:
     field: email
     function: truth
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    

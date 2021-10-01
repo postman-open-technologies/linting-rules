@@ -7,6 +7,10 @@ info-contact-name-and-url:
     function: truthy
   - field: url
     function: truthy
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    
 ...
 info-contact-name-and-url:
   description: Contact should have name and url properties.
@@ -16,3 +20,7 @@ info-contact-name-and-url:
     function: truthy
   - field: url
     function: truthy
+  x-status: validated
+  x-tags:
+    - Contact
+    - Communication    
