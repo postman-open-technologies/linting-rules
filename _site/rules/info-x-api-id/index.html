@@ -1,6 +1,6 @@
 {
 "rules": {
-"has-x-api-id":{
+"info-x-api-id":{
 
     
         "x-tags": ["it","metadata"],
@@ -12,12 +12,11 @@
 
     
         "description": "The `#/info/x-api-id` field can be used to associate an identifier
-to an API.
-This is useful to track an API even when its `#/info/title` changes.",
+to an API. This is useful to track an API even when its `#/info/title` changes.",
     
 
     
-        "given": "$",
+        "given": "$.info",
     
 
     
@@ -33,7 +32,7 @@ This is useful to track an API even when its `#/info/title` changes.",
     
 
     
-        "then": {"field":"info.x-api-id","function":"truthy"}
+        "then": {"field":"x-api-id","function":"truthy"}
     
  
 }

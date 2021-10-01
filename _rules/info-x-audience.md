@@ -1,5 +1,5 @@
 ---
-has-x-audience:
+info-x-audience:
   message: Missing info.x-audience.
   description: MUST contain API meta information [218]
   documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#218
@@ -9,7 +9,7 @@ has-x-audience:
     field: x-audience
     function: truthy
 ...
-has-x-audience:
+info-x-audience:
   message: Missing info.x-audience.
   description: MUST contain API meta information [218]
   documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#218
