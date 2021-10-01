@@ -10,6 +10,9 @@ components-parameters-prefix-in-query:
     function: pattern
     functionOptions:
       match: ^query$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-parameters-prefix-in-query:
   description: Parameters should be in a location matching the prefix (Query.)
@@ -22,3 +25,6 @@ components-parameters-prefix-in-query:
     function: pattern
     functionOptions:
       match: ^query$
+  x-status: draft
+  x-tags:
+    - Tag      

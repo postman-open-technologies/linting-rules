@@ -2,6 +2,7 @@
 info-contact-name-and-url:
   description: Contact should have name and url properties.
   given: $.info.contact
+  severity: error
   then:
   - field: name
     function: truthy
@@ -15,6 +16,7 @@ info-contact-name-and-url:
 info-contact-name-and-url:
   description: Contact should have name and url properties.
   given: $.info.contact
+  severity: error
   then:
   - field: name
     function: truthy

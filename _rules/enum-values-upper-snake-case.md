@@ -9,6 +9,9 @@ enum-values-upper-snake-case:
     function: pattern
     functionOptions:
       match: ^[A-Z][A-Z_0-9]*$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 enum-values-upper-snake-case:
   message: Enum values should be in UPPER_SNAKE_CASE format
@@ -20,3 +23,6 @@ enum-values-upper-snake-case:
     function: pattern
     functionOptions:
       match: ^[A-Z][A-Z_0-9]*$
+  x-status: draft
+  x-tags:
+    - Tag      

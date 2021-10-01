@@ -11,7 +11,9 @@ definitions-camelcase-alphanumeric:
     function: pattern
     functionOptions:
       match: /^[a-z$_]{1}[A-Z09$_]*/
+  x-status: draft
   x-tags:
+    - Tag
     - Adidas
 ...
 definitions-camelcase-alphanumeric:
@@ -26,5 +28,7 @@ definitions-camelcase-alphanumeric:
     function: pattern
     functionOptions:
       match: /^[a-z$_]{1}[A-Z09$_]*/
+  x-status: draft
   x-tags:
+    - Tag
     - Adidas

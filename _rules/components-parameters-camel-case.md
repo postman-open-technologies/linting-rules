@@ -10,6 +10,9 @@ components-parameters-camel-case:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-parameters-camel-case:
   description: All parameter names should be lowerCamelCase
@@ -22,3 +25,6 @@ components-parameters-camel-case:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+    - Tag      

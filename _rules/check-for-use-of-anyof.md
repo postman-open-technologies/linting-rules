@@ -7,6 +7,9 @@ check-for-use-of-anyof:
   then:
     field: anyOf
     function: falsy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 check-for-use-of-anyof:
   description: API Connect has a compatibility issue with the anyOf functionality.
@@ -16,3 +19,6 @@ check-for-use-of-anyof:
   then:
     field: anyOf
     function: falsy
+  x-status: draft
+  x-tags:
+    - Tag    

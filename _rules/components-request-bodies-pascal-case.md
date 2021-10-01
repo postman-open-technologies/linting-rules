@@ -13,6 +13,9 @@ components-request-bodies-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-request-bodies-pascal-case:
   description: All definitions should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-request-bodies-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

@@ -12,6 +12,9 @@ definitions-properties-maxlength:
   then:
     field: maxLength
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 definitions-properties-maxlength:
   description: Las propiedades de tipo cadena deben contener la propiedad maxLength
@@ -26,3 +29,6 @@ definitions-properties-maxlength:
   then:
     field: maxLength
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

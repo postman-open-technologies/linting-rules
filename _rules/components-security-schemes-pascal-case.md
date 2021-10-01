@@ -13,6 +13,9 @@ components-security-schemes-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-security-schemes-pascal-case:
   description: All security schemes should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-security-schemes-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

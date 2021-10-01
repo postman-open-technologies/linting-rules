@@ -15,6 +15,9 @@ consume-mime-type-oas2:
         - application/fhir+json
         - application/fhir+turtle
         - application/x-www-form-urlencoded
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 consume-mime-type-oas2:
   description: FHIR mime-type must be application/fhir+(xml|json|turtle) or application/x-www-form-urlencoded for search endpoints
@@ -32,3 +35,6 @@ consume-mime-type-oas2:
         - application/fhir+json
         - application/fhir+turtle
         - application/x-www-form-urlencoded
+  x-status: draft
+  x-tags:
+    - Tag        

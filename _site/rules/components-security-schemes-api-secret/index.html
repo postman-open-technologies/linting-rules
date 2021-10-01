@@ -25,7 +25,7 @@
     
             
             
-                "given": "$.components.securitySchemes[Keys.ClientId]"
+                "given": "$.components.securitySchemes[Keys.ClientId]",
             
         
     
@@ -43,6 +43,16 @@
     
           
         "then": [{"field":"type","function":"pattern","functionOptions":{"match":"^apiKey$"}},{"field":"in","function":"pattern","functionOptions":{"match":"^header$"}},{"field":"name","function":"pattern","functionOptions":{"match":"^X-api-secret$"}}]
+        
+    
+    
+
+    
+        
+    
+    
+
+    
         
     
     

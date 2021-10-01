@@ -2,6 +2,7 @@
 info-contact-name:
   description: Contact name should be Manual.
   given: $.info.contact
+  severity: error
   then:
     field: name
     function: truthy
@@ -13,6 +14,7 @@ info-contact-name:
 info-contact-name:
   description: Contact name should be Manual.
   given: $.info.contact
+  severity: error
   then:
     field: name
     function: truthy

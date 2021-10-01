@@ -13,6 +13,9 @@ components-examples-camelcase:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-examples-camelcase:
   description: All examples should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-examples-camelcase:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

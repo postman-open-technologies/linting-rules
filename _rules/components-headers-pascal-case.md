@@ -13,6 +13,9 @@ components-headers-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-headers-pascal-case:
   description: All responses should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-headers-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

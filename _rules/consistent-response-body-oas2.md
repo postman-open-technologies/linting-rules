@@ -9,7 +9,10 @@ response-body-standard-oas2:
   then: 
     function: consistent-response-body
   x-tags: 
-    - Responses   
+    - Responses  
+  x-status: draft
+  x-tags:
+    - Tag     
 ...
 response-body-standard-oas2: 
   description: "Ensure the get, put, and patch response body schemas are consistent."
@@ -22,3 +25,6 @@ response-body-standard-oas2:
     function: consistent-response-body
   x-tags: 
     - Responses  
+  x-status: draft
+  x-tags:
+    - Tag    

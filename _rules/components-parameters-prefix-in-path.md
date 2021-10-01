@@ -10,6 +10,9 @@ components-parameters-prefix-in-path:
     function: pattern
     functionOptions:
       match: ^path$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-parameters-prefix-in-path:
   description: Parameters should be in a location matching the prefix (Path.)
@@ -22,3 +25,6 @@ components-parameters-prefix-in-path:
     function: pattern
     functionOptions:
       match: ^path$
+  x-status: draft
+  x-tags:
+    - Tag      

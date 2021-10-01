@@ -14,7 +14,9 @@ example-in-definitions-oas2:
       field: example
       schemaPath: $
   type: validation
+  x-status: draft
   x-tags:
+    - Tag
     - Adidas  
 ...
 example-in-definitions-oas2:
@@ -32,5 +34,7 @@ example-in-definitions-oas2:
       field: example
       schemaPath: $
   type: validation
+  x-status: draft
   x-tags:
+    - Tag
     - Adidas  

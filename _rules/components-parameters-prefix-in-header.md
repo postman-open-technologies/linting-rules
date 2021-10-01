@@ -10,6 +10,9 @@ components-parameters-prefix-in-header:
     function: pattern
     functionOptions:
       match: ^header$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-parameters-prefix-in-header:
   description: Parameters should be in a location matching the prefix (Header.)
@@ -22,3 +25,6 @@ components-parameters-prefix-in-header:
     function: pattern
     functionOptions:
       match: ^header$
+  x-status: draft
+  x-tags:
+    - Tag      

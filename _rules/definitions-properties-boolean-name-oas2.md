@@ -9,6 +9,9 @@ definitions-properties-boolean-name-oas2:
     function: pattern
     functionOptions:
       match: ^(is|has)[A-Z0-9][a-zA-Z0-9]*
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 definitions-properties-boolean-name-oas2:
   description: Checks for specific pattern in boolean property names.
@@ -20,3 +23,6 @@ definitions-properties-boolean-name-oas2:
     function: pattern
     functionOptions:
       match: ^(is|has)[A-Z0-9][a-zA-Z0-9]*
+  x-status: draft
+  x-tags:
+    - Tag      

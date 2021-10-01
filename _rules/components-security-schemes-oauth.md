@@ -11,6 +11,9 @@ components-security-schemes-oauth:
   then:
     field: $.components.securitySchemes.[*].type
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 components-security-schemes-oauth:
   description: The API must contain the security mechanism OAuth2
@@ -24,3 +27,6 @@ components-security-schemes-oauth:
   then:
     field: $.components.securitySchemes.[*].type
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

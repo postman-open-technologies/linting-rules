@@ -9,6 +9,9 @@ example-exists-in-parameters:
   severity: error
   then:
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 example-exists-in-parameters:
   description: All models MUST have a valid example.
@@ -20,3 +23,6 @@ example-exists-in-parameters:
   severity: error
   then:
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

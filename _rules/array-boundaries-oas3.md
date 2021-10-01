@@ -14,7 +14,9 @@ array-boundaries-oas3:
       function: defined
     - field: minItems
       function: defined     
+  x-status: draft
   x-tags:
+    - Tag
     - Arrays  
     - Security    
 ...
@@ -33,6 +35,8 @@ array-boundaries-oas3:
       function: defined
     - field: minItems
       function: defined     
+   x-status: draft
   x-tags:
+    - Tag
     - Arrays  
     - Security 

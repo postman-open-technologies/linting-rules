@@ -6,6 +6,9 @@ components-security-schema-sigv4:
   then:
     field: sigv4
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 components-security-schema-sigv4:
   description: Please provide a sigv4 for securitySchemes.
@@ -14,3 +17,6 @@ components-security-schema-sigv4:
   then:
     field: sigv4
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

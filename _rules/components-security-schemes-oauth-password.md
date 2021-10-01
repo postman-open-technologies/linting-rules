@@ -11,6 +11,9 @@ components-security-schemes-oauth-password:
   then:
     field: $.components.securitySchemes.[*].flows.password
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 components-security-schemes-oauth-password:
   description: The API must contain the security mechanism OAuth2 password
@@ -24,3 +27,6 @@ components-security-schemes-oauth-password:
   then:
     field: $.components.securitySchemes.[*].flows.password
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

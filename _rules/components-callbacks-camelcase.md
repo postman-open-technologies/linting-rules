@@ -13,6 +13,9 @@ components-callbacks-camelcase:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-callbacks-camelcase:
   description: All callbacks should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-callbacks-camelcase:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

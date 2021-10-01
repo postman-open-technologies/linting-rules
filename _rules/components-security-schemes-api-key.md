@@ -17,6 +17,9 @@ components-security-schemes-api-key:
     function: pattern
     functionOptions:
       match: ^X-api-key$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-security-schemes-api-key:
   description: The client ID should be an apiKey in a header with the name X-api-key
@@ -36,3 +39,6 @@ components-security-schemes-api-key:
     function: pattern
     functionOptions:
       match: ^X-api-key$
+  x-status: draft
+  x-tags:
+    - Tag      

@@ -10,6 +10,9 @@ components-parameters-prefix-in-cookie:
     function: pattern
     functionOptions:
       match: ^cookie$
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-parameters-prefix-in-cookie:
   description: Parameters should be in a location matching the prefix (Cookie.)
@@ -22,3 +25,6 @@ components-parameters-prefix-in-cookie:
     function: pattern
     functionOptions:
       match: ^cookie$
+  x-status: draft
+  x-tags:
+    - Tag      

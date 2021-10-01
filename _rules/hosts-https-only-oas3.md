@@ -8,7 +8,10 @@ hosts-https-only-oas3:
     then:
         function: pattern
         functionOptions:
-        match: "/^https:/"   
+        match: "/^https:/"  
+    x-status: draft
+    x-tags:
+        - Tag         
 ...
 hosts-https-only-oas3:
     description: "ALL requests MUST go through `https` protocol only"
@@ -20,3 +23,6 @@ hosts-https-only-oas3:
         function: pattern
         functionOptions:
         match: "/^https:/" 
+    x-status: draft
+    x-tags:
+        - Tag         

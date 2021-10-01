@@ -9,7 +9,9 @@ array-object-example-oas3:
   then:
   - field: example
     function: falsy
+  x-status: draft
   x-tags:
+    - Tag
     - Arrays    
 ...
 array-object-example-oas3:
@@ -22,5 +24,7 @@ array-object-example-oas3:
   then:
   - field: example
     function: falsy
+  x-status: draft
   x-tags:
+    - Tag
     - Arrays 

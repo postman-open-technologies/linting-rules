@@ -9,6 +9,9 @@ components-security-schemes-prefix:
     function: pattern
     functionOptions:
       match: ^Keys\.|^Oidc\.|^Csh\.
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 components-security-schemes-prefix:
   description: Security schemes should be prefixed with their security type (Oidc., Csh. or Keys.)
@@ -20,3 +23,6 @@ components-security-schemes-prefix:
     function: pattern
     functionOptions:
       match: ^Keys\.|^Oidc\.|^Csh\.
+  x-status: draft
+  x-tags:
+    - Tag      

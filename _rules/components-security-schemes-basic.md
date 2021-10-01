@@ -9,6 +9,9 @@ components-security-schemes-basic:
         function: pattern
         functionOptions:
         notMatch: basic 
+    x-status: draft
+    x-tags:
+        - Tag        
 ...
 components-security-schemes-basic:
     description: "Consider a more secure alternative to HTTP Basic."
@@ -20,3 +23,6 @@ components-security-schemes-basic:
         function: pattern
         functionOptions:
         notMatch: basic 
+    x-status: draft
+    x-tags:
+        - Tag        

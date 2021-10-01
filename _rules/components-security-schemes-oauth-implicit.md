@@ -11,6 +11,9 @@ components-security-schemes-oauth-implicit:
   then:
     field: $.components.securitySchemes.[*].flows.implicit
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    
 ...
 components-security-schemes-oauth-implicit:
   description: The API must contain the security mechanism OAuth2 implicit
@@ -24,3 +27,6 @@ components-security-schemes-oauth-implicit:
   then:
     field: $.components.securitySchemes.[*].flows.implicit
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag    

@@ -14,7 +14,10 @@ hosts-https-only-oas2:
             items:
             type: string
             enum: ["https"]
-            maxItems: 1    
+            maxItems: 1  
+    x-status: draft
+    x-tags:
+        - Tag              
 ...
 hosts-https-only-oas2:
     description: "ALL requests MUST go through `https` protocol only"
@@ -32,3 +35,6 @@ hosts-https-only-oas2:
             type: string
             enum: ["https"]
             maxItems: 1 
+    x-status: draft
+    x-tags:
+        - Tag            

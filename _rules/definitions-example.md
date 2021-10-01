@@ -13,6 +13,9 @@ definitions-example:
       field: example
       schemaPath: $
   type: validation
+  x-status: draft
+  x-tags:
+    - Tag  
 ...
 definitions-example: 
   description: "Examples must be valid against their defined schema."
@@ -28,3 +31,6 @@ definitions-example:
       field: example
       schemaPath: $
   type: validation
+  x-status: draft
+  x-tags:
+    - Tag  

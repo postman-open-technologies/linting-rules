@@ -13,6 +13,9 @@ components-links-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 components-links-pascal-case:
   description: All links should be named with UpperCamelCase
@@ -28,3 +31,6 @@ components-links-pascal-case:
       separator:
         char: .
         allowLeading: false
+  x-status: draft
+  x-tags:
+    - Tag        

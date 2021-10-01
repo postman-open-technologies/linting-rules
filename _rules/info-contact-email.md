@@ -2,6 +2,7 @@
 info-contact-email:
   description: Should have a contact email.
   given: $.info.contact
+  severity: error
   then:
     field: email
     function: truthy
@@ -13,6 +14,7 @@ info-contact-email:
 info-contact-email:
   description: Should have a contact email.
   given: $.info.contact
+  severity: error
   then:
     field: email
     function: truthy

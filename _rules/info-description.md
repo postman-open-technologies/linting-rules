@@ -2,6 +2,7 @@
 info-description:
   description: API must have a info description.
   message: "Missing the {{property}}"
+  severity: error
   given: "$.info"
   then:
       field: "description"
@@ -10,6 +11,7 @@ info-description:
 info-description:
   description: API must have a info description.
   message: "Missing the {{property}}"
+  severity: error
   given: "$.info"
   then:
       field: "description"

@@ -2,6 +2,7 @@
 info-contact-url:
   description: Should have a contact url.
   given: $.info.contact
+  severity: error
   then:
     field: url
     function: truthy
@@ -13,6 +14,7 @@ info-contact-url:
 info-contact-url:
   description: Should have a contact url.
   given: $.info.contact
+  severity: error
   then:
     field: url
     function: truthy
