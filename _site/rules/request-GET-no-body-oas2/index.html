@@ -2,12 +2,15 @@
 "rules": {
 "request-GET-no-body-oas2":{
 
+
+
     
             
             
                 "description": "A `GET` request MUST NOT accept a `body` parameter",
             
         
+    
     
 
     
@@ -17,11 +20,13 @@
             
         
     
+    
 
     
           
-        "format": ["oas2"],
+        "format": ["oas2"]
         
+    
     
 
     
@@ -31,11 +36,13 @@
             
         
     
+    
 
     
           
         "then": {"function":"pattern","functionOptions":null,"notMatch":"/^body$/"}
         
+    
     
  
 }

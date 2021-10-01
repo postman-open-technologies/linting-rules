@@ -2,12 +2,15 @@
 "rules": {
 "request-body-not-allowed-oas2":{
 
+
+
     
             
             
                 "description": "A get or delete operation must not accept a body parameter.",
             
         
+    
     
 
     
@@ -17,11 +20,13 @@
             
         
     
+    
 
     
           
-        "formats": ["oas2"],
+        "formats": ["oas2"]
         
+    
     
 
     
@@ -29,11 +34,13 @@
         "given": ["$.paths[*].[get,delete].parameters[*]"],
         
     
+    
 
     
           
         "then": {"field":"in","function":"pattern","functionOptions":{"notMatch":"/^body$/"}}
         
+    
     
  
 }

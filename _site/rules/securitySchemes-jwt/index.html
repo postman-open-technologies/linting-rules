@@ -2,6 +2,8 @@
 "rules": {
 "securitySchemes-jwt":{
 
+
+
     
             
             
@@ -19,13 +21,15 @@ An API using JWT should explicit in the `description` that the implementation co
             
         
     
+    
 
     
             
             
-                "message": "JWT usage should be detailed in `description` {{error}}.",
+                "message": "JWT usage should be detailed in `description` {{error}}."
             
         
+    
     
 
     
@@ -33,11 +37,13 @@ An API using JWT should explicit in the `description` that the implementation co
         "given": ["$.[securitySchemes][?(@.bearerFormat==\"jwt\" || @.bearerFormat==\"JWT\")]"],
         
     
+    
 
     
           
         "then": [{"field":"description","function":"truthy"},{"field":"description","function":"pattern","functionOptions":{"match":".*RFC8725.*"}}]
         
+    
     
  
 }

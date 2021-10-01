@@ -2,12 +2,15 @@
 "rules": {
 "operations-operationids-kebab-case":{
 
+
+
     
             
             
                 "description": "Operation IDs MUST be written in kebab-case",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -25,19 +29,22 @@
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
           
         "then": {"field":"operationId","function":"pattern","functionOptions":{"match":"^([a-z0-9-]+)$"}},
         
+    
     
 
     
@@ -46,6 +53,7 @@
                 "type": "style"
             
         
+    
     
  
 }

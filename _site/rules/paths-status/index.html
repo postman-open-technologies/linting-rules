@@ -2,8 +2,11 @@
 "rules": {
 "paths-status":{
 
+
+
     
         
+    
     
 
     
@@ -13,6 +16,7 @@
             
         
     
+    
 
     
             
@@ -20,6 +24,7 @@
                 "message": "The "/status" path used to health-check the API must be defined. {{error}}",
             
         
+    
     
 
     
@@ -29,13 +34,15 @@
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -45,11 +52,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"paths./status.get.responses.200","function":"truthy"}
         
+    
     
  
 }

@@ -2,12 +2,15 @@
 "rules": {
 "components-security-schemes-oauth-password":{
 
+
+
     
             
             
                 "description": "The API must contain the security mechanism OAuth2 password",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -24,6 +28,7 @@
                 "recommended": true,
             
         
+    
     
 
     
@@ -33,19 +38,22 @@
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
     
+    
 
     
             
             
-                "type": "style",
+                "type": "style"
             
         
+    
     
 
     
@@ -55,11 +63,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"$.components.securitySchemes.[*].flows.password","function":"truthy"}
         
+    
     
  
 }

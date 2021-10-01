@@ -2,12 +2,15 @@
 "rules": {
 "parameter-names-standard":{
 
+
+
     
             
             
                 "description": "Parameter names should conform to Azure naming conventions.",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "severity": "warn",
+                "severity": "warn"
             
         
+    
     
 
     
@@ -31,11 +36,13 @@
         "given": ["$.paths[*].parameters.*","$.paths.*[get,put,post,patch,delete,options,head].parameters.*"],
         
     
+    
 
     
           
         "then": {"function":"param-names"}
         
+    
     
  
 }

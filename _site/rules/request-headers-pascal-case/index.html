@@ -2,8 +2,11 @@
 "rules": {
 "request-headers-pascal-case":{
 
+
+
     
         
+    
     
 
     
@@ -16,6 +19,7 @@ See Italian recommendation RAC_REST_NAME_003.
             
         
     
+    
 
     
             
@@ -23,6 +27,7 @@ See Italian recommendation RAC_REST_NAME_003.
                 "message": "{{value}} {{error}} in {{path}}",
             
         
+    
     
 
     
@@ -32,13 +37,15 @@ See Italian recommendation RAC_REST_NAME_003.
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -46,11 +53,13 @@ See Italian recommendation RAC_REST_NAME_003.
         "given": ["$.[parameters][?(@.in==\"header\")].name"],
         
     
+    
 
     
           
         "then": {"function":"casing","functionOptions":null,"type":"pascal","separator":{"char":"-"}}
         
+    
     
  
 }

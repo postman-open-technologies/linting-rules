@@ -2,12 +2,15 @@
 "rules": {
 "components-parameters-prefix-in-header":{
 
+
+
     
             
             
                 "description": "Parameters should be in a location matching the prefix (Header.)",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.parameters..[?(@property.match(/^Header\./))]",
+                "given": "$.components.parameters..[?(@property.match(/^Header\./))]"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"in","function":"pattern","functionOptions":{"match":"^header$"}}
         
+    
     
  
 }

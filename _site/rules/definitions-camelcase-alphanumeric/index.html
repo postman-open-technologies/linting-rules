@@ -2,12 +2,15 @@
 "rules": {
 "definitions-camelcase-alphanumeric":{
 
+
+
     
             
             
                 "description": "All YAML/JSON definitions MUST follow fields-camelCase and be ASCII alphanumeric characters or _ or $.",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -24,6 +28,7 @@
                 "message": "{{property}} MUST follow camelCase and be ASCII alphanumeric characters or _ or $.",
             
         
+    
     
 
     
@@ -33,13 +38,15 @@
             
         
     
+    
 
     
             
             
-                "severity": "error",
+                "severity": "error"
             
         
+    
     
 
     
@@ -47,9 +54,11 @@
         "then": {"function":"pattern","functionOptions":{"match":"/^[a-z$_]{1}[A-Z09$_]*/"}},
         
     
+    
 
     
         
+    
     
  
 }

@@ -2,12 +2,15 @@
 "rules": {
 "allowed-currency-format":{
 
+
+
     
             
             
                 "description": "currency must fit the ISO standard",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -24,6 +28,7 @@
                 "recommended": true,
             
         
+    
     
 
     
@@ -33,6 +38,7 @@
             
         
     
+    
 
     
             
@@ -40,6 +46,7 @@
                 "given": "$.[?(/~*/.test(@.currency))].*.currency",
             
         
+    
     
 
     
@@ -49,6 +56,7 @@
             
         
     
+    
 
     
             
@@ -57,19 +65,23 @@
             
         
     
+    
 
     
           
-        "then": {"function":"checkCurrency"},
+        "then": {"function":"checkCurrency"}
         
+    
     
 
     
         
     
+    
 
     
         
+    
     
  
 }

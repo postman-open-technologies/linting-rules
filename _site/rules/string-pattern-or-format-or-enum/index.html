@@ -2,6 +2,8 @@
 "rules": {
 "string-pattern-or-format-or-enum":{
 
+
+
     
             
             
@@ -28,6 +30,7 @@ in conjunction with `format` and `pattern`.",
             
         
     
+    
 
     
             
@@ -36,11 +39,13 @@ in conjunction with `format` and `pattern`.",
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -50,13 +55,15 @@ in conjunction with `format` and `pattern`.",
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -64,11 +71,13 @@ in conjunction with `format` and `pattern`.",
         "given": ["$.[?(@.type==\"string\" && !@.enum && @.format!=\"date\" && @.format!=\"date-time\" )]"],
         
     
+    
 
     
           
         "then": {"function":"schema","functionOptions":null,"schema":{"type":"object","anyOf":[{"required":["pattern"]},{"required":["format"]}],"additionalProperties":true}}
         
+    
     
  
 }

@@ -2,12 +2,15 @@
 "rules": {
 "components-parameters-prefix-in-cookie":{
 
+
+
     
             
             
                 "description": "Parameters should be in a location matching the prefix (Cookie.)",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.parameters..[?(@property.match(/^Cookie\./))]",
+                "given": "$.components.parameters..[?(@property.match(/^Cookie\./))]"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"in","function":"pattern","functionOptions":{"match":"^cookie$"}}
         
+    
     
  
 }

@@ -2,6 +2,8 @@
 "rules": {
 "definitions-properties-maxlength":{
 
+
+
     
             
             
@@ -9,11 +11,13 @@
             
         
     
+    
 
     
           
         "given": ["$.definitions.*.properties.[?(@.type==\"string\")]","$.definitions.*.properties.[?(@.type==\"string\")]"],
         
+    
     
 
     
@@ -23,13 +27,15 @@
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -39,11 +45,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"maxLength","function":"truthy"}
         
+    
     
  
 }

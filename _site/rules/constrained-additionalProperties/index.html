@@ -2,6 +2,8 @@
 "rules": {
 "constrained-additionalProperties":{
 
+
+
     
             
             
@@ -44,6 +46,7 @@ Person:
             
         
     
+    
 
     
             
@@ -52,11 +55,13 @@ Person:
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -66,13 +71,15 @@ Person:
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -80,11 +87,13 @@ Person:
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties &&  @.additionalProperties!=true &&  @.additionalProperties!=false )]"],
         
     
+    
 
     
           
         "then": [{"field":"maxProperties","function":"defined"}]
         
+    
     
  
 }

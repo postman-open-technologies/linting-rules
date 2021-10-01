@@ -2,8 +2,11 @@
 "rules": {
 "missing-ratelimit":{
 
+
+
     
         
+    
     
 
     
@@ -20,6 +23,7 @@ X-Ratelimit-Reset: 12
             
         
     
+    
 
     
             
@@ -28,11 +32,13 @@ X-Ratelimit-Reset: 12
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -42,13 +48,15 @@ X-Ratelimit-Reset: 12
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -58,11 +66,13 @@ X-Ratelimit-Reset: 12
             
         
     
+    
 
     
           
         "then": [{"functionOptions":{"properties":["X-RateLimit-Limit","RateLimit-Limit"]},"function":"xor"},{"functionOptions":{"properties":["X-RateLimit-Remaining","RateLimit-Remaining"]},"function":"xor"},{"functionOptions":{"properties":["X-RateLimit-Reset","RateLimit-Reset"]},"function":"xor"}]
         
+    
     
  
 }

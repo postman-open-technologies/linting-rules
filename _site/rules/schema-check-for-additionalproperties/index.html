@@ -2,6 +2,8 @@
 "rules": {
 "schema-check-for-additionalproperties":{
 
+
+
     
             
             
@@ -13,6 +15,7 @@ unwanted information.",
             
         
     
+    
 
     
             
@@ -21,11 +24,13 @@ unwanted information.",
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -35,13 +40,15 @@ unwanted information.",
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -49,11 +56,13 @@ unwanted information.",
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties &&  @.additionalProperties!=true &&  @.additionalProperties!=false )]"],
         
     
+    
 
     
           
         "then": [{"field":"maxProperties","function":"defined"}]
         
+    
     
  
 }

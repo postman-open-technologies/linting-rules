@@ -2,12 +2,15 @@
 "rules": {
 "components-parameters-camel-case":{
 
+
+
     
             
             
                 "description": "All parameter names should be lowerCamelCase",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]",
+                "given": "$.components.parameters..[?(@.in==='query' || @.in==='path' || @.in==='cookie')]"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}}
         
+    
     
  
 }

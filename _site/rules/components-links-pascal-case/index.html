@@ -2,12 +2,15 @@
 "rules": {
 "components-links-pascal-case":{
 
+
+
     
             
             
                 "description": "All links should be named with UpperCamelCase",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.links",
+                "given": "$.components.links"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal","separator":{"char":".","allowLeading":false}}}
         
+    
     
  
 }

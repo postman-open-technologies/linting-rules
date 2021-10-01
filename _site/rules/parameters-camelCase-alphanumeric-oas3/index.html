@@ -2,12 +2,15 @@
 "rules": {
 "parameters-camelCase-alphanumeric-oas3":{
 
+
+
     
             
             
                 "description": "Path parameters MUST follow camelCase",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -24,6 +28,7 @@
                 "message": "{{property}} path parameter is not camelCase {{error}}",
             
         
+    
     
 
     
@@ -33,13 +38,15 @@
             
         
     
+    
 
     
             
             
-                "severity": "warn",
+                "severity": "warn"
             
         
+    
     
 
     
@@ -47,9 +54,11 @@
         "then": {"function":"pattern","functionOptions":{"match":"^[a-z][a-zA-Z0-9]+$"}},
         
     
+    
 
     
         
+    
     
  
 }

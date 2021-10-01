@@ -2,12 +2,15 @@
 "rules": {
 "components-request-bodies-pascal-case":{
 
+
+
     
             
             
                 "description": "All definitions should be named with UpperCamelCase",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.requestBodies",
+                "given": "$.components.requestBodies"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal","separator":{"char":".","allowLeading":false}}}
         
+    
     
  
 }

@@ -2,12 +2,15 @@
 "rules": {
 "response-pagination-response-oas2":{
 
+
+
     
             
             
                 "description": "An operation that returns a list that is potentially large should support pagination.",
             
         
+    
     
 
     
@@ -17,6 +20,7 @@
             
         
     
+    
 
     
             
@@ -25,11 +29,13 @@
             
         
     
+    
 
     
           
-        "formats": ["oas2"],
+        "formats": ["oas2"]
         
+    
     
 
     
@@ -37,11 +43,13 @@
         "given": ["$.paths.*[get,post]"],
         
     
+    
 
     
           
         "then": {"function":"pagination-response"}
         
+    
     
  
 }

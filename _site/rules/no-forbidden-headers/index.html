@@ -2,8 +2,11 @@
 "rules": {
 "no-forbidden-headers":{
 
+
+
     
         
+    
     
 
     
@@ -15,6 +18,7 @@ You MUST use the associate functionalities provided by OAS, instead.",
             
         
     
+    
 
     
             
@@ -23,13 +27,15 @@ You MUST use the associate functionalities provided by OAS, instead.",
             
         
     
+    
 
     
             
             
-                "severity": "error",
+                "severity": "error"
             
         
+    
     
 
     
@@ -37,11 +43,13 @@ You MUST use the associate functionalities provided by OAS, instead.",
         "given": ["$..parameters[?(@.in == 'header')].name","$.[responses][*].headers.*~"],
         
     
+    
 
     
           
         "then": {"function":"pattern","functionOptions":{"notMatch":"/^(accept|content-type|authorization)$/i"}}
         
+    
     
  
 }

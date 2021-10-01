@@ -2,6 +2,8 @@
 "rules": {
 "security-protection-non-idempotent":{
 
+
+
     
             
             
@@ -25,6 +27,7 @@ AccessToken:
             
         
     
+    
 
     
             
@@ -33,11 +36,13 @@ AccessToken:
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -47,13 +52,15 @@ AccessToken:
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -61,11 +68,13 @@ AccessToken:
         "given": ["$.paths.*[?(@property.match(/^(post|put|patch|delete)/))]"],
         
     
+    
 
     
           
         "then": [{"field":"security","function":"schema","functionOptions":{"schema":null,"items":{"type":"object","minProperties":1},"minItems":1,"type":"array"}}]
         
+    
     
  
 }

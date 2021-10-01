@@ -2,12 +2,15 @@
 "rules": {
 "components-parameters-prefix-in-path":{
 
+
+
     
             
             
                 "description": "Parameters should be in a location matching the prefix (Path.)",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.parameters..[?(@property.match(/^Path\./))]",
+                "given": "$.components.parameters..[?(@property.match(/^Path\./))]"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"in","function":"pattern","functionOptions":{"match":"^path$"}}
         
+    
     
  
 }

@@ -2,12 +2,15 @@
 "rules": {
 "components-headers-pascal-case":{
 
+
+
     
             
             
                 "description": "All responses should be named with UpperCamelCase",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.headers",
+                "given": "$.components.headers"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal","separator":{"char":".","allowLeading":false}}}
         
+    
     
  
 }

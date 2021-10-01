@@ -2,8 +2,11 @@
 "rules": {
 "no-x-headers-request":{
 
+
+
     
         
+    
     
 
     
@@ -13,6 +16,7 @@
             
         
     
+    
 
     
             
@@ -21,11 +25,13 @@
             
         
     
+    
 
     
           
         "given": ["$..parameters[?(@.in == 'header')].name"],
         
+    
     
 
     
@@ -35,13 +41,15 @@
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -51,11 +59,13 @@
             
         
     
+    
 
     
           
         "then": {"function":"pattern","functionOptions":{"match":"/^([^x]|.[^-])|RateLimit-/i"}}
         
+    
     
  
 }

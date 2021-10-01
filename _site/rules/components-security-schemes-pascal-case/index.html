@@ -2,12 +2,15 @@
 "rules": {
 "components-security-schemes-pascal-case":{
 
+
+
     
             
             
                 "description": "All security schemes should be named with UpperCamelCase",
             
         
+    
     
 
     
@@ -17,13 +20,15 @@
             
         
     
+    
 
     
             
             
-                "given": "$.components.securitySchemes",
+                "given": "$.components.securitySchemes"
             
         
+    
     
 
     
@@ -33,11 +38,13 @@
             
         
     
+    
 
     
           
         "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal","separator":{"char":".","allowLeading":false}}}
         
+    
     
  
 }

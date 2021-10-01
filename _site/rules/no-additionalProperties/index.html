@@ -2,6 +2,8 @@
 "rules": {
 "no-additionalProperties":{
 
+
+
     
             
             
@@ -44,6 +46,7 @@ properties:
             
         
     
+    
 
     
             
@@ -52,11 +55,13 @@ properties:
             
         
     
+    
 
     
           
         "formats": ["oas3"],
         
+    
     
 
     
@@ -66,13 +71,15 @@ properties:
             
         
     
+    
 
     
             
             
-                "recommended": true,
+                "recommended": true
             
         
+    
     
 
     
@@ -80,11 +87,13 @@ properties:
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties==true)]"],
         
     
+    
 
     
           
         "then": [{"field":"additionalProperties","function":"falsy"}]
         
+    
     
  
 }
