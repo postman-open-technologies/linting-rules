@@ -48,11 +48,11 @@ layout: default
                   </ul>
                </div>
                <div class="col-md-1" style="border: 0px solid #000;">
-                  <a href="{{ site.url }}/{{ ruleset.url }}" style="color:#000"><img src="{{ site.url }}/images/link-icon.png" width="90">
+                  <a href="{{ site.url }}/{{ ruleset.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
                   <strong>Link</strong></a>
                </div>                
                <div class="col-md-1" style="border: 0px solid #000;">
-                  <a href="{{ ruleset.discussion }}" style="color:#000"><img src="{{ site.url }}/images/github-issues-icon.png" width="90">
+                  <a href="{{ ruleset.discussion }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="90">
                   <strong>Discussion</strong></a>
                </div>                
             </div>
@@ -62,12 +62,16 @@ layout: default
         <p>These are a list of the rules.</p>
         
         {% for rule in rules %}  
-               <div class="row collection">                 
-                  <div class="col-md-8" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">{{ rule.title }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
-                  </div>
-               </div>                                         
+            <div class="row collection">                 
+               <div class="col-md-11" style="border: 0px solid #000;">
+                  <span style="font-size: 18px; font-weight: bold;">{{ rule.title }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
+                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
+               </div>            
+               <div class="col-md-1" style="border: 0px solid #000;">
+                  <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
+                  <strong>Link</strong></a>
+               </div>   
+            </div>                                                       
          {% endfor %}            
    </div>
 </div>
