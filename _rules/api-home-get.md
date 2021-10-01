@@ -8,9 +8,7 @@ api-home-get:
   severity: warn
   then: 
     field: get
-    function: truthy
-  x-tags: 
-    - Paths      
+    function: truthy     
 ...
 api-home-get: 
   description: "APIs root path MUST have a GET defined,."
@@ -22,5 +20,3 @@ api-home-get:
   then: 
     field: get
     function: truthy
-  x-tags: 
-    - Paths 

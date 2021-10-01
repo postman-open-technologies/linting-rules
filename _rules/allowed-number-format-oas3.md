@@ -21,8 +21,10 @@ allowed-number-format-oas3:
         - float
         - double
         - decimal128   
+  x-status: draft
   x-tags:
-    - Formats        
+    - Numbers
+    - Formats      
 ...
 allowed-number-format-oas3:
   description: |-

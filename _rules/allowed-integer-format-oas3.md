@@ -4,7 +4,7 @@ allowed-integer-format-oas3:
     To improve interoperability, integer and number formats are constrained
     to a shared subset.  See recommendation RAC_REST_FORMAT_004.
   message: Type format is "{{value}}", expected one of [int32, int64]. {{path}}
-  formats:
+  formats:dd
     - oas3
   severity: hint
   recommended: true
@@ -17,8 +17,10 @@ allowed-integer-format-oas3:
       values:
         - int32
         - int64 
+  x-status: draft
   x-tags:
-    - Formats        
+    - Numbers
+    - Formats     
 ...
 allowed-integer-format-oas3:
   description: |-

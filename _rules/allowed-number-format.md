@@ -24,6 +24,10 @@ allowed-number-format:
         - float
         - double
         - decimal128   
+  x-status: draft
+  x-tags:
+    - Numbers
+    - Formats        
 ...
 allowed-number-format:
   x-tags:
