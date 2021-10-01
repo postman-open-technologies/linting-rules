@@ -4,7 +4,6 @@
     
     
     
-
     
         
                     
@@ -161,7 +160,31 @@
     
         
         
-            "info-description": {"description":"API must have a info description.","message":"Missing the {{property}}","given":"$.info","then":{"field":"description","function":"truthy"}}
+            "info-description": {            
+                
+                    
+                            
+                            "description": "API must have a info description.",
+                        
+                    
+                
+                    
+                            
+                            "message": "Missing the {{property}}",
+                        
+                    
+                
+                    
+                            
+                            "given": "$.info",
+                        
+                    
+                
+                    
+                        "then": {"field":"description","function":"truthy"}
+                    
+                 
+            }
             
                     
     
@@ -585,11 +608,8 @@
         
                     
         
-
     , 
-
     
-
     
         
                     
@@ -824,7 +844,31 @@
     
         
         
-            "operations-description": {"severity":"error","message":"Missing {{property}}at {{path}}","given":"$.paths.*[get,post,patch,put,delete]","then":[{"field":"description","function":"truthy"}]}
+            "operations-description": {            
+                
+                    
+                            
+                            "severity": "error",
+                        
+                    
+                
+                    
+                            
+                            "message": "Missing {{property}}at {{path}}",
+                        
+                    
+                
+                    
+                            
+                            "given": "$.paths.*[get,post,patch,put,delete]",
+                        
+                    
+                
+                    
+                        "then": [{"field":"description","function":"truthy"}]
+                    
+                 
+            }
             
                     
     
@@ -1170,11 +1214,8 @@
         
                     
         
-
     , 
-
     
-
     
         
                     
@@ -1427,7 +1468,35 @@
     
         
         
-            "parameter-description-oas3": {"description":"All parameters should have a description.","message":"Parameter should have a description.","severity":"warn","given":["$.paths[*].parameters.*","$.paths.*[get,put,post,patch,delete,options,head].parameters.*"],"then":{"field":"description","function":"truthy"}}
+            "parameter-description-oas3": {            
+                
+                    
+                            
+                            "description": "All parameters should have a description.",
+                        
+                    
+                
+                    
+                            
+                            "message": "Parameter should have a description.",
+                        
+                    
+                
+                    
+                            
+                            "severity": "warn",
+                        
+                    
+                
+                    
+                        "given": ["$.paths[*].parameters.*","$.paths.*[get,put,post,patch,delete,options,head].parameters.*"],
+                    
+                
+                    
+                        "then": {"field":"description","function":"truthy"}
+                    
+                 
+            }
             
                     
     
@@ -1755,11 +1824,8 @@
         
                     
         
-
     , 
-
     
-
     
         
                     
@@ -2249,7 +2315,25 @@
     
         
         
-            "schema-descriptions": {"severity":"warn","given":"$..properties.*","then":{"field":"description","function":"truthy"}}
+            "schema-descriptions": {            
+                
+                    
+                            
+                            "severity": "warn",
+                        
+                    
+                
+                    
+                            
+                            "given": "$..properties.*",
+                        
+                    
+                
+                    
+                        "then": {"field":"description","function":"truthy"}
+                    
+                 
+            }
             
                     
     
@@ -2340,11 +2424,8 @@
         
                     
         
-
-     
-
+    , 
     
-
     
         
                     
@@ -2922,8 +3003,6 @@
         
                     
         
-
-     
-
+    , 
     
 }}

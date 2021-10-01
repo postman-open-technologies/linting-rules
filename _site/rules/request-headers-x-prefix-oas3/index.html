@@ -3,31 +3,45 @@
 "request-headers-x-prefix-oas3":{
 
     
-        "description": "Headers must start with X",
+            
+            "description": "Headers must start with X",
+        
     
 
     
-        "message": "Headers must start with X-, so please find a new value for {{path}}.",
+            
+            "message": "Headers must start with X-, so please find a new value for {{path}}.",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "type": "style",
+            
+            "type": "style",
+        
     
 
     
-        "given": "$..parameters.[?(@.in === 'header')].name",
+            
+            "given": "$..parameters.[?(@.in === 'header')].name",
+        
     
 
     
-        "severity": "error",
+            
+            "severity": "error",
+        
     
 
     
-        "resolved": "false",
+            
+            "resolved": "false",
+        
     
 
     

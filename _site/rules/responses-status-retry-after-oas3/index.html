@@ -3,11 +3,13 @@
 "responses-status-retry-after-oas3":{
 
     
-        "description": "When a client is either:
+            
+            "description": "When a client is either:
 * throttled out with a 429 status code;
 * warned about a temporary server issue with a 503 status code;
 the server should explicitly communicate how long to wait
 before issuing further requests using the Retry-After header. Retry-After is defined in RFC7231.",
+        
     
 
     
@@ -15,19 +17,27 @@ before issuing further requests using the Retry-After header. Retry-After is def
     
 
     
-        "given": "$.[responses][?(@property == "429" || @property == "503"  )][headers]",
+            
+            "given": "$.[responses][?(@property == "429" || @property == "503"  )][headers]",
+        
     
 
     
-        "message": "Missing ratelimit header: {{property}} in {{path}}",
+            
+            "message": "Missing ratelimit header: {{property}} in {{path}}",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "severity": "warn",
+            
+            "severity": "warn",
+        
     
 
     

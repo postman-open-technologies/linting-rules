@@ -3,12 +3,16 @@
 "allowed-number-format-oas3":{
 
     
-        "description": "To improve interoperability, integer and number formats are constrained
+            
+            "description": "To improve interoperability, integer and number formats are constrained
 to a shared subset. See recommendation RAC_REST_FORMAT_004.",
+        
     
 
     
-        "message": "Type format is "{{value}}", expected one of [decimal32, decimal64, decimal128, float, double]. {{path}}",
+            
+            "message": "Type format is "{{value}}", expected one of [decimal32, decimal64, decimal128, float, double]. {{path}}",
+        
     
 
     
@@ -16,16 +20,22 @@ to a shared subset. See recommendation RAC_REST_FORMAT_004.",
     
 
     
-        "severity": "hint",
+            
+            "severity": "hint",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "given": "$.[?(@.type=="number")]
+            
+            "given": "$.[?(@.type=="number")]
 ",
+        
     
 
     
@@ -33,7 +43,11 @@ to a shared subset. See recommendation RAC_REST_FORMAT_004.",
     
 
     
-        "x-tags": ["Formats"]
+        
+    
+
+    
+        "x-tags": ["Numbers","Formats"]
     
  
 }

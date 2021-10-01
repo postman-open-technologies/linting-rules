@@ -3,7 +3,9 @@
 "responses-headers-rate-limits-oas3":{
 
     
-        "description": "Must posses rate limiting headers.",
+            
+            "description": "Must posses rate limiting headers.",
+        
     
 
     
@@ -11,19 +13,27 @@
     
 
     
-        "given": "$.[responses][?(@property[0] == "2" )][headers]",
+            
+            "given": "$.[responses][?(@property[0] == "2" )][headers]",
+        
     
 
     
-        "message": "Missing ratelimit headers. {{property}} {{error}} {{path}}",
+            
+            "message": "Missing ratelimit headers. {{property}} {{error}} {{path}}",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "severity": "warn",
+            
+            "severity": "warn",
+        
     
 
     

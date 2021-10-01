@@ -7,16 +7,23 @@ layout: none
     {% assign this_count = 1 %}
     {% assign rules_count = page.rules | size %}
     {% for this_rule in page.rules %}
-
     {% for rule in rules %}
         {% assign r = rule %}
         {% if this_rule == rule.slug %}
-            "{{ rule.slug }}": {{ rule[rule.slug] | jsonify }}
+            "{{ rule.slug }}": {            
+                {% for property in rule[rule.slug] %}
+                    {% if property[1].first %}
+                        "{{ property[0] }}": {{ property[1] | jsonify  }}{% unless forloop.last %},{% endunless %}
+                    {% else %}
+                        {% if property[0]  contains 'x-' %}{% else %}    
+                            "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless %}
+                        {% endif %}
+                    {% endif %}
+                {% endfor %} 
+            }
             {% assign this_count = this_count | plus: 1 %}
         {% endif %}            
     {% endfor %}    
-
-    {% if this_count < rules_count %},{% endif %} 
-
+    {% if this_count <= rules_count %},{% endif %} 
     {% endfor %}
 }}

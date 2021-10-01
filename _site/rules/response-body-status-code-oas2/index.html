@@ -3,11 +3,15 @@
 "response-body-status-code-oas2":{
 
     
-        "description": "All success responses except 202 & 204 should define a response body.",
+            
+            "description": "All success responses except 202 & 204 should define a response body.",
+        
     
 
     
-        "severity": "warn",
+            
+            "severity": "warn",
+        
     
 
     
@@ -15,7 +19,9 @@
     
 
     
-        "given": "$.paths[*][*].responses[?(@property >= 200 && @property < 300 && @property != '202' && @property != '204')]",
+            
+            "given": "$.paths[*][*].responses[?(@property >= 200 && @property < 300 && @property != '202' && @property != '204')]",
+        
     
 
     

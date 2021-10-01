@@ -3,16 +3,20 @@
 "allowed-integer-format":{
 
     
-        "x-tags": ["it","RAC_REST_FORMAT_004"],
+        "x-tags": ["Numbers","Formats"],
     
 
     
-        "description": "To improve interoperability, integer and number formats are constrained
+            
+            "description": "To improve interoperability, integer and number formats are constrained
 to a shared subset.  See recommendation RAC_REST_FORMAT_004.",
+        
     
 
     
-        "message": "Type format is "{{value}}", expected one of [int32, int64]. {{path}}",
+            
+            "message": "Type format is "{{value}}", expected one of [int32, int64]. {{path}}",
+        
     
 
     
@@ -20,20 +24,30 @@ to a shared subset.  See recommendation RAC_REST_FORMAT_004.",
     
 
     
-        "severity": "hint",
+            
+            "severity": "hint",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "given": "$.[?(@.type=="integer")]
+            
+            "given": "$.[?(@.type=="integer")]
 ",
+        
     
 
     
-        "then": {"field":"format","function":"enumeration","functionOptions":{"values":["int32","int64"]}}
+        "then": {"field":"format","function":"enumeration","functionOptions":{"values":["int32","int64"]}},
+    
+
+    
+        
     
  
 }

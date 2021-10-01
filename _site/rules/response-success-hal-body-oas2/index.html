@@ -3,7 +3,9 @@
 "response-success-hal-body-oas2":{
 
     
-        "description": "All success responses MUST be of media type application/hal+json",
+            
+            "description": "All success responses MUST be of media type application/hal+json",
+        
     
 
     
@@ -11,19 +13,27 @@
     
 
     
-        "given": "$.paths..responses[?( @property >= 200 && @property < 300 && @property != 204)]",
+            
+            "given": "$.paths..responses[?( @property >= 200 && @property < 300 && @property != 204)]",
+        
     
 
     
-        "message": "Response documents MUST follow application/hal+json {{error}}",
+            
+            "message": "Response documents MUST follow application/hal+json {{error}}",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
-        "severity": "error",
+            
+            "severity": "error",
+        
     
 
     
@@ -31,7 +41,9 @@
     
 
     
-        "type": "style",
+            
+            "type": "style",
+        
     
 
     

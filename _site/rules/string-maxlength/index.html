@@ -3,7 +3,8 @@
 "string-maxlength":{
 
     
-        "description": "String length should be limited to avoid an attacker to send very long strings to your service. You can do this in different ways:
+            
+            "description": "String length should be limited to avoid an attacker to send very long strings to your service. You can do this in different ways:
 - specify a `maxLength`
 - constraint the possible values with an `enum`
 - use a constrained `format` like `date` or `date-time`.
@@ -23,10 +24,13 @@ pattern: '[0-9]{5}'
 ```
 For further security, you can always limit string length even
 in conjunction with `format` and `pattern`.",
+        
     
 
     
-        "message": "Strings (non enum) must specify a maximum length. {{path}} {{error}}",
+            
+            "message": "Strings (non enum) must specify a maximum length. {{path}} {{error}}",
+        
     
 
     
@@ -34,11 +38,15 @@ in conjunction with `format` and `pattern`.",
     
 
     
-        "severity": "warn",
+            
+            "severity": "warn",
+        
     
 
     
-        "recommended": "true",
+            
+            "recommended": "true",
+        
     
 
     
