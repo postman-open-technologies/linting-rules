@@ -4,7 +4,7 @@ info-contact-email:
   given: $.info.contact
   then:
     field: email
-    function: truth
+    function: truthy
   x-status: validated
   x-tags:
     - Contact
@@ -15,7 +15,7 @@ info-contact-email:
   given: $.info.contact
   then:
     field: email
-    function: truth
+    function: truthy
   x-status: validated
   x-tags:
     - Contact
