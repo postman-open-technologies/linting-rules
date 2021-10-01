@@ -1,1 +1,22 @@
-{"name": ""}
+
+
+
+rules:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;paths-method-order:<br />
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;severity: error<br />
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;given: $.paths[?(@.get || @.post || @.patch || @.put || @.delete)]<br />
+
+
+
+
+    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function: operationOrdering<br />
+    
+ 
+
+ 
