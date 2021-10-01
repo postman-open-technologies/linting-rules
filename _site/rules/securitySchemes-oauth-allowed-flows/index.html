@@ -15,7 +15,9 @@
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -31,11 +33,15 @@
     
 
     
+          
         "given": ["$.[?(@.type==\"oauth2\")].flows"],
+        
     
 
     
+          
         "then": [{"field":"implicit","function":"falsy"},{"field":"password","function":"falsy"}]
+        
     
  
 }

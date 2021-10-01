@@ -9,7 +9,9 @@
     
 
     
+          
         "given": ["$.[securitySchemes][?(@.bearerFormat==\"jwt\" || @.bearerFormat==\"JWT\")]"],
+        
     
 
     
@@ -19,7 +21,9 @@
     
 
     
+          
         "then": [{"field":"description","function":"truthy"},{"field":"description","function":"pattern","functionOptions":{"match":".*RFC8725.*"}}]
+        
     
  
 }

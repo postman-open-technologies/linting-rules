@@ -15,7 +15,9 @@
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -31,11 +33,15 @@
     
 
     
+          
         "given": ["$.[securitySchemes][?(@.type==\"oauth2\")][*].[?(@property.match(/url$/i))]"],
+        
     
 
     
+          
         "then": [{"field":"value","function":"pattern","functionOptions":{"match":"^https://"}}]
+        
     
  
 }

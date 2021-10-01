@@ -15,15 +15,21 @@
     
 
     
+          
         "formats": ["oas2"],
+        
     
 
     
+          
         "given": ["$.paths[*].[get,delete].parameters[*]"],
+        
     
 
     
+          
         "then": {"field":"in","function":"pattern","functionOptions":{"notMatch":"/^body$/"}}
+        
     
  
 }

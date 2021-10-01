@@ -50,7 +50,9 @@ Person:
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -66,11 +68,15 @@ Person:
     
 
     
+          
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties &&  @.additionalProperties!=true &&  @.additionalProperties!=false )]"],
+        
     
 
     
+          
         "then": [{"field":"maxProperties","function":"defined"}]
+        
     
  
 }

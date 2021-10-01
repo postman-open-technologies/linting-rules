@@ -3,7 +3,7 @@
 "servers-use-https":{
 
     
-        "x-tags": ["security"],
+        
     
 
     
@@ -23,7 +23,9 @@ Use `x-sandbox: true` to skip this kind of check.",
     
 
     
+          
         "given": ["$.servers[?(@[\"x-sandbox\"] != true)]","$.paths..servers[?(@[\"x-sandbox\"] != true)]"],
+        
     
 
     
@@ -39,7 +41,9 @@ Use `x-sandbox: true` to skip this kind of check.",
     
 
     
+          
         "then": {"field":"url","function":"pattern","functionOptions":null,"match":"^https://.*"}
+        
     
  
 }

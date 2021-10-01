@@ -3,7 +3,7 @@
 "servers-description":{
 
     
-        "x-tags": ["metadata","it"],
+        
     
 
     
@@ -13,11 +13,15 @@
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
+          
         "given": ["$.servers[*]","$.paths..servers"],
+        
     
 
     
@@ -27,7 +31,9 @@
     
 
     
+          
         "then": {"field":"description","function":"truthy"}
+        
     
  
 }

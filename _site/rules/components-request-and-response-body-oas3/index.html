@@ -21,11 +21,15 @@
     
 
     
+          
         "given": ["$..responses.*.content..*.schema.$ref","$..requestBody.content..*.schema.$ref"],
+        
     
 
     
+          
         "then": {"function":"pattern","functionOptions":{"match":"#/components/"}}
+        
     
  
 }

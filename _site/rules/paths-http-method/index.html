@@ -3,7 +3,7 @@
 "paths-http-method":{
 
     
-        "x-tags": ["it"],
+        
     
 
     
@@ -45,11 +45,15 @@ Location: /users/1234 ``` This simplifies securing your API as you know beforeha
     
 
     
+          
         "given": ["$.paths[?(@property.match( /\\/(get|post|put|delete|patch)[\\/A-Z_\\-]?/ ))]~","$.paths[?(@property.match( /\\/(create|remove|list)[\\/A-Z_\\-]?/ ))]~"],
+        
     
 
     
+          
         "then": {"field":"@key","function":"undefined"}
+        
     
  
 }

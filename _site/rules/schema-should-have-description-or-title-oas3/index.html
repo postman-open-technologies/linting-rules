@@ -21,15 +21,21 @@
     
 
     
+          
         "formats": ["oas2","oas3"],
+        
     
 
     
+          
         "given": ["$.definitions[?(!@.description && !@.title)]","$.components.schemas[?(!@.description && !@.title)]"],
+        
     
 
     
+          
         "then": {"function":"falsy"}
+        
     
  
 }

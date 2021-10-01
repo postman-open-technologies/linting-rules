@@ -13,9 +13,11 @@ layout: none
             "{{ rule.slug }}": {            
                 {% for property in rule[rule.slug] %}
                     {% if property[1].first %}
+                        {% if property[0] contains 'x-' %}{% else %}    
                         "{{ property[0] }}": {{ property[1] | jsonify  }}{% unless forloop.last %},{% endunless %}
+                        {% endif %}
                     {% else %}
-                        {% if property[0]  contains 'x-' %}{% else %}    
+                        {% if property[0] contains 'x-' %}{% else %}    
                             "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless %}
                         {% endif %}
                     {% endif %}

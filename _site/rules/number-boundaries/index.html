@@ -17,7 +17,9 @@ be sure to test it thoroughly.",
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -33,11 +35,15 @@ be sure to test it thoroughly.",
     
 
     
+          
         "given": ["$.[?(@.type==\"number\")]","$.[?(@.type==\"integer\")]"],
+        
     
 
     
+          
         "then": [{"field":"maximum","function":"defined"},{"field":"minimum","function":"defined"}]
+        
     
  
 }

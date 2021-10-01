@@ -3,7 +3,7 @@
 "no-x-headers-response":{
 
     
-        "x-tags": ["standards"],
+        
     
 
     
@@ -19,7 +19,9 @@
     
 
     
+          
         "given": ["$.[responses][*].headers.*~"],
+        
     
 
     
@@ -41,7 +43,9 @@
     
 
     
+          
         "then": {"function":"pattern","functionOptions":{"match":"/^([^x]|.[^-])|RateLimit-/i"}}
+        
     
  
 }

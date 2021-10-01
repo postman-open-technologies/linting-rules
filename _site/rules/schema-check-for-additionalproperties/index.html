@@ -19,7 +19,9 @@ unwanted information.",
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -35,11 +37,15 @@ unwanted information.",
     
 
     
+          
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties &&  @.additionalProperties!=true &&  @.additionalProperties!=false )]"],
+        
     
 
     
+          
         "then": [{"field":"maxProperties","function":"defined"}]
+        
     
  
 }

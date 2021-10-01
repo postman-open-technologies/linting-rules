@@ -26,11 +26,15 @@ An API using JWT should explicit in the `description` that the implementation co
     
 
     
+          
         "given": ["$.[securitySchemes][?(@.type==\"oauth2\")]"],
+        
     
 
     
+          
         "then": [{"field":"description","function":"truthy"},{"field":"description","function":"pattern","functionOptions":{"match":".*RFC8725.*"}}]
+        
     
  
 }

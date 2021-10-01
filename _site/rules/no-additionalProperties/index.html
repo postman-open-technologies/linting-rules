@@ -50,7 +50,9 @@ properties:
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -66,11 +68,15 @@ properties:
     
 
     
+          
         "given": ["$.[?(@.type==\"object\" && @.additionalProperties==true)]"],
+        
     
 
     
+          
         "then": [{"field":"additionalProperties","function":"falsy"}]
+        
     
  
 }

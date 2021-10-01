@@ -34,7 +34,9 @@ in conjunction with `format` and `pattern`.",
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -50,11 +52,15 @@ in conjunction with `format` and `pattern`.",
     
 
     
+          
         "given": ["$.[?(@.type==\"string\" && !@.enum && @.format!=\"date\" && @.format!=\"date-time\" )]"],
+        
     
 
     
+          
         "then": [{"field":"maxLength","function":"defined"}]
+        
     
  
 }

@@ -15,7 +15,9 @@
     
 
     
+          
         "formats": ["oas3"],
+        
     
 
     
@@ -31,15 +33,19 @@
     
 
     
+          
         "given": ["$.[?(@.type==\"array\")]"],
+        
     
 
     
+          
         "then": [{"field":"maxItems","function":"defined"},{"field":"minItems","function":"defined"}],
+        
     
 
     
-        "x-tags": ["Arrays","Security"]
+        
     
  
 }
