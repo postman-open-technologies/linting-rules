@@ -5972,7 +5972,7 @@ function: truthy
             <div class="row collection">                 
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info License Url Apache</span> (<a href="http://localhost:4000//rules/info-license-url-apache/" style="color:#000">info-license-url-apache</a>)</p>
-                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;license&#8211;url:
+                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;license&#8211;url&#8211;apache:
   description: Should have a license url.
   given: $.info.license.url
   severity: error
@@ -5995,19 +5995,18 @@ function: truthy
             <div class="row collection">                 
                <div class="col-md-11" style="border: 0px solid #000;">
                   <span style="font-size: 18px; font-weight: bold;">Info License Url Mit</span> (<a href="http://localhost:4000//rules/info-license-url-mit/" style="color:#000">info-license-url-mit</a>)</p>
-                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;license&#8211;url:
-  description: Should have an MIT license.
+                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">info&#8211;license&#8211;url&#8211;mit:
+  description: Should have a MIT license.
   given: $.info.license.url
   severity: error
   then:
     function: pattern
     functionOptions:
-      match: apache.org
+      match: mit.edu
   x&#8211;status: validated
   x&#8211;tags:
     &#8211; License
     &#8211; Legal
-    &#8211; MIT
 </code></pre>                  
                </div>            
                <div class="col-md-1" style="border: 0px solid #000;">

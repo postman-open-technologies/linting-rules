@@ -1,28 +1,26 @@
 ---
-info-license-url:
-  description: Should have an MIT license.
+info-license-url-mit:
+  description: Should have a MIT license.
   given: $.info.license.url
   severity: error
   then:
     function: pattern
     functionOptions:
-      match: apache.org
+      match: mit.edu
   x-status: validated
   x-tags:
     - License
-    - Legal  
-    - MIT   
+    - Legal     
 ...
-info-license-url:
-  description: Should have an MIT license.
+info-license-url-mit:
+  description: Should have a MIT license.
   given: $.info.license.url
   severity: error
   then:
     function: pattern
     functionOptions:
-      match: apache.org
+      match: mit.edu
   x-status: validated
   x-tags:
     - License
     - Legal  
-    - MIT     

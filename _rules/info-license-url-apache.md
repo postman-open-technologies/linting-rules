@@ -1,5 +1,5 @@
 ---
-info-license-url:
+info-license-url-apache:
   description: Should have a license url.
   given: $.info.license.url
   severity: error
@@ -12,7 +12,7 @@ info-license-url:
     - License
     - Legal     
 ...
-info-license-url:
+info-license-url-apache:
   description: Should have a license url.
   given: $.info.license.url
   severity: error
