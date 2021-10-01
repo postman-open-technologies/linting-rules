@@ -17,8 +17,10 @@ layout: none
                         "{{ property[0] }}": {{ property[1] | jsonify  }}{% unless forloop.last %},{% endunless %}
                         {% endif %}
                     {% else %}
-                        {% if property[0] contains 'x-' %}{% else %}    
+                        {% if property[0] contains 'x-' %}{% else %}   
+                            {% if property[0] == 'recommended' %} 
                             "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless %}
+                            {% endif %}
                         {% endif %}
                     {% endif %}
                 {% endfor %} 

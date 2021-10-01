@@ -4,7 +4,9 @@
 
     
             
-            "description": "Examples must be valid against their defined schema.",
+            
+                "description": "Examples must be valid against their defined schema.",
+            
         
     
 
@@ -16,25 +18,33 @@
 
     
             
-            "given": "$..parameters..[?(@.in == 'body')]..[?(@property !== 'properties' && @.example && ( @.type || @.format || @.$ref ))]",
+            
+                "given": "$..parameters..[?(@.in == 'body')]..[?(@property !== 'properties' && @.example && ( @.type || @.format || @.$ref ))]",
+            
         
     
 
     
             
-            "message": "{{error}}",
+            
+                "message": "{{error}}",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
     
             
-            "severity": "0",
+            
+                "severity": "0",
+            
         
     
 
@@ -46,7 +56,9 @@
 
     
             
-            "type": "validation",
+            
+                "type": "validation",
+            
         
     
 

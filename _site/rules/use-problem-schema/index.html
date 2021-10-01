@@ -4,7 +4,8 @@
 
     
             
-            "description": "WARN: This rule is under implementation and just provides an hint.
+            
+                "description": "WARN: This rule is under implementation and just provides an hint.
 
 Error management is a key enabler of a resilient API ecosystem.
 Enforcing a consistent schema for errors between different APIs,
@@ -25,12 +26,15 @@ An example of a valid payload is
 ```
 
 See recommendation RAC_REST_NAME_007.",
+            
         
     
 
     
             
-            "message": "Your schema doesn't seem to match RFC7807. Are you sure it is ok? {{path}}",
+            
+                "message": "Your schema doesn't seem to match RFC7807. Are you sure it is ok? {{path}}",
+            
         
     
 
@@ -42,19 +46,25 @@ See recommendation RAC_REST_NAME_007.",
 
     
             
-            "severity": "hint",
+            
+                "severity": "hint",
+            
         
     
 
     
             
-            "recommended": "false",
+            
+                "recommended": false,
+            
         
     
 
     
             
-            "given": "$.paths.[*].responses[?(@property.match(/^(4|5|default)/))][[schema]]",
+            
+                "given": "$.paths.[*].responses[?(@property.match(/^(4|5|default)/))][[schema]]",
+            
         
     
 

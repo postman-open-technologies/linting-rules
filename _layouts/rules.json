@@ -11,7 +11,11 @@ layout: none
         {% endif %}
     {% else %}
         {% if property[0]  contains 'x-' %}{% else %}    
-            "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless %}
+            {% if property[0] == 'recommended' %}
+                "{{ property[0] }}": {{ property[1] }}{% unless forloop.last %},{% endunless %}
+            {% else %}
+                "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless %}
+            {% endif %}
         {% endif %}
     {% endif %}
 {% endfor %} 

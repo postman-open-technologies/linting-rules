@@ -4,7 +4,9 @@
 
     
             
-            "description": "Every request SHOULD support `application/json` media type",
+            
+                "description": "Every request SHOULD support `application/json` media type",
+            
         
     
 
@@ -16,19 +18,25 @@
 
     
             
-            "severity": "warn",
+            
+                "severity": "warn",
+            
         
     
 
     
             
-            "message": "{{description}}: {{error}}",
+            
+                "message": "{{description}}: {{error}}",
+            
         
     
 
     
             
-            "given": "$.paths.[*].requestBody.content[?(@property.indexOf('json') === -1)]^",
+            
+                "given": "$.paths.[*].requestBody.content[?(@property.indexOf('json') === -1)]^",
+            
         
     
 

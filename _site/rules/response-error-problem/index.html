@@ -4,7 +4,9 @@
 
     
             
-            "description": "All error responses MUST be of media type application/problem+json",
+            
+                "description": "All error responses MUST be of media type application/problem+json",
+            
         
     
 
@@ -16,25 +18,33 @@
 
     
             
-            "given": "$.paths..responses[?( @property >= 400 && @property < 600 )]",
+            
+                "given": "$.paths..responses[?( @property >= 400 && @property < 600 )]",
+            
         
     
 
     
             
-            "message": "Error response document MUST follow application/problem+json {{error}}",
+            
+                "message": "Error response document MUST follow application/problem+json {{error}}",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 
@@ -46,7 +56,9 @@
 
     
             
-            "type": "style",
+            
+                "type": "style",
+            
         
     
 

@@ -4,7 +4,9 @@
 
     
             
-            "description": "All success responses MUST be of media type application/hal+json or application/problem+json",
+            
+                "description": "All success responses MUST be of media type application/hal+json or application/problem+json",
+            
         
     
 
@@ -16,25 +18,33 @@
 
     
             
-            "given": "$.paths..responses[?( @property == 200 )].content[*]~",
+            
+                "given": "$.paths..responses[?( @property == 200 )].content[*]~",
+            
         
     
 
     
             
-            "message": "Response documents MUST be of application/hal+json or application/problem+json media types {{error}}",
+            
+                "message": "Response documents MUST be of application/hal+json or application/problem+json media types {{error}}",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 

@@ -4,7 +4,9 @@
 
     
             
-            "description": "All success responses MUST follow application/hal+json schema",
+            
+                "description": "All success responses MUST follow application/hal+json schema",
+            
         
     
 
@@ -16,25 +18,33 @@
 
     
             
-            "given": "$.paths..responses[?( @property == 200 && @property < 300 && @property != 204)].content[?(@property === "application/hal+json")]",
+            
+                "given": "$.paths..responses[?( @property == 200 && @property < 300 && @property != 204)].content[?(@property === "application/hal+json")]",
+            
         
     
 
     
             
-            "message": "Response documents MUST follow application/hal+json schema {{error}}",
+            
+                "message": "Response documents MUST follow application/hal+json schema {{error}}",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 
@@ -46,7 +56,9 @@
 
     
             
-            "type": "style",
+            
+                "type": "style",
+            
         
     
 

@@ -4,7 +4,9 @@
 
     
             
-            "description": "All models MUST have a valid example.",
+            
+                "description": "All models MUST have a valid example.",
+            
         
     
 
@@ -16,25 +18,33 @@
 
     
             
-            "given": "$..parameters..[?(@.in == 'body' && (@.example || @.schema.$ref))]",
+            
+                "given": "$..parameters..[?(@.in == 'body' && (@.example || @.schema.$ref))]",
+            
         
     
 
     
             
-            "message": "{{ property }} MUST have a valid example.",
+            
+                "message": "{{ property }} MUST have a valid example.",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 

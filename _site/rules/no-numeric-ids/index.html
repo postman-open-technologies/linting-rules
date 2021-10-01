@@ -4,19 +4,25 @@
 
     
             
-            "description": "Please avoid exposing IDs as an integer, UUIDs are preferred.",
+            
+                "description": "Please avoid exposing IDs as an integer, UUIDs are preferred.",
+            
         
     
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 
     
             
-            "given": "$.paths..parameters[*].[?(@property === "name" && (@ === "id" || @.match(/(_id|Id)$/)))]^.schema",
+            
+                "given": "$.paths..parameters[*].[?(@property === "name" && (@ === "id" || @.match(/(_id|Id)$/)))]^.schema",
+            
         
     
 

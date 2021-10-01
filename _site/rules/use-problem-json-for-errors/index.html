@@ -4,7 +4,8 @@
 
     
             
-            "description": "
+            
+                "description": "
 Error management is a key enabler of a resilient API ecosystem.
 Enforcing a consistent schema for errors between different APIs,
 enables client to properly implement an error management strategy,
@@ -25,12 +26,15 @@ responses:
         schema:
           ...
 ```",
+            
         
     
 
     
             
-            "message": "Error responses should support RFC7807 in {{path}}.",
+            
+                "message": "Error responses should support RFC7807 in {{path}}.",
+            
         
     
 
@@ -42,13 +46,17 @@ responses:
 
     
             
-            "severity": "error",
+            
+                "severity": "error",
+            
         
     
 
     
             
-            "given": "$.paths.[*].responses[?(@property.match(/^(4|5|default)/))].content.*~",
+            
+                "given": "$.paths.[*].responses[?(@property.match(/^(4|5|default)/))].content.*~",
+            
         
     
 

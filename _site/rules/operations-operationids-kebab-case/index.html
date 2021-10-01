@@ -4,25 +4,33 @@
 
     
             
-            "description": "Operation IDs MUST be written in kebab-case",
+            
+                "description": "Operation IDs MUST be written in kebab-case",
+            
         
     
 
     
             
-            "given": "$.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]",
+            
+                "given": "$.paths.*[?( @property === 'get' || @property === 'put' || @property === 'post' || @property === 'delete' || @property === 'options' || @property === 'head' || @property === 'patch' || @property === 'trace' )]",
+            
         
     
 
     
             
-            "message": "{{property}} is not kebab-case {{error}}",
+            
+                "message": "{{property}} is not kebab-case {{error}}",
+            
         
     
 
     
             
-            "recommended": "true",
+            
+                "recommended": true,
+            
         
     
 
@@ -34,7 +42,9 @@
 
     
             
-            "type": "style"
+            
+                "type": "style"
+            
         
     
  
