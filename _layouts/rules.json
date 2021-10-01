@@ -7,45 +7,51 @@ layout: none
 rules:{{ break }}
 {{ tab }}{{ page.slug }}:{{ break }}
 {% for property in page[page.slug] %}
-{% if property[1].first %}
-{% for property2 in property[1] %}
-    {% if property2[1].first %}
-        {% for property3 in property2[1] %}
-            {% if property3[1].first %}
-                {% for property4 in property3[1] %}
-                    {% if property4[1].first %}
-                        {% for property5 in property4[1] %}
-                            {% if property5[1].first %}
-                                {% for property6 in property5[1] %}
-                                    {% if property6[1].first %}
-                                        {% for property7 in property6[1] %}
-                                            {% if property7[1].first %}
-                                                {{ tab }}{{ tab }}{{ property7[0] }}: {{ property7[1] }}{{ break }}
+    {% if property[1].first %}
+        {{ tab }}{{ tab }}{{ property[0] }}:{{ break }}
+        {% for property2 in property[1] %}
+            {% if property2[1].first %}
+                {{ tab }}{{ tab }}{{ tab }}{{ property2[0] }}:{{ break }}
+                {% for property3 in property2[1] %}
+                    {% if property3[1].first %}
+                        {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property3[0] }}:{{ break }}
+                        {% for property4 in property3[1] %}
+                            {% if property4[1].first %}
+                                {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property4[0] }}:{{ break }}
+                                {% for property5 in property4[1] %}
+                                    {% if property5[1].first %}
+                                        {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property5[0] }}:{{ break }}
+                                        {% for property6 in property5[1] %}
+                                            {% if property6[1].first %}
+                                                {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property6[0] }}:{{ break }}
+                                                {% for property7 in property6[1] %}
+                                                    {% if property7[1].first %}
+                                                        END!!
+                                                    {% else %}
+                                                    {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property7[0] }}: {{ property7[1] }}{{ break }}
+                                                    {% endif %}
+                                                {% endfor %} 
                                             {% else %}
-                                            {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property7[0] }}: {{ property7[1] }}{{ break }}
+                                            {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property6[0] }}: {{ property6[1] }}{{ break }}
                                             {% endif %}
                                         {% endfor %} 
                                     {% else %}
-                                    {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property6[0] }}: {{ property6[1] }}{{ break }}
+                                    {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property5[0] }}: {{ property5[1] }}{{ break }}
                                     {% endif %}
                                 {% endfor %} 
                             {% else %}
-                            {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property5[0] }}: {{ property5[1] }}{{ break }}
+                                {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property4[0] }}: {{ property4[1] }}{{ break }}
                             {% endif %}
                         {% endfor %} 
                     {% else %}
-                        {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property4[0] }}: {{ property4[1] }}{{ break }}
+                        {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property3[0] }}: {{ property3[1] }}{{ break }}
                     {% endif %}
                 {% endfor %} 
             {% else %}
-                {{ tab }}{{ tab }}{{ tab }}{{ tab }}{{ property3[0] }}: {{ property3[1] }}{{ break }}
+                {{ tab }}{{ tab }}{{ tab }}{{ property2[0] }}: {{ property2[1] }}{{ break }}
             {% endif %}
         {% endfor %} 
     {% else %}
-        {{ tab }}{{ tab }}{{ tab }}{{ property2[0] }}: {{ property2[1] }}{{ break }}
+        {{ tab }}{{ tab }}{{ property[0] }}: {{ property[1] }}{{ break }}
     {% endif %}
-{% endfor %} 
-{% else %}
-{{ tab }}{{ tab }}{{ property[0] }}: {{ property[1] }}{{ break }}
-{% endif %}
 {% endfor %} 
