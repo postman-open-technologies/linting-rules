@@ -1,6 +1,6 @@
 {
 "rules": {
-"parameter-default-not-allowed-oas3":{
+"parameter-default-not-allowed":{
 
 
 
@@ -24,7 +24,7 @@
 
     
           
-        "given": ["$.paths[*].parameters.[?(@.required)]","$.paths.*[get,put,post,patch,delete,options,head].parameters.[?(@.required)]"],
+        "given": ["$.paths[*].parameters.[?(@.required)]"],
         
     
     

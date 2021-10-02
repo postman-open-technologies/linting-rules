@@ -7,6 +7,10 @@ parameters-camelcase:
     function: casing
     functionOptions:
       type: camel
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing        
 ...
 parameters-camelcase:
   description: Path and query parmeters must use camelCase.
@@ -16,3 +20,7 @@ parameters-camelcase:
     function: casing
     functionOptions:
       type: camel
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing        

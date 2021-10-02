@@ -7,6 +7,10 @@ parameters-snake-case:
     function: casing
     functionOptions:
       type: snake
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing        
 ...
 parameters-snake-case:
   description: Path and query parmeters must use snake_case.
@@ -16,3 +20,7 @@ parameters-snake-case:
     function: casing
     functionOptions:
       type: snake
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing        

@@ -7,6 +7,10 @@ parameters-pascal-case:
     function: casing
     functionOptions:
       type: pascal
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing      
 ...
 parameters-pascal-case:
   description: Path and query parmeters must use PascalCase.
@@ -16,3 +20,7 @@ parameters-pascal-case:
     function: casing
     functionOptions:
       type: pascal
+  x-status: validated
+  x-tags:
+    - Parameters
+    - Casing        
