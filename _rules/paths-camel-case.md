@@ -4,12 +4,11 @@ paths-camel-case:
   message: '{{property}} is not camelCase {{error}}'
   severity: warn
   recommended: true
-  format: oas2
   given: $.paths[*]~
   then:
-    function: pattern
+    function: casing
     functionOptions:
-      match: ^(\/)?[A-Z][a-zA-Z0-9]*(\/)?
+      type: camel  
   x-status: draft
   x-tags:
       - Tag          
@@ -19,12 +18,11 @@ paths-camel-case:
   message: '{{property}} is not camelCase {{error}}'
   severity: warn
   recommended: true
-  format: oas2
   given: $.paths[*]~
   then:
-    function: pattern
+    function: casing
     functionOptions:
-      match: ^(\/)?[A-Z][a-zA-Z0-9]*(\/)?
+      type: camel  
   x-status: draft
   x-tags:
-      - Tag          
+      - Tag         

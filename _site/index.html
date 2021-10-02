@@ -28806,12 +28806,11 @@ formats:
   message: ‘ is not camelCase ‘
   severity: warn
   recommended: true
-  format: oas2
-  given: $.paths[]~
+  given: $.paths[*]~
   then:
-    function: pattern
+    function: casing
     functionOptions:
-      match: ^(\/)?[A&#8211;Z][a&#8211;zA&#8211;Z0&#8211;9](\/)?
+      type: camel
   x&#8211;status: draft
   x&#8211;tags:
       &#8211; Tag
