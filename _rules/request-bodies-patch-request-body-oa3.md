@@ -1,7 +1,7 @@
 --- 
-request-bodies-put-request-body: 
-  description: "PUT methods must have a request body."
-  given: $.paths.*.put
+request-bodies-patch-request-body-oas3: 
+  description: "PATCH methods must have a request body."
+  given: $.paths.*.patch
   message: "Method must have a request body {{path}}"
   recommended: true
   severity: error
@@ -12,9 +12,9 @@ request-bodies-put-request-body:
   x-tags:
     - Methods  
 ...
-request-bodies-put-request-body: 
-  description: "PUT methods must have a request body."
-  given: $.paths.*.put
+request-bodies-patch-request-body-oas3: 
+  description: "PATCH methods must have a request body."
+  given: $.paths.*.patch
   message: "Method must have a request body {{path}}"
   recommended: true
   severity: error
@@ -23,4 +23,4 @@ request-bodies-put-request-body:
     function: truthy
   x-status: validated
   x-tags:
-    - Methods  
+    - Methods 

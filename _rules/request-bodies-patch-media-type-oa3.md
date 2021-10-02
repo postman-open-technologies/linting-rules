@@ -1,5 +1,5 @@
 --- 
-request-bodies-patch-media-type: 
+request-bodies-patch-media-type-oas3: 
   description: "PATCH request bodies must have a application/json media type."
   given: $.paths.*.patch[requestBody].content
   message: "application/json is required for PATCH requests {{path}}"
@@ -12,7 +12,7 @@ request-bodies-patch-media-type:
   x-tags:
     - Methods  
 ...
-request-bodies-post-media-type: 
+request-bodies-post-media-type-oas3: 
   description: "POST request bodies must have a application/json media type."
   given: $.paths.*.post[requestBody].content
   message: "application/json is required for POST requests {{path}}"

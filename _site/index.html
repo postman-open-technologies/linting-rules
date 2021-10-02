@@ -27065,107 +27065,15 @@ function: truthy
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Patch Media Type - </span> (<a href="http://localhost:4000//rules/request-bodies-patch-media-type/" style="color:#000">request-bodies-patch-media-type</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;media&#8211;type: 
-  description: “POST request bodies must have a application/json media type.”
-  given: $.paths.*.post[requestBody].content
-  message: “application/json is required for POST requests “
-  recommended: true
-  severity: error
-  then: 
-    field: “application/json”
-    function: truthy
-  x&#8211;status: draft
-  x&#8211;tags:
-    &#8211; Tag
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-patch-media-type/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Post Media Type - </span> (<a href="http://localhost:4000//rules/request-bodies-post-media-type/" style="color:#000">request-bodies-post-media-type</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;media&#8211;type: 
-  description: “POST request bodies must have a application/json media type.”
-  given: $.paths.*.post[requestBody].content
-  message: “application/json is required for POST requests “
-  recommended: true
-  severity: error
-  then: 
-    field: “application/json”
-    function: truthy
-  x&#8211;status: draft
-  x&#8211;tags:
-    &#8211; Tag
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-post-media-type/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Put Media Type - </span> (<a href="http://localhost:4000//rules/request-bodies-put-media-type/" style="color:#000">request-bodies-put-media-type</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;put&#8211;media&#8211;type: 
-  description: “PUT request bodies must have a application/json media type.”
-  given: $.paths.*.put[requestBody].content
-  message: “application/json is required for PUT requests “
-  recommended: true
-  severity: error
-  then: 
-    field: “application/json”
-    function: truthy
-  x&#8211;status: validated
-  x&#8211;tags:
-    &#8211; Methods
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-put-media-type/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Put Request Body - </span> (<a href="http://localhost:4000//rules/request-bodies-put-request-body/" style="color:#000">request-bodies-put-request-body</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;put&#8211;request&#8211;body: 
-  description: “PUT methods must have a request body.”
-  given: $.paths.*.put
-  message: “Method must have a request body “
-  recommended: true
-  severity: error
-  then: 
-    field: “requestBody”
-    function: truthy
-  x&#8211;status: validated
-  x&#8211;tags:
-    &#8211; Methods
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-put-request-body/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             
@@ -30069,36 +29977,15 @@ functionOptions:
                                                                 
            
             
+                                                                
+           
             
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Json - </span> (<a href="http://localhost:4000//rules/request-bodies-json/" style="color:#000">request-bodies-json</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;json:
-  description: Payload must be in json format
-  message: Payload must be in JSON format, please correct the format for .
-  recommended: true
-  type: style
-  given: $.paths...requestBody.*
-  severity: warn
-  resolved: false
-  then:
-
-  field: application/json
-function: truthy
-  x&#8211;status: draft
-  x&#8211;tags:
-    
-      Tag
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-json/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
+                                                                
+           
+            
+                                                                
+           
+            
                                                                 
            
             
@@ -30133,105 +30020,6 @@ function: truthy
                   </div>            
                   <div class="col-md-1" style="border: 0px solid #000;">
                      <a href="http://localhost:4000//rules/request-bodies-schema-object/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
-                                                                
-           
-            
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Xml - </span> (<a href="http://localhost:4000//rules/request-bodies-xml/" style="color:#000">request-bodies-xml</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;xml:
-  description: Payload must be in xml format
-  message: Payload must be in xml format, please correct the format for .
-  recommended: true
-  type: style
-  given: $.paths...requestBody.*
-  severity: warn
-  resolved: false
-  then:
-
-  field: application/xml
-function: truthy
-  x&#8211;status: draft
-  x&#8211;tags:
-    
-      Tag
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-bodies-xml/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
-                                                                
-           
-            
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Body Content Type Oas2 - </span> (<a href="http://localhost:4000//rules/request-body-content-type-oas2/" style="color:#000">request-body-content-type-oas2</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;body&#8211;content&#8211;type&#8211;oas2:
-  description: The request body content type for patch operations should be JSON merge
-    patch.
-  message: ‘’
-  severity: warn
-  formats:
-
-  oas2
-  given: $
-  then:
-function: patch&#8211;content&#8211;type
-  x&#8211;status: draft
-  x&#8211;tags:
-    
-      Tag
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-body-content-type-oas2/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
-                                                                
-           
-            
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Request Body Not Allowed Oas2 - </span> (<a href="http://localhost:4000//rules/request-body-not-allowed-oas2/" style="color:#000">request-body-not-allowed-oas2</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;body&#8211;not&#8211;allowed&#8211;oas2:
-  description: A get or delete operation must not accept a body parameter.
-  severity: error
-  formats:
-
-  oas2
-  given:
-  $.paths[].[get,delete].parameters[]
-  then:
-field: in
-function: pattern
-functionOptions:
-  notMatch: /^body$/
-  x&#8211;status: draft
-  x&#8211;tags:
-    
-      Tag
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/request-body-not-allowed-oas2/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
                      <strong>Link</strong></a>
                   </div>   
                </div>   
