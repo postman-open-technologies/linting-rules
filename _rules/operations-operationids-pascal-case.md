@@ -9,6 +9,10 @@ operations-operationids-pascal-case:
       functionOptions:
           type: pascal
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing 
 ...
 operations-operationids-pascal-case:
   description: "Operation IDs MUST be written in PascalCase."
@@ -20,3 +24,7 @@ operations-operationids-pascal-case:
         functionOptions:
             type: pascal
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing   

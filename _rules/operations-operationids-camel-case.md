@@ -9,6 +9,10 @@ operations-operationids-camel-case:
       functionOptions:
           type: camel
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing
 ...
 operations-operationids-camel-case:
   description: "Operation IDs MUST be written in camelCase."
@@ -20,3 +24,7 @@ operations-operationids-camel-case:
         functionOptions:
             type: camel
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing  

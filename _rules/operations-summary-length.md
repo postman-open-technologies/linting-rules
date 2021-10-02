@@ -1,5 +1,5 @@
 --- 
-operation-summary-short: 
+operation-summary-length: 
   description: "Operation summary should be short and sweet, no full stops, and less than 20 characters"
   given: $.paths.*[get,post,patch,put,delete]
   recommended: true
@@ -14,7 +14,7 @@ operation-summary-short:
     - Operations
     - Length  
 ...
-operation-summary-short: 
+operation-summary-length: 
   description: "Operation summary should be short and sweet, no full stops, and less than 20 characters"
   given: $.paths.*[get,post,patch,put,delete]
   recommended: true

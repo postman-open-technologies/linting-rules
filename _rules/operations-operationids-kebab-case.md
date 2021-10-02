@@ -9,6 +9,10 @@ operations-operationids-kebab-case:
       functionOptions:
           type: kebab
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing  
 ...
 operations-operationids-kebab-case:
   description: "Operation IDs MUST be written in kebab-case."
@@ -20,3 +24,7 @@ operations-operationids-kebab-case:
         functionOptions:
             type: kebab
   type: style
+  x-status: validated
+  x-tags:
+    - Operations
+    - Casing  
