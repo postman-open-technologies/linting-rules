@@ -1,6 +1,6 @@
 ---
 parameters-name-length:
-  description: Path and query parmeters must use camelCase.
+  description: The name can't be more than 20 characters.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
     field: summary
@@ -13,7 +13,7 @@ parameters-name-length:
     - Length        
 ...
 parameters-name-length:
-  description: Path and query parmeters must use camelCase.
+  description: The name can't be more than 20 characters.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
     field: summary
