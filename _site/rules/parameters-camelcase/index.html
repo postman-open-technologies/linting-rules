@@ -16,7 +16,7 @@
     
             
             
-                "given": "$..parameters[?(@.in=='query' || @.in=='path')]",
+                "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
             
         
     
