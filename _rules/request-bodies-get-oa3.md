@@ -1,5 +1,5 @@
 --- 
-request-bodies-get-request-body-oas3: 
+request-bodies-get-oas3: 
   description: "GET methods must have a request body."
   given: $.paths.*.get
   message: "Method must not have a request body {{path}}"
@@ -12,7 +12,7 @@ request-bodies-get-request-body-oas3:
   x-tags:
     - Methods  
 ...
-request-bodies-get-request-body-oas3: 
+request-bodies-get-oas3:
   description: "GET methods must have a request body."
   given: $.paths.*.get
   message: "Method must not have a request body {{path}}"

@@ -1,5 +1,5 @@
 --- 
-request-bodies-patch-request-body-oas3: 
+request-bodies-patch-oas3: 
   description: "PATCH methods must have a request body."
   given: $.paths.*.patch
   message: "Method must have a request body {{path}}"
@@ -12,7 +12,7 @@ request-bodies-patch-request-body-oas3:
   x-tags:
     - Methods  
 ...
-request-bodies-patch-request-body-oas3: 
+request-bodies-patch-oas3: 
   description: "PATCH methods must have a request body."
   given: $.paths.*.patch
   message: "Method must have a request body {{path}}"

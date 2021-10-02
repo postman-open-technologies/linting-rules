@@ -1,5 +1,5 @@
 --- 
-request-bodies-post-request-body-oas3: 
+request-bodies-post-oas3: 
   description: "POST methods must have a request body."
   given: $.paths.*.post
   message: "Method must have a request body {{path}}"
@@ -12,7 +12,7 @@ request-bodies-post-request-body-oas3:
   x-tags:
     - Methods  
 ...
-request-bodies-post-request-body-oas3: 
+request-bodies-post-oas3: 
   description: "POST methods must have a request body."
   given: $.paths.*.post
   message: "Method must have a request body {{path}}"

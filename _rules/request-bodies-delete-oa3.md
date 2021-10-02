@@ -1,7 +1,7 @@
 --- 
-request-bodies-get-request-body-oas3: 
-  description: "GET methods must have a request body."
-  given: $.paths.*.get
+request-bodies-delete-oas3: 
+  description: "DELETE methods must have a request body."
+  given: $.paths.*.delete
   message: "Method must not have a request body {{path}}"
   recommended: true
   severity: error
@@ -12,9 +12,9 @@ request-bodies-get-request-body-oas3:
   x-tags:
     - Methods  
 ...
-request-bodies-get-request-body-oas3: 
-  description: "GET methods must have a request body."
-  given: $.paths.*.get
+request-bodies-delete-oas3: 
+  description: "DELETE methods must have a request body."
+  given: $.paths.*.delete
   message: "Method must not have a request body {{path}}"
   recommended: true
   severity: error
@@ -23,4 +23,4 @@ request-bodies-get-request-body-oas3:
     function: falsy
   x-status: validated
   x-tags:
-    - Methods 
+    - Methods  

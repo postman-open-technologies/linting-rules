@@ -1,5 +1,5 @@
 --- 
-request-bodies-put-request-body-oas3: 
+request-bodies-put-oas3: 
   description: "PUT methods must have a request body."
   given: $.paths.*.put
   message: "Method must have a request body {{path}}"
@@ -12,7 +12,7 @@ request-bodies-put-request-body-oas3:
   x-tags:
     - Methods  
 ...
-request-bodies-put-request-body-oas3: 
+request-bodies-put-oas3: 
   description: "PUT methods must have a request body."
   given: $.paths.*.put
   message: "Method must have a request body {{path}}"
