@@ -1,5 +1,5 @@
 ---
-parameters-name-camelcase:
+parameters-name-camel-case:
   description: Path and query parmeters must use camelCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
@@ -12,7 +12,7 @@ parameters-name-camelcase:
     - Parameters
     - Casing        
 ...
-parameters-name-camelcase:
+parameters-name-camel-case:
   description: Path and query parmeters must use camelCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
