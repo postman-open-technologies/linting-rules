@@ -1,6 +1,6 @@
 ---
-info-title:
-  description: "Must not contain specific words."
+info-title-word-check:
+  description: "Must not contain specific words, including REST, Public, and Developer."
   given: "$.info.title"
   severity: error
   recommended: true
@@ -17,8 +17,8 @@ info-title:
     - Filters
     - Dictionaries
 ...
-info-title:
-  description: "Must not contain specific words."
+info-title-word-check:
+  description: "Must not contain specific words, including REST, Public, and Developer."
   given: "$.info.title"
   severity: error
   recommended: true
