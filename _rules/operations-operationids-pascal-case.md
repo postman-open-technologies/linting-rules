@@ -1,7 +1,7 @@
 --- 
 operations-operationids-pascal-case:
   description: "Operation IDs MUST be written in PascalCase."
-  given: $.paths.*[get,post,patch,put,delete]
+  given: $.paths.*[get,post,patch,put,delete].operationId
   message: "{{property}} is not PascalCase {{error}}"
   recommended: true
   then:
