@@ -4,10 +4,10 @@ operations-operationids-kebab-case:
   given: $.paths.*[get,post,patch,put,delete]
   message: "{{property}} is not kebab-case {{error}}"
   recommended: true
-    then:
-        function: casing
-        functionOptions:
-            type: kebab
+  then:
+      function: casing
+      functionOptions:
+          type: kebab
   type: style
 ...
 operations-operationids-kebab-case:

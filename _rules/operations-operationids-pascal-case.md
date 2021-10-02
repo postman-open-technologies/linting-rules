@@ -4,10 +4,10 @@ operations-operationids-pascal-case:
   given: $.paths.*[get,post,patch,put,delete]
   message: "{{property}} is not PascalCase {{error}}"
   recommended: true
-    then:
-        function: casing
-        functionOptions:
-            type: pascal
+  then:
+      function: casing
+      functionOptions:
+          type: pascal
   type: style
 ...
 operations-operationids-pascal-case:
