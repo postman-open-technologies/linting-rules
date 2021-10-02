@@ -10,7 +10,7 @@ paths-no-empty:
     function: pattern
     functionOptions:
       notMatch: //
-  x-status: draft
+  x-status: validated
   x-tags:
       - Tag        
 ...
@@ -25,6 +25,6 @@ paths-no-empty:
     function: pattern
     functionOptions:
       notMatch: //
-  x-status: draft
+  x-status: validated
   x-tags:
       - Tag        

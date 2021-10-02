@@ -10,7 +10,7 @@ paths-trailing-slash-none:
     function: pattern
     functionOptions:
       notMatch: /$
-  x-status: draft
+  x-status: validated
   x-tags:
       - Tag        
 ...
@@ -25,6 +25,6 @@ paths-trailing-slash-none:
     function: pattern
     functionOptions:
       notMatch: /$
-  x-status: draft
+  x-status: validated
   x-tags:
       - Tag        

@@ -22,7 +22,7 @@ paths-limit-number-of:
   then:
     function: count-resource-types
     functionOptions:
-      max: 8
+      max: 1
   x-status: draft
   x-tags:
       - Tag        
