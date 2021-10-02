@@ -1,5 +1,5 @@
 --- 
-operation-summary-short: 
+operations-summary-short: 
   description: "Must not contain specific words, including REST, Public, and Developer."
   given: $.paths.*[get,post,patch,put,delete]
   recommended: true
@@ -13,7 +13,7 @@ operation-summary-short:
     - Operations
     - Words  
 ...
-operation-summary-short: 
+operations-summary-short: 
   description: "Must not contain specific words, including REST, Public, and Developer."
   given: $.paths.*[get,post,patch,put,delete]
   recommended: true
