@@ -1,30 +1,26 @@
 --- 
 request-bodies-patch-media-type: 
-  description: "The PATCH specification explicits that the request body contains a \"patch document\" describing the changes to be applied to the target resource. To avoid confusion, [this errata](https://www.rfc-editor.org/errata/eid3169) explains that `application/json` is not an appropriate media-type for `PATCH`. A correct example of PATCH using eg. `application/json-patch+json` media-type defined in RFC6902."
-  formats: 
-    - oas3
-  given: "$.[patch][requestBody][content]"
-  message: "application/json is not an appropriate media-type for PATCH. {{path}}"
+  description: "PATCH request bodies must have a application/json media type."
+  given: $.paths.*.patch[requestBody].content
+  message: "application/json is required for PATCH requests {{path}}"
   recommended: true
   severity: error
   then: 
-    field: application/json
-    function: falsy
-  x-status: draft
+    field: "application/json"
+    function: truthy
+  x-status: validated
   x-tags:
-    - Tag  
+    - Methods  
 ...
-request-bodies-patch-media-type: 
-  description: "The PATCH specification explicits that the request body contains a \"patch document\" describing the changes to be applied to the target resource. To avoid confusion, [this errata](https://www.rfc-editor.org/errata/eid3169) explains that `application/json` is not an appropriate media-type for `PATCH`. A correct example of PATCH using eg. `application/json-patch+json` media-type defined in RFC6902."
-  formats: 
-    - oas3
-  given: "$.[patch][requestBody][content]"
-  message: "application/json is not an appropriate media-type for PATCH. {{path}}"
+request-bodies-post-media-type: 
+  description: "POST request bodies must have a application/json media type."
+  given: $.paths.*.post[requestBody].content
+  message: "application/json is required for POST requests {{path}}"
   recommended: true
   severity: error
   then: 
-    field: application/json
-    function: falsy
+    field: "application/json"
+    function: truthy
   x-status: draft
   x-tags:
-    - Tag  
+    - Tag 

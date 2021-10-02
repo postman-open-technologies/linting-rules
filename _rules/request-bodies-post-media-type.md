@@ -8,9 +8,9 @@ request-bodies-post-media-type:
   then: 
     field: "application/json"
     function: truthy
-  x-status: draft
+  x-status: validated
   x-tags:
-    - Tag  
+    - Methods 
 ...
 request-bodies-post-media-type: 
   description: "POST request bodies must have a application/json media type."

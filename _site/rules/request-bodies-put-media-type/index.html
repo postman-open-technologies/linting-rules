@@ -1,13 +1,13 @@
 {
 "rules": {
-"request-bodies-patch-media-type":{
+"request-bodies-put-media-type":{
 
 
 
     
             
             
-                "description": "PATCH request bodies must have a application/json media type.",
+                "description": "PUT request bodies must have a application/json media type.",
             
         
     
@@ -16,7 +16,7 @@
     
             
             
-                "given": "$.paths.*.patch[requestBody].content",
+                "given": "$.paths.*.put[requestBody].content",
             
         
     
@@ -25,7 +25,7 @@
     
             
             
-                "message": "application/json is required for PATCH requests {{path}}",
+                "message": "application/json is required for PUT requests {{path}}",
             
         
     
