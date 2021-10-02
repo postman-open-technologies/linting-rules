@@ -1,7 +1,7 @@
 --- 
 operations-description-words-check: 
   description: "Must not contain specific words, including REST, Public, and Developer."
-  given: $.paths.*[get,post,patch,put,delete]
+  given: $.paths.*[get,post,patch,put,delete].description
   recommended: true
   then:
     function: pattern
