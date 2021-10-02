@@ -11,6 +11,9 @@ schema-should-have-description-or-title-oas3:
   - $.components.schemas[?(!@.description && !@.title)]
   then:
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag         
 ...
 schema-should-have-description-or-title-oas3:
   description: All schemas should have a description or title.
@@ -24,3 +27,6 @@ schema-should-have-description-or-title-oas3:
   - $.components.schemas[?(!@.description && !@.title)]
   then:
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag       

@@ -14,6 +14,9 @@ security-schemes-oauth-allowed-flows:
           function: falsy
         - field: password
           function: falsy
+    x-status: draft
+    x-tags:
+        - Tag            
 ...
 security-schemes-oauth-allowed-flows:
     description: >-
@@ -30,3 +33,6 @@ security-schemes-oauth-allowed-flows:
           function: falsy
         - field: password
           function: falsy
+    x-status: draft
+    x-tags:
+        - Tag           

@@ -13,6 +13,9 @@ security-schemes-oauth-https:
           function: pattern
           functionOptions:
             match: ^https://
+    x-status: draft
+    x-tags:
+        - Tag             
 ...
 security-schemes-oauth-https:
     description: OAuth2 endpoints must use `https://`
@@ -28,3 +31,6 @@ security-schemes-oauth-https:
           function: pattern
           functionOptions:
             match: ^https://
+    x-status: draft
+    x-tags:
+        - Tag 

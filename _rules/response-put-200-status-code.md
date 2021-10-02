@@ -10,6 +10,9 @@ response-delete-200-status-code:
   then:
     field: "200"
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 response-delete-200-status-code:
   description: A delete operation should have a 200 response.
@@ -22,3 +25,6 @@ response-delete-200-status-code:
   then:
     field: "200"
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

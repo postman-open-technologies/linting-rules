@@ -16,8 +16,10 @@ request-support-json:
           - application/json
           type: string
         type: array
+  x-status: draft
   x-tags:
-    - Adidas
+      - Tag    
+      - Adidas
 ...
 request-support-json:
   description: Every request SHOULD support application/json media type
@@ -36,5 +38,7 @@ request-support-json:
           - application/json
           type: string
         type: array
+  x-status: draft
   x-tags:
-    - Adidas        
+      - Tag    
+      - Adidas        

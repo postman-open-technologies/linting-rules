@@ -9,6 +9,9 @@ request-bodies-components:
     function: pattern
     functionOptions:
       match: ^.*\#\/components\/schemas.*|examples.*$
+  x-status: draft
+  x-tags:
+    - Tag        
 ...
 request-bodies-components:
   description: $ref may only point to examples or elements in the components section
@@ -20,3 +23,6 @@ request-bodies-components:
     function: pattern
     functionOptions:
       match: ^.*\#\/components\/schemas.*|examples.*$
+  x-status: draft
+  x-tags:
+    - Tag        

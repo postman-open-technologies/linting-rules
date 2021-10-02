@@ -10,6 +10,9 @@ paths-camel-case:
     function: pattern
     functionOptions:
       match: ^(\/)?[A-Z][a-zA-Z0-9]*(\/)?
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 paths-camel-case:
   description: Paths should be camel case
@@ -22,3 +25,6 @@ paths-camel-case:
     function: pattern
     functionOptions:
       match: ^(\/)?[A-Z][a-zA-Z0-9]*(\/)?
+  x-status: draft
+  x-tags:
+      - Tag          

@@ -6,6 +6,9 @@ parameter-description:
     then:
         field: description
         function: truthy
+    x-status: draft
+    x-tags:
+        - Tag            
 ...
 parameter-description:
     description: Parameters must have a description.
@@ -14,3 +17,6 @@ parameter-description:
     then:
         field: description
         function: truthy
+    x-status: draft
+    x-tags:
+        - Tag             

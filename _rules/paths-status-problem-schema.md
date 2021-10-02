@@ -14,6 +14,9 @@ paths-status-problem-schema:
       field: properties.title
     - function: truthy
       field: properties.detail     
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 paths-status-problem-schema:
   x-tags:
@@ -30,3 +33,6 @@ paths-status-problem-schema:
       field: properties.title
     - function: truthy
       field: properties.detail 
+  x-status: draft
+  x-tags:
+      - Tag        

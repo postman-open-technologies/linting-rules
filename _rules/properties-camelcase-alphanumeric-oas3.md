@@ -11,8 +11,10 @@ properties-camelcase-alphanumeric-oas3:
     function: pattern
     functionOptions:
       match: /^[a-z$_]{1}[A-Z09$_]*/
+  x-status: draft
   x-tags:
-    - Adidas      
+      - Tag     
+      - Adidas      
 ...
 properties-camelcase-alphanumeric-oas3:
   description: All JSON Schema properties MUST follow fields-camelCase and be ASCII
@@ -26,5 +28,7 @@ properties-camelcase-alphanumeric-oas3:
     function: pattern
     functionOptions:
       match: /^[a-z$_]{1}[A-Z09$_]*/
+  x-status: draft
   x-tags:
-    - Adidas  
+      - Tag     
+      - Adidas  

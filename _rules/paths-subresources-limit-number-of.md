@@ -9,6 +9,9 @@ paths-subresources-limit-number-of:
     function: pattern
     functionOptions:
       match: ^\/[^\/]*((\/{[^}]*})*\/[^\/]*(\/{[^}]*})*){0,3}\/?$
+  x-status: draft
+  x-tags:
+      - Tag         
 ...
 paths-subresources-limit-number-of:
   message: 'Sub-resource levels should by '
@@ -20,3 +23,6 @@ paths-subresources-limit-number-of:
     function: pattern
     functionOptions:
       match: ^\/[^\/]*((\/{[^}]*})*\/[^\/]*(\/{[^}]*})*){0,3}\/?$
+  x-status: draft
+  x-tags:
+      - Tag           

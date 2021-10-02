@@ -8,6 +8,9 @@ responses-error-problem-default:
   then:
     field: content.application/problem+json
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 responses-error-problem-default:
   message: Operation must use problem json as default response
@@ -18,3 +21,6 @@ responses-error-problem-default:
   then:
     field: content.application/problem+json
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

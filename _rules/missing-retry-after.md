@@ -17,6 +17,9 @@ missing-retry-after:
     then:
         field: Retry-After
         function: truthy 
+    x-status: draft
+    x-tags:
+        - Tag          
 ...
 missing-retry-after:
     description: |-
@@ -36,3 +39,6 @@ missing-retry-after:
     then:
         field: Retry-After
         function: truthy 
+    x-status: draft
+    x-tags:
+        - Tag          

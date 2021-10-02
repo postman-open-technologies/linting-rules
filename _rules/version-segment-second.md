@@ -7,6 +7,9 @@ version-segment-second:
     function: pattern
     functionOptions:
       match: ^/[^/]+/v\d+/.+$
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 version-segment-second:
   description: The second path segment should be a whole-number version like v1.
@@ -16,3 +19,6 @@ version-segment-second:
     function: pattern
     functionOptions:
       match: ^/[^/]+/v\d+/.+$
+  x-status: draft
+  x-tags:
+      - Tag       

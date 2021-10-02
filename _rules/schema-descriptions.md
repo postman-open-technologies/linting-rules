@@ -5,6 +5,9 @@ schema-descriptions:
   then:
     field: description
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 schema-descriptions:
   severity: warn
@@ -12,3 +15,6 @@ schema-descriptions:
   then:
     field: description
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

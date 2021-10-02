@@ -6,6 +6,9 @@ response-status-204-no-body:
   then:
     field: content
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 response-status-204-no-body:
   severity: error
@@ -14,3 +17,6 @@ response-status-204-no-body:
   then:
     field: content
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag        

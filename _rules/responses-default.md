@@ -8,6 +8,9 @@ responses-default:
   then:
     field: default
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 responses-default:
   message: Operation does not contain a default response
@@ -18,3 +21,6 @@ responses-default:
   then:
     field: default
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

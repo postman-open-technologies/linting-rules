@@ -13,6 +13,9 @@ operations-description-length:
   x-tags:
     - Operations
     - Length  
+  x-status: draft
+  x-tags:
+      - Tag      
 ...
 operations-description-length: 
   description: "Operation description should be short and sweet, no full stops, and less than 20 characters"
@@ -28,3 +31,6 @@ operations-description-length:
   x-tags:
     - Operations
     - Length  
+  x-status: draft
+  x-tags:
+      - Tag        

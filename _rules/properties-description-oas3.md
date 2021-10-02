@@ -8,6 +8,9 @@ properties-description-oas3:
   then:
     field: description
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag      
 ...
 properties-description-oas3:
   description: All schema properties should have a description.
@@ -18,3 +21,6 @@ properties-description-oas3:
   then:
     field: description
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag      

@@ -57,6 +57,9 @@ response-status-code-standard:
       - "505"
       - "511"
       - default
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 response-status-code-standard:
   message: '{{property}} is not a standardized response code'
@@ -116,3 +119,6 @@ response-status-code-standard:
       - "505"
       - "511"
       - default
+  x-status: draft
+  x-tags:
+      - Tag          

@@ -10,7 +10,10 @@ response-with-json-object:
     field: type
     function: pattern
     functionOptions:
-      match: object     
+      match: object  
+  x-status: draft
+  x-tags:
+      - Tag             
 ...
 response-with-json-object:
   description: |-
@@ -24,3 +27,6 @@ response-with-json-object:
     function: pattern
     functionOptions:
       match: object 
+  x-status: draft
+  x-tags:
+      - Tag          

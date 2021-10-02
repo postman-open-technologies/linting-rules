@@ -8,6 +8,9 @@ response-body-status-code-oas2:
   then:
     field: schema
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag                
 ...
 response-body-status-code-oas2:
   description: All success responses except 202 & 204 should define a response body.
@@ -19,3 +22,6 @@ response-body-status-code-oas2:
   then:
     field: schema
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag       

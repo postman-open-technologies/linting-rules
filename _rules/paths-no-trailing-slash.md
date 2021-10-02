@@ -10,6 +10,9 @@ paths-no-trailing-slash:
     function: pattern
     functionOptions:
       notMatch: /$
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 paths-no-trailing-slash:
   message: Path with trailing slash is not allowed
@@ -22,3 +25,6 @@ paths-no-trailing-slash:
     function: pattern
     functionOptions:
       notMatch: /$
+  x-status: draft
+  x-tags:
+      - Tag        

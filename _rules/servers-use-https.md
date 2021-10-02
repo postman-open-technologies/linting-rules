@@ -20,6 +20,9 @@ servers-use-https:
         function: pattern
         functionOptions:
         match: ^https://.*  
+    x-status: draft
+    x-tags:
+        - Tag         
 ...
 servers-use-https:
     x-tags:
@@ -38,3 +41,6 @@ servers-use-https:
         function: pattern
         functionOptions:
         match: ^https://.* 
+    x-status: draft
+    x-tags:
+        - Tag   

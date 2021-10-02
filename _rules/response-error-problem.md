@@ -14,8 +14,10 @@ response-error-problem:
       schema:
         $ref: ./supermodel/adidas/api/ProblemDetail.yaml
   type: style
+  x-status: draft
   x-tags:
-    - Adidas  
+      - Tag   
+      - Adidas  
 ...
 response-error-problem:
   description: All error responses MUST be of media type application/problem+json
@@ -33,4 +35,7 @@ response-error-problem:
         $ref: ./supermodel/adidas/api/ProblemDetail.yaml
   type: style
   x-tags:
-    - Adidas  
+  x-status: draft
+  x-tags:
+      - Tag     
+      - Adidas  

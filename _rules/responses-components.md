@@ -9,6 +9,9 @@ responses-components:
     function: pattern
     functionOptions:
       match: ^.*\#\/components\/schemas.*|examples.*$
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 responses-components:
   description: $ref may only point to examples or elements in the components section
@@ -20,3 +23,6 @@ responses-components:
     function: pattern
     functionOptions:
       match: ^.*\#\/components\/schemas.*|examples.*$
+  x-status: draft
+  x-tags:
+      - Tag          

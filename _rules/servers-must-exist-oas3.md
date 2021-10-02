@@ -14,8 +14,9 @@ servers-must-exist-oas3:
           type: object
         minItems: 1
         type: array
+  x-status: draft
   x-tags:
-    - Tag        
+      - Tag         
 ...
 servers-must-exist-oas3:
   description: OpenAPI servers must be present and non-empty array.
@@ -32,5 +33,6 @@ servers-must-exist-oas3:
           type: object
         minItems: 1
         type: array
+  x-status: draft
   x-tags:
-    - Tag 
+      - Tag 

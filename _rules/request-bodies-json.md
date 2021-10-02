@@ -10,6 +10,9 @@ request-bodies-json:
   then:
   - field: application/json
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 request-bodies-json:
   description: Payload must be in json format
@@ -22,3 +25,6 @@ request-bodies-json:
   then:
   - field: application/json
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag      

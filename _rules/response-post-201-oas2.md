@@ -9,6 +9,9 @@ response-post-201-oas2:
   then:
     field: "201"
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 response-post-201-oas2:
   description: Using post for a create operation is discouraged.
@@ -20,3 +23,6 @@ response-post-201-oas2:
   then:
     field: "201"
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag        

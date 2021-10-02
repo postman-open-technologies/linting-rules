@@ -26,8 +26,10 @@ responses-headers-rate-limits-oas3:
         properties: 
           - X-RateLimit-Reset
           - RateLimit-Reset
-  x-tags: 
-    - Rate Limits 
+  x-status: draft
+  x-tags:
+      - Tag    
+      - Rate Limits 
 ...
 responses-headers-rate-limits-oas3: 
   description: Must posses rate limiting headers.
@@ -56,5 +58,7 @@ responses-headers-rate-limits-oas3:
         properties: 
           - X-RateLimit-Reset
           - RateLimit-Reset
-  x-tags: 
-    - Rate Limits 
+  x-status: draft
+  x-tags:
+      - Tag     
+      - Rate Limits 

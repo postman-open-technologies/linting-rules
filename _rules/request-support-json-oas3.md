@@ -7,6 +7,9 @@ request-support-json-oas3:
     given: $.paths.[*].requestBody.content[?(@property.indexOf('json') === -1)]^
     then:
         function: falsy
+    x-status: draft
+    x-tags:
+        - Tag            
 ...
 request-support-json-oas3:
     description: Every request SHOULD support `application/json` media type
@@ -16,3 +19,6 @@ request-support-json-oas3:
     given: $.paths.[*].requestBody.content[?(@property.indexOf('json') === -1)]^
     then:
         function: falsy
+    x-status: draft
+    x-tags:
+        - Tag                    

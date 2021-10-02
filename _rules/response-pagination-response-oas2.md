@@ -10,6 +10,9 @@ response-pagination-response-oas2:
   - $.paths.*[get,post]
   then:
     function: pagination-response
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 response-pagination-response-oas2:
   description: An operation that returns a list that is potentially large should support
@@ -22,3 +25,6 @@ response-pagination-response-oas2:
   - $.paths.*[get,post]
   then:
     function: pagination-response
+  x-status: draft
+  x-tags:
+      - Tag        

@@ -9,6 +9,9 @@ version-date-format:
     function: pattern
     functionOptions:
       match: ^([0-9]{4}-[0-9]{2}-[0-9]{2})$
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 version-date-format:
   severity: error
@@ -20,3 +23,6 @@ version-date-format:
     function: pattern
     functionOptions:
       match: ^([0-9]{4}-[0-9]{2}-[0-9]{2})$
+  x-status: draft
+  x-tags:
+      - Tag       

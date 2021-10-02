@@ -10,6 +10,9 @@ protocol-https-only-oas3:
     function: pattern
     functionOptions: ~
     match: "/^https:/"
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 protocol-https-only-oas3:
   description: "ALL requests MUST go through `https` protocol only"
@@ -22,3 +25,6 @@ protocol-https-only-oas3:
     function: pattern
     functionOptions: ~
     match: "/^https:/"
+  x-status: draft
+  x-tags:
+    - Tag      

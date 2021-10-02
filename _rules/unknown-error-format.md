@@ -11,6 +11,9 @@ unknown-error-format:
         - application/vnd.api+json
         - application/problem+xml
         - application/problem+json    
+    x-status: draft
+    x-tags:
+        - Tag         
 ...
 unknown-error-format:
     description: "Every error response SHOULD support either RFC 7807 (https://tools.ietf.org/html/rfc6648) or the JSON:API Error format."
@@ -24,3 +27,6 @@ unknown-error-format:
         - application/vnd.api+json
         - application/problem+xml
         - application/problem+json 
+    x-status: draft
+    x-tags:
+        - Tag         

@@ -13,6 +13,9 @@ paths-status-return-problem:
         values:
             - application/problem+xml
             - application/problem+json   
+    x-status: draft
+    x-tags:
+        - Tag              
 ...
 paths-status-return-problem:
     x-tags:
@@ -28,3 +31,6 @@ paths-status-return-problem:
         values:
             - application/problem+xml
             - application/problem+json    
+    x-status: draft
+    x-tags:
+        - Tag               

@@ -11,6 +11,9 @@ request-body-not-allowed-oas2:
     function: pattern
     functionOptions:
       notMatch: /^body$/
+  x-status: draft
+  x-tags:
+    - Tag       
 ...
 request-body-not-allowed-oas2:
   description: A get or delete operation must not accept a body parameter.
@@ -24,3 +27,6 @@ request-body-not-allowed-oas2:
     function: pattern
     functionOptions:
       notMatch: /^body$/
+  x-status: draft
+  x-tags:
+    - Tag       

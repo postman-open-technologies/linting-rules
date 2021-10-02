@@ -12,6 +12,9 @@ version-semantic:
         function: pattern
         functionOptions:
         match: ^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?   
+    x-status: draft
+    x-tags:
+        - Tag         
 ...
 version-semantic:
     description: >-
@@ -26,3 +29,6 @@ version-semantic:
         function: pattern
         functionOptions:
         match: ^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?   
+    x-status: draft
+    x-tags:
+        - Tag 

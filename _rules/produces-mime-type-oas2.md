@@ -14,6 +14,9 @@ produces-mime-type-oas2:
         - application/fhir+xml
         - application/fhir+json
         - application/fhir+turtle
+  x-status: draft
+  x-tags:
+      - Tag             
 ...
 produces-mime-type-oas2:
   description: FHIR mime-type must be application/fhir+(xml|json|turtle) or application/x-www-form-urlencoded for search endpoints
@@ -30,3 +33,6 @@ produces-mime-type-oas2:
         - application/fhir+xml
         - application/fhir+json
         - application/fhir+turtle
+  x-status: draft
+  x-tags:
+      - Tag             

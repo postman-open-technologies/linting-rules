@@ -10,6 +10,9 @@ paths-no-empty:
     function: pattern
     functionOptions:
       notMatch: //
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 paths-no-empty:
   message: Empty path segments are not allowed
@@ -22,3 +25,6 @@ paths-no-empty:
     function: pattern
     functionOptions:
       notMatch: //
+  x-status: draft
+  x-tags:
+      - Tag        

@@ -15,6 +15,9 @@ no-forbidden-headers:
     function: pattern
     functionOptions:
       notMatch: /^(accept|content-type|authorization)$/i      
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 no-forbidden-headers:
   x-tags:
@@ -32,3 +35,6 @@ no-forbidden-headers:
     function: pattern
     functionOptions:
       notMatch: /^(accept|content-type|authorization)$/i   
+  x-status: draft
+  x-tags:
+      - Tag       

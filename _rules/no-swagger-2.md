@@ -9,7 +9,10 @@ no-swagger-2:
     - oas2
   then:
     field: swagger
-    function: falsy     
+    function: falsy  
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 no-swagger-2:
   description: Swagger 2 files are not allowed. Use OpenAPI >= 3.0
@@ -21,4 +24,7 @@ no-swagger-2:
     - oas2
   then:
     field: swagger
-    function: falsy   
+    function: falsy  
+  x-status: draft
+  x-tags:
+      - Tag        

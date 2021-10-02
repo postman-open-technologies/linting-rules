@@ -9,6 +9,9 @@ request-headers-accept:
     function: pattern
     functionOptions:
       match: ^.*; fhirVersion=4
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 request-headers-accept:
   description: FHIR v4.0 is the prefered version
@@ -20,3 +23,6 @@ request-headers-accept:
     function: pattern
     functionOptions:
       match: ^.*; fhirVersion=4
+  x-status: draft
+  x-tags:
+      - Tag        

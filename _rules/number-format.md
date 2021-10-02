@@ -13,7 +13,10 @@ number-format:
     given: $.[?(@.type=="number")]
     then:
         field: format
-        function: truthy   
+        function: truthy  
+    x-status: draft
+    x-tags:
+        - Tag            
 ...
 number-format:
     x-tags:
@@ -29,4 +32,7 @@ number-format:
     given: $.[?(@.type=="number")]
     then:
         field: format
-        function: truthy  
+        function: truthy 
+    x-status: draft
+    x-tags:
+        - Tag           

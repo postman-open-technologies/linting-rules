@@ -57,22 +57,42 @@ layout: default
                </div>                
             </div>
          {% endfor %} 
-        <hr><br>
-        <h3>Rules</h3>
-        <p>These are a list of the rules.</p>
-        
-        {% for rule in rules %}  
-            <div class="row collection">                 
-               <div class="col-md-11" style="border: 0px solid #000;">
-                  <span style="font-size: 18px; font-weight: bold;">{{ rule.title }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
-                  <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
-               </div>            
-               <div class="col-md-1" style="border: 0px solid #000;">
-                  <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
-                  <strong>Link</strong></a>
+         <hr><br>
+         <h3>Rules (Validated)</h3>
+          <p>These are a list of the rules which have been validated as functional, able to be used individually, or as part of rulesets.</p>        
+         {% for rule in rules %}  
+            {% assign status = rule[rule.slug]['x-status'] %}
+            {% if status == 'validated' %}
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
                </div>   
-            </div>                                                       
-         {% endfor %}            
+            {% endif %}                                                    
+         {% endfor %}    
+         <hr><br>
+         <h3>Rules (draft)</h3>
+          <p>These are a list of the rules which have not been validated as functional, and are used for inspiration, or just need more work to work.</p>        
+         {% for rule in rules %}  
+            {% assign status = rule[rule.slug]['x-status'] %}
+            {% if status == 'draft' %}
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
+            {% endif %}                                                    
+         {% endfor %}                  
    </div>
 </div>
 

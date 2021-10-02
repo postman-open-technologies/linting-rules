@@ -19,7 +19,9 @@ protocol-https-only-oas2:
         maxItems: 1
         type: array
   type: style
+  x-status: draft
   x-tags:
+    - Tag  
     - Adidas  
 ...
 protocol-https-only-oas2:
@@ -42,5 +44,7 @@ protocol-https-only-oas2:
         maxItems: 1
         type: array
   type: style
+  x-status: draft
   x-tags:
+    - Tag  
     - Adidas  

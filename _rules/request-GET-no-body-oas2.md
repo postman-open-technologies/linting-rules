@@ -7,7 +7,10 @@ request-GET-no-body-oas2:
     then:
         function: pattern
         functionOptions:
-        notMatch: "/^body$/"      
+        notMatch: "/^body$/"  
+    x-status: draft
+    x-tags:
+        - Tag             
 ...
 request-GET-no-body-oas2:
     description: A `GET` request MUST NOT accept a `body` parameter
@@ -18,3 +21,6 @@ request-GET-no-body-oas2:
         function: pattern
         functionOptions:
         notMatch: "/^body$/"  
+    x-status: draft
+    x-tags:
+        - Tag           

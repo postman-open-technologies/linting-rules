@@ -15,8 +15,10 @@ response-success-and-problem-oas3:
       values:
       - application/hal+json
       - application/problem+json
+  x-status: draft
   x-tags:
-    - Adidas      
+      - Tag    
+      - Adidas      
 ...
 response-success-and-problem-oas3:
   description: All success responses MUST be of media type application/hal+json or
@@ -34,5 +36,7 @@ response-success-and-problem-oas3:
       values:
       - application/hal+json
       - application/problem+json
+  x-status: draft
   x-tags:
-    - Adidas   
+      - Tag    
+      - Adidas   

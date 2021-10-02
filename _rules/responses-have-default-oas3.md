@@ -7,6 +7,9 @@ responses-have-default-oas3:
   then:
     field: default
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 responses-have-default-oas3:
   description: All operations should have a default (error) response.
@@ -16,3 +19,6 @@ responses-have-default-oas3:
   then:
     field: default
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

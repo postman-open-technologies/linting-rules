@@ -9,6 +9,9 @@ no-http-basic:
         function: pattern
         functionOptions:
         notMatch: basic 
+    x-status: draft
+    x-tags:
+        - Tag         
 ...
 no-http-basic:
     description: "Consider a more secure alternative to HTTP Basic."
@@ -20,3 +23,6 @@ no-http-basic:
         function: pattern
         functionOptions:
         notMatch: basic 
+    x-status: draft
+    x-tags:
+        - Tag           

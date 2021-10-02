@@ -14,7 +14,10 @@ no-numeric-ids:
                 const: integer
             properties:
             format:
-                const: uuid    
+                const: uuid 
+    x-status: draft
+    x-tags:
+        - Tag                      
 ...
 no-numeric-ids:
     description: Please avoid exposing IDs as an integer, UUIDs are preferred.
@@ -32,3 +35,6 @@ no-numeric-ids:
             properties:
             format:
                 const: uuid 
+    x-status: draft
+    x-tags:
+        - Tag                   

@@ -15,6 +15,9 @@ responses-status-retry-after-oas3:
   then: 
     field: Retry-After
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 responses-status-retry-after-oas3: 
   description: |-
@@ -32,3 +35,6 @@ responses-status-retry-after-oas3:
   then: 
     field: Retry-After
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag        

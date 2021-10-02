@@ -5,7 +5,10 @@ tags-description:
     severity: error
     then:
         field: description
-        function: truthy    
+        function: truthy  
+    x-status: draft
+    x-tags:
+        - Tag           
 ...
 tags-description:
     description: "Tags must have a description."
@@ -13,4 +16,7 @@ tags-description:
     severity: error
     then:
         field: description
-        function: truthy   
+        function: truthy  
+    x-status: draft
+    x-tags:
+        - Tag          

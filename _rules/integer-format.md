@@ -1,8 +1,5 @@
 ---
 integer-format:
-    x-tags:
-        - it
-        - RAC_REST_FORMAT_004
     description: >-
         Schema of type number or integer must specify a format to express the associated datatype, eg. `int32`, `int64`, You can express similar requirements using the `minimum` and `maximum` properties. See recommendation RAC_REST_FORMAT_004.
     message: Schema of type number or integer must specify a format. {{path}}
@@ -15,11 +12,11 @@ integer-format:
     then:
         field: format
         function: truthy 
+    x-status: draft
+    x-tags:
+        - Tag        
 ...
 integer-format:
-    x-tags:
-        - it
-        - RAC_REST_FORMAT_004
     description: >-
         Schema of type number or integer must specify a format to express the associated datatype, eg. `int32`, `int64`, You can express similar requirements using the `minimum` and `maximum` properties. See recommendation RAC_REST_FORMAT_004.
     message: Schema of type number or integer must specify a format. {{path}}
@@ -31,4 +28,7 @@ integer-format:
         $.[?(@.type=="integer")]
     then:
         field: format
-        function: truthy   
+        function: truthy 
+    x-status: draft
+    x-tags:
+        - Tag  

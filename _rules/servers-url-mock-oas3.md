@@ -9,6 +9,9 @@ servers-url-mock-oas3:
     function: pattern
     functionOptions:
       match: http://localhost:4010
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 servers-url-mock-oas3:
   description: Mock API server must be the first one so that Postman import uses it.
@@ -20,3 +23,6 @@ servers-url-mock-oas3:
     function: pattern
     functionOptions:
       match: http://localhost:4010
+  x-status: draft
+  x-tags:
+      - Tag       

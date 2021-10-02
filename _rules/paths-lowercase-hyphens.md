@@ -9,6 +9,9 @@ paths-lowercase-hyphens:
     function: pattern
     functionOptions:
       match: ^(([\/a-z][a-z0-9\-\/]*)?({[^}]*})?)+$
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 paths-lowercase-hyphens:
   message: Path segments have to be lowercase separate words with hyphens
@@ -20,3 +23,6 @@ paths-lowercase-hyphens:
     function: pattern
     functionOptions:
       match: ^(([\/a-z][a-z0-9\-\/]*)?({[^}]*})?)+$
+  x-status: draft
+  x-tags:
+      - Tag        

@@ -15,8 +15,10 @@ response-success-hal-body-oas3:
       schema:
         $ref: ./supermodel/adidas/api/HAL.yaml
   type: style
+  x-status: draft
   x-tags:
-    - Adidas  
+      - Tag    
+      - Adidas  
 ...
 response-success-hal-body-oas3:
   description: All success responses MUST follow application/hal+json schema
@@ -34,5 +36,7 @@ response-success-hal-body-oas3:
       schema:
         $ref: ./supermodel/adidas/api/HAL.yaml
   type: style
+  x-status: draft
   x-tags:
-    - Adidas  
+      - Tag    
+      - Adidas  

@@ -9,6 +9,9 @@ paths-limit-number-of:
     function: count-resource-types
     functionOptions:
       max: 8
+  x-status: draft
+  x-tags:
+      - Tag            
 ...
 paths-limit-number-of:
   message: '{{error}}'
@@ -20,3 +23,6 @@ paths-limit-number-of:
     function: count-resource-types
     functionOptions:
       max: 8
+  x-status: draft
+  x-tags:
+      - Tag        

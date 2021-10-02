@@ -7,6 +7,9 @@ request-bodies-schema-object:
   given: $.paths.*.*[requestBody]..content..schema
   then:
     function: is-object-schema
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 request-bodies-schema-object:
   message: Top-level data structure must be an object
@@ -16,3 +19,6 @@ request-bodies-schema-object:
   given: $.paths.*.*[requestBody]..content..schema
   then:
     function: is-object-schema
+  x-status: draft
+  x-tags:
+    - Tag      

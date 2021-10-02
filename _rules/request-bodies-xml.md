@@ -10,6 +10,9 @@ request-bodies-xml:
   then:
   - field: application/xml
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag      
 ...
 request-bodies-xml:
   description: Payload must be in xml format
@@ -22,3 +25,6 @@ request-bodies-xml:
   then:
   - field: application/xml
     function: truthy
+  x-status: draft
+  x-tags:
+    - Tag      

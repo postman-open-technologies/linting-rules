@@ -8,6 +8,9 @@ version-query-parameter-oas2:
   given: $
   then:
     function: version-policy
+  x-status: draft
+  x-tags:
+      - Tag     
 ...
 version-query-parameter-oas2:
   description: Specify API version using api-version query parameter, not in path.
@@ -18,3 +21,6 @@ version-query-parameter-oas2:
   given: $
   then:
     function: version-policy
+  x-status: draft
+  x-tags:
+      - Tag     

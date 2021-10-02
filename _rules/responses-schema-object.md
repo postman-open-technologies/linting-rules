@@ -7,6 +7,9 @@ responses-schema-object:
   given: $.paths.*.*[responses]..content..schema
   then:
     function: is-object-schema
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 responses-schema-object:
   message: Top-level data structure must be an object
@@ -16,3 +19,6 @@ responses-schema-object:
   given: $.paths.*.*[responses]..content..schema
   then:
     function: is-object-schema
+  x-status: draft
+  x-tags:
+      - Tag        

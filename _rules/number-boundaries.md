@@ -17,7 +17,10 @@ number-boundaries:
     - field: maximum
       function: defined
     - field: minimum
-      function: defined      
+      function: defined  
+  x-status: draft
+  x-tags:
+      - Tag             
 ...
 number-boundaries:
   description: |-
@@ -38,3 +41,6 @@ number-boundaries:
       function: defined
     - field: minimum
       function: defined  
+  x-status: draft
+  x-tags:
+      - Tag         

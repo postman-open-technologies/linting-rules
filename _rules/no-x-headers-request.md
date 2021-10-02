@@ -13,6 +13,9 @@ no-x-headers-request:
     function: pattern
     functionOptions:
       match: /^([^x]|.[^-])|RateLimit-/i    
+  x-status: draft
+  x-tags:
+      - Tag         
 ...
 no-x-headers-request:
   x-tags:
@@ -28,3 +31,6 @@ no-x-headers-request:
     function: pattern
     functionOptions:
       match: /^([^x]|.[^-])|RateLimit-/i    
+  x-status: draft
+  x-tags:
+      - Tag         

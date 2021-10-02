@@ -7,6 +7,9 @@ no-x-response-headers:
     function: pattern
     functionOptions:
       notMatch: '^(x|X)-'
+  x-status: draft
+  x-tags:
+      - Tag         
 ...
 no-x-response-headers:
   description: "Please do not use headers with X-"
@@ -16,3 +19,6 @@ no-x-response-headers:
     function: pattern
     functionOptions:
       notMatch: '^(x|X)-'  
+  x-status: draft
+  x-tags:
+      - Tag         

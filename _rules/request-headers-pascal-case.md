@@ -17,6 +17,9 @@ request-headers-pascal-case:
             type: pascal
             separator:
                 char: "-"
+    x-status: draft
+    x-tags:
+        - Tag                   
 ...
 request-headers-pascal-case:
     x-tags:
@@ -36,3 +39,6 @@ request-headers-pascal-case:
         type: pascal
         separator:
             char: "-" 
+    x-status: draft
+    x-tags:
+        - Tag               

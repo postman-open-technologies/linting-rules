@@ -8,7 +8,10 @@ request-headers-hyphenated-pascal-case:
     then: 
         function: pattern
         functionOptions:
-        match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"    
+        match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"  
+    x-status: draft
+    x-tags:
+        - Tag            
 ...
 request-headers-hyphenated-pascal-case:
     description: All `HTTP` headers MUST use `Hyphenated-Pascal-Case` notation
@@ -19,4 +22,7 @@ request-headers-hyphenated-pascal-case:
     then: 
         function: pattern
         functionOptions:
-        match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"   
+        match: "/^([A-Z][a-z0-9]-)*([A-Z][a-z0-9])+/"  
+    x-status: draft
+    x-tags:
+        - Tag            

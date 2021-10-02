@@ -11,6 +11,9 @@ paths-characters:
     function: pattern
     functionOptions:
       match: ^(/([0-9A-Za-z._~-]+|{[^}]+}))*(/([0-9A-Za-z._~:-]+|{[^}]*}(:[0-9A-Za-z._~-]+)?))$
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 paths-characters:
   description: Path should contain only recommended characters.
@@ -24,3 +27,6 @@ paths-characters:
     function: pattern
     functionOptions:
       match: ^(/([0-9A-Za-z._~-]+|{[^}]+}))*(/([0-9A-Za-z._~:-]+|{[^}]*}(:[0-9A-Za-z._~-]+)?))$
+  x-status: draft
+  x-tags:
+      - Tag          

@@ -6,6 +6,9 @@ paths-method-posts-id:
   then:
     field: post
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag      
 ...
 paths-method-posts-id:
   severity: error
@@ -14,3 +17,6 @@ paths-method-posts-id:
   then:
     field: post
     function: falsy
+  x-status: draft
+  x-tags:
+      - Tag      

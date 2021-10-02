@@ -8,6 +8,9 @@ endpoint-must-be-ref:
   then:
   - field: $ref
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag      
 ...
 endpoint-must-be-ref:
   description: Endpoint must a $ref
@@ -18,3 +21,6 @@ endpoint-must-be-ref:
   then:
   - field: $ref
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag      

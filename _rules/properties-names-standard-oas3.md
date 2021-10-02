@@ -9,6 +9,9 @@ properties-names-standard-oas3:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+      - Tag        
 ...
 properties-names-standard-oas3:
   description: Property names should be camel case.
@@ -20,3 +23,6 @@ properties-names-standard-oas3:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+      - Tag        

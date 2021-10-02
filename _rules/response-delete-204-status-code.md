@@ -10,6 +10,9 @@ response-delete-204-status-code:
   then:
     field: "204"
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 response-delete-204-status-code:
   description: A delete operation should have a 204 response.
@@ -22,3 +25,6 @@ response-delete-204-status-code:
   then:
     field: "204"
     function: truthy
+  x-status: draft
+  x-tags:
+      - Tag       

@@ -7,6 +7,9 @@ schema-properties-camelcase:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 schema-properties-camelcase:
   description: Properties defined inline in schema must use camelCase.
@@ -16,3 +19,6 @@ schema-properties-camelcase:
     function: casing
     functionOptions:
       type: camel
+  x-status: draft
+  x-tags:
+      - Tag          

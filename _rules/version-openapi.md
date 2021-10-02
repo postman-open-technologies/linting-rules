@@ -8,6 +8,9 @@ version-openapi:
     function: pattern
     functionOptions:
       match: 3.0.3
+  x-status: draft
+  x-tags:
+      - Tag       
 ...
 version-openapi:
   description: OpenAPI specification version must be 3.0.3.
@@ -18,3 +21,6 @@ version-openapi:
     function: pattern
     functionOptions:
       match: 3.0.3
+  x-status: draft
+  x-tags:
+      - Tag       

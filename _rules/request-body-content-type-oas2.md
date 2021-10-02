@@ -9,6 +9,9 @@ request-body-content-type-oas2:
   given: $
   then:
     function: patch-content-type
+  x-status: draft
+  x-tags:
+    - Tag     
 ...
 request-body-content-type-oas2:
   description: The request body content type for patch operations should be JSON merge
@@ -20,3 +23,6 @@ request-body-content-type-oas2:
   given: $
   then:
     function: patch-content-type
+  x-status: draft
+  x-tags:
+    - Tag     

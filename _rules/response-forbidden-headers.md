@@ -11,8 +11,9 @@ response-forbidden-headers:
     function: pattern
     functionOptions: 
       notMatch: /^(accept|content-type|authorization)$/i
-  x-tags: 
-    - standards   
+  x-status: draft
+  x-tags:
+      - Tag     
 ...
 response-forbidden-headers: 
   description: |-
@@ -26,5 +27,6 @@ response-forbidden-headers:
     function: pattern
     functionOptions: 
       notMatch: /^(accept|content-type|authorization)$/i
-  x-tags: 
-    - standards 
+  x-status: draft
+  x-tags:
+      - Tag   

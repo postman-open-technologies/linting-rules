@@ -16,7 +16,10 @@ response-headers-pascal-case:
         functionOptions:
         type: pascal
         separator:
-            char: "-"     
+            char: "-"  
+    x-status: draft
+    x-tags:
+        - Tag                  
 ...
 response-headers-pascal-case:
     x-tags:
@@ -35,4 +38,7 @@ response-headers-pascal-case:
         functionOptions:
         type: pascal
         separator:
-            char: "-" 
+            char: "-"
+    x-status: draft
+    x-tags:
+        - Tag                

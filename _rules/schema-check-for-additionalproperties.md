@@ -18,6 +18,9 @@ schema-check-for-additionalproperties:
   then:
     - field: maxProperties
       function: defined  
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 schema-check-for-additionalproperties:
   description: |-
@@ -38,3 +41,6 @@ schema-check-for-additionalproperties:
   then:
     - field: maxProperties
       function: defined  
+  x-status: draft
+  x-tags:
+      - Tag          

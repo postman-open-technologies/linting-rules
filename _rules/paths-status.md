@@ -11,6 +11,9 @@ paths-status:
     then:
         field: paths./status.get.responses.200
         function: truthy  
+    x-status: draft
+    x-tags:
+        - Tag           
 ...
 paths-status:
     x-tags:
@@ -24,3 +27,6 @@ paths-status:
     then:
         field: paths./status.get.responses.200
         function: truthy     
+    x-status: draft
+    x-tags:
+        - Tag           

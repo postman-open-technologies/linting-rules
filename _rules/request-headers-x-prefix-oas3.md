@@ -11,6 +11,9 @@ request-headers-x-prefix-oas3:
     function: pattern
     functionOptions:
       match: ^(x|X)-
+  x-status: draft
+  x-tags:
+      - Tag         
 ...
 request-headers-x-prefix-oas3:
   description: Headers must start with X
@@ -24,3 +27,6 @@ request-headers-x-prefix-oas3:
     function: pattern
     functionOptions:
       match: ^(x|X)-
+  x-status: draft
+  x-tags:
+      - Tag          

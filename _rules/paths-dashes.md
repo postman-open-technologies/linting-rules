@@ -10,6 +10,9 @@ paths-dashes:
     function: pattern
     functionOptions:
       notMatch: /-/
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 paths-dashes:
   description: The URI template (RFC 6570 - https//tools.ietf.org/html/rfc6570) cannot
@@ -22,3 +25,6 @@ paths-dashes:
     function: pattern
     functionOptions:
       notMatch: /-/
+  x-status: draft
+  x-tags:
+      - Tag          

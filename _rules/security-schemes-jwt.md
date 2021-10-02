@@ -13,7 +13,10 @@ security-schemes-jwt:
       field: description
       function: pattern
       functionOptions: 
-        match: .*RFC8725.*   
+        match: .*RFC8725.*  
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 security-schemes-jwt: 
   description: |-
@@ -30,3 +33,6 @@ security-schemes-jwt:
       function: pattern
       functionOptions: 
         match: .*RFC8725.*  
+  x-status: draft
+  x-tags:
+      - Tag          

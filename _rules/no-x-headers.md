@@ -6,7 +6,10 @@ no-x-headers:
   then:
     function: pattern
     functionOptions:
-      notMatch: '^(x|X)-'    
+      notMatch: '^(x|X)-'   
+  x-status: draft
+  x-tags:
+      - Tag          
 ...
 no-x-headers:
   description: "Please do not use headers with X-"
@@ -15,4 +18,7 @@ no-x-headers:
   then:
     function: pattern
     functionOptions:
-      notMatch: '^(x|X)-'      
+      notMatch: '^(x|X)-'   
+  x-status: draft
+  x-tags:
+      - Tag            

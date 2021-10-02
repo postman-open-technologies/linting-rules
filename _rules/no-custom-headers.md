@@ -11,7 +11,10 @@ adidas-headers-no-x-headers:
       notMatch: /^(x|X)-/
   type: style
   x-tags:
-    - Adidas  
+    - Adidas 
+  x-status: draft
+  x-tags:
+      - Tag      
 ...
 adidas-headers-no-x-headers:
   description: All HTTP headers SHOULD NOT include X- headers (https//tools.ietf.org/html/rfc6648).
@@ -25,4 +28,7 @@ adidas-headers-no-x-headers:
       notMatch: /^(x|X)-/
   type: style
   x-tags:
-    - Adidas  
+    - Adidas 
+  x-status: draft
+  x-tags:
+      - Tag        
