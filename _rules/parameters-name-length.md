@@ -1,26 +1,26 @@
 ---
-parameters-camelcase:
+parameters-name-length:
   description: Path and query parmeters must use camelCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
-    field: name
-    function: casing
-    functionOptions:
-      type: camel
+    field: summary
+    function: length
+    functionOptions: 
+      max: 20
   x-status: validated
   x-tags:
     - Parameters
-    - Casing        
+    - Length        
 ...
-parameters-camelcase:
+parameters-name-length:
   description: Path and query parmeters must use camelCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
-    field: name
-    function: casing
-    functionOptions:
-      type: camel
+    field: summary
+    function: length
+    functionOptions: 
+      max: 20
   x-status: validated
   x-tags:
     - Parameters
-    - Casing        
+    - Length        

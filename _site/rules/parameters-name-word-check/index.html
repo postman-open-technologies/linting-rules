@@ -1,13 +1,13 @@
 {
 "rules": {
-"parameters-camelcase":{
+"parameters-name-word-check":{
 
 
 
     
             
             
-                "description": "Path and query parmeters must use camelCase.",
+                "description": "Must not contain specific words, including REST, Public, and Developer.",
             
         
     
@@ -24,7 +24,7 @@
 
     
           
-        "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}},
+        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
         
     
     

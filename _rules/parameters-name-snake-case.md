@@ -1,5 +1,5 @@
 ---
-parameters-snake-case:
+parameters-name-snake-case:
   description: Path and query parmeters must use snake_case.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
@@ -12,7 +12,7 @@ parameters-snake-case:
     - Parameters
     - Casing        
 ...
-parameters-snake-case:
+parameters-name-snake-case:
   description: Path and query parmeters must use snake_case.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:

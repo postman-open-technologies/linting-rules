@@ -1,13 +1,13 @@
 {
 "rules": {
-"parameters-snake-case":{
+"parameters-name-length":{
 
 
 
     
             
             
-                "description": "Path and query parmeters must use snake_case.",
+                "description": "Path and query parmeters must use camelCase.",
             
         
     
@@ -24,7 +24,7 @@
 
     
           
-        "then": {"field":"name","function":"casing","functionOptions":{"type":"snake"}},
+        "then": {"field":"summary","function":"length","functionOptions":{"max":20}},
         
     
     

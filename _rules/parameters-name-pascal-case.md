@@ -1,5 +1,5 @@
 ---
-parameters-pascal-case:
+parameters-name-pascal-case:
   description: Path and query parmeters must use PascalCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
@@ -12,7 +12,7 @@ parameters-pascal-case:
     - Parameters
     - Casing      
 ...
-parameters-pascal-case:
+parameters-name-pascal-case:
   description: Path and query parmeters must use PascalCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
