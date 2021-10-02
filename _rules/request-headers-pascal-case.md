@@ -14,9 +14,9 @@ request-headers-pascal-case:
     then:
         function: casing
         functionOptions:
-        type: pascal
-        separator:
-            char: "-"
+            type: pascal
+            separator:
+                char: "-"
 ...
 request-headers-pascal-case:
     x-tags:

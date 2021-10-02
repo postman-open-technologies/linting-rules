@@ -6,6 +6,9 @@ operations-summary:
   then:
   - field: summary
     function: truthy
+  x-status: validated
+  x-tags:
+    - Operations    
 ...
 operations-summary:
   severity: error
@@ -14,3 +17,6 @@ operations-summary:
   then:
   - field: summary
     function: truthy
+  x-status: validated
+  x-tags:
+    - Operations       
