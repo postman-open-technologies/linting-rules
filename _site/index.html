@@ -29798,7 +29798,7 @@ function: truthy
                      <span style="font-size: 18px; font-weight: bold;">Request Bodies Post Media Type - </span> (<a href="http://localhost:4000//rules/request-bodies-post-media-type/" style="color:#000">request-bodies-post-media-type</a>)</p>
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;media&#8211;type: 
   description: “POST request bodies must have a application/json media type.”
-  given: “$.post.requestBody.content”
+  given: $.paths.*.post[requestBody].content
   message: “application/json is required for POST requests “
   recommended: true
   severity: error
