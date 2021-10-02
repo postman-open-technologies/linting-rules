@@ -25114,6 +25114,30 @@ function: truthy
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Paths Lowercase Hyphens - </span> (<a href="http://localhost:4000//rules/paths-lowercase-hyphens/" style="color:#000">paths-lowercase-hyphens</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">paths&#8211;lowercase&#8211;hyphens:
+  message: Path segments have to be lowercase separate words with hyphens
+  description: MUST use lowercase separate words with hyphens for path segments [129]
+  documentationUrl: https://opensource.zalando.com/restful&#8211;api&#8211;guidelines/#129
+  severity: error
+  given: $.paths.~
+  then:
+    function: pattern
+    functionOptions:
+      match: ^(([\/a&#8211;z][a&#8211;z0&#8211;9&#8211;\/])?({[^}]*})?)+$
+  x&#8211;status: validated
+  x&#8211;tags:
+      &#8211; Paths
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/paths-lowercase-hyphens/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
@@ -27371,30 +27395,6 @@ formats:
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Paths Lowercase Hyphens - </span> (<a href="http://localhost:4000//rules/paths-lowercase-hyphens/" style="color:#000">paths-lowercase-hyphens</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">paths&#8211;lowercase&#8211;hyphens:
-  message: Path segments have to be lowercase separate words with hyphens
-  description: MUST use lowercase separate words with hyphens for path segments [129]
-  documentationUrl: https://opensource.zalando.com/restful&#8211;api&#8211;guidelines/#129
-  severity: error
-  given: $.paths.~
-  then:
-    function: pattern
-    functionOptions:
-      match: ^(([\/a&#8211;z][a&#8211;z0&#8211;9&#8211;\/])?({[^}]*})?)+$
-  x&#8211;status: draft
-  x&#8211;tags:
-      &#8211; Tag
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/paths-lowercase-hyphens/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             
