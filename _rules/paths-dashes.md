@@ -1,30 +1,28 @@
 ---
 paths-dashes:
-  description: The URI template (RFC 6570 - https//tools.ietf.org/html/rfc6570) cannot
-    contain a - character
+  description: "Paths cannot contain dashes."
   severity: error
   recommended: true
-  message: '{{property}} {{description}}'
+  message: "Paths cannot contain dashes {{property}}"
   given: $.paths[*]~
   then:
     function: pattern
     functionOptions:
       notMatch: /-/
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Paths          
 ...
 paths-dashes:
-  description: The URI template (RFC 6570 - https//tools.ietf.org/html/rfc6570) cannot
-    contain a - character
+  description: "Paths cannot contain dashes."
   severity: error
   recommended: true
-  message: '{{property}} {{description}}'
+  message: "Paths cannot contain dashes {{property}}"
   given: $.paths[*]~
   then:
     function: pattern
     functionOptions:
       notMatch: /-/
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Paths          

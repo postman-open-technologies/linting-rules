@@ -1,5 +1,5 @@
 ---
-paths-no-trailing-slash:
+paths-trailing-slash-none:
   message: Path with trailing slash is not allowed
   description: MUST use normalized paths without empty path segments and trailing
     slashes [136]
@@ -14,7 +14,7 @@ paths-no-trailing-slash:
   x-tags:
       - Tag        
 ...
-paths-no-trailing-slash:
+paths-trailing-slash-none:
   message: Path with trailing slash is not allowed
   description: MUST use normalized paths without empty path segments and trailing
     slashes [136]
