@@ -1,7 +1,7 @@
 ---
 operations-summary:
   severity: error
-  message: Missing {{property}}at {{path}}
+  message: Missing {{property}} at {{path}}.
   given: $.paths.*[get,post,patch,put,delete]
   then:
   - field: summary
