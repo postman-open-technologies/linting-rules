@@ -1,5 +1,5 @@
 ---
-parameter-default-not-allowed:
+parameters-default-not-allowed:
   description: A required parameter should not specify a default value.
   severity: warn
   given:
@@ -8,7 +8,7 @@ parameter-default-not-allowed:
     field: default
     function: falsy
 ...
-parameter-default-not-allowed:
+parameters-default-not-allowed:
   description: A required parameter should not specify a default value.
   severity: warn
   given:
