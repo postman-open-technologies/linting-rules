@@ -1,6 +1,6 @@
 ---
 info-title-max-length:
-  description: "The title must not be too long."
+  description: "The title must not be greater than 20 characters."
   given: "$.info"
   severity: error
   recommended: true
@@ -18,7 +18,7 @@ info-title-max-length:
     - Length
 ...
 info-title-max-length:
-  description: "The title must not be too long."
+  description: "The title must not be greater than 20 characters."
   given: "$.info"
   severity: error
   recommended: true
