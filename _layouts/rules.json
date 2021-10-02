@@ -4,7 +4,7 @@ layout: none
 {
 "rules": {
 "{{ page.slug }}":{
-{% assign prop_count =  page[page.slug] | size | minus : 2 %}
+{% assign prop_count =  page[page.slug] | size %}
 {% assign this_count = 1 %}
 {% for property in page[page.slug] %}
     {% if property[1].first %}
