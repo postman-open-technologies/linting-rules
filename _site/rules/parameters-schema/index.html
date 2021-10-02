@@ -1,0 +1,44 @@
+{
+"rules": {
+"parameters-schema":{
+
+
+
+    
+            
+            
+                "description": "Parameters must have a schema.",
+            
+        
+    
+    
+
+    
+            
+            
+                "given": "$.paths.*.*.parameters[?(@.schema=='query')]",
+            
+        
+    
+    
+
+    
+          
+        "then": {"field":"schema","function":"truthy"},
+        
+    
+    
+
+    
+        
+    
+    
+
+    
+        
+    
+    
+ 
+}
+}
+}
