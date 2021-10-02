@@ -1,18 +1,18 @@
 ---
-parameters-snake-case:
-  description: Path and query parmeters must use snake_case.
+parameters-pascal-case:
+  description: Path and query parmeters must use PascalCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
     field: name
     function: casing
     functionOptions:
-      type: snake
+      type: pascal
 ...
-parameters-snake-case:
-  description: Path and query parmeters must use snake_case.
+parameters-pascal-case:
+  description: Path and query parmeters must use PascalCase.
   given: $.paths.*.*.parameters[?(@.in=='query')].name
   then:
     field: name
     function: casing
     functionOptions:
-      type: snake
+      type: pascal
