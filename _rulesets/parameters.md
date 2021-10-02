@@ -16,6 +16,6 @@ rules:
   - parameters-name
   - parameters-schema-type
   - parameters-schema
-image: /images/parameter-icon.jpeg
+image: /images/parameters-icon.jpeg
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/15
 ...
