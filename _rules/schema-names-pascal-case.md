@@ -1,7 +1,7 @@
 ---
 schema-names-pascal-case:
-  description: Schema names should be Pascal case.
-  message: Schema name should be Pascal case.
+  description: Schema names should be pascal case.
+  message: Schema name should be pascal case.
   severity: error
   given: $.components.schemas
   then:
@@ -12,20 +12,19 @@ schema-names-pascal-case:
   x-status: validated
   x-tags:
       - Schema
-      - Casing         
+      - Casing          
 ...
 schema-names-pascal-case:
-  description: Schema names should be Pascal case.
-  message: Schema name should be Pascal case.
-  severity: hint
-  formats:
-  - oas2
-  given: $.definitions.*~
+  description: Schema names should be pascal case.
+  message: Schema name should be pascal case.
+  severity: error
+  given: $.components.schemas
   then:
+    field: "@key"
     function: casing
     functionOptions:
       type: pascal
   x-status: validated
   x-tags:
       - Schema
-      - Casing          
+      - Casing       

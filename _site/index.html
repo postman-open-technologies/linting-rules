@@ -25616,7 +25616,7 @@ function: truthy
   description: Schema names should be camel case.
   message: Schema name should be camel case.
   severity: error
-  given: $.components.schemas.
+  given: $.components.schemas
   then:
     field: “@key”
     function: casing
@@ -25641,25 +25641,19 @@ function: truthy
                   <div class="col-md-11" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;">Schema Names Pascal Case - </span> (<a href="http://localhost:4000//rules/schema-names-pascal-case/" style="color:#000">schema-names-pascal-case</a>)</p>
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">schema&#8211;names&#8211;pascal&#8211;case:
-  description: Schema names should be Pascal case.
-  message: Schema name should be Pascal case.
-  severity: hint
-  formats:
-
-  oas2
-  given: $.definitions.*~
+  description: Schema names should be pascal case.
+  message: Schema name should be pascal case.
+  severity: error
+  given: $.components.schemas
   then:
-function: casing
-functionOptions:
-  type: pascal
+    field: “@key”
+    function: casing
+    functionOptions:
+      type: pascal
   x&#8211;status: validated
   x&#8211;tags:
-    
-      Schema
-      Casing
-    
-  
-
+      &#8211; Schema
+      &#8211; Casing
 </code></pre>                  
                   </div>            
                   <div class="col-md-1" style="border: 0px solid #000;">
@@ -25670,6 +25664,31 @@ functionOptions:
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Schema Names Snake Case - </span> (<a href="http://localhost:4000//rules/schema-names-snake-case/" style="color:#000">schema-names-snake-case</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">schema&#8211;names&#8211;snake&#8211;case:
+  description: Schema names should be snake case.
+  message: Schema name should be snake case.
+  severity: error
+  given: $.components.schemas
+  then:
+    field: “@key”
+    function: casing
+    functionOptions:
+      type: snake
+  x&#8211;status: validated
+  x&#8211;tags:
+      &#8211; Schema
+      &#8211; Casing
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/schema-names-snake-case/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
@@ -28826,37 +28845,6 @@ functionOptions:
                                                                 
            
             
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Schema Names Snake Case - </span> (<a href="http://localhost:4000//rules/schema-names-snake-case/" style="color:#000">schema-names-snake-case</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">schema&#8211;names&#8211;snake&#8211;case:
-  description: Schema names should be snake case.
-  message: Schema name should be snake case.
-  severity: hint
-  formats:
-
-  oas2
-  given: $.definitions.*~
-  then:
-function: casing
-functionOptions:
-  type: snake
-  x&#8211;status: validated
-  x&#8211;tags:
-    
-      Schema
-      Casing
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/schema-names-snake-case/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             

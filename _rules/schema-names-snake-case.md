@@ -9,22 +9,22 @@ schema-names-snake-case:
     function: casing
     functionOptions:
       type: snake
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing          
 ...
 schema-names-snake-case:
   description: Schema names should be snake case.
   message: Schema name should be snake case.
-  severity: hint
-  formats:
-  - oas2
-  given: $.definitions.*~
+  severity: error
+  given: $.components.schemas
   then:
+    field: "@key"
     function: casing
     functionOptions:
       type: snake
   x-status: validated
   x-tags:
       - Schema
-      - Casing          
+      - Casing       
