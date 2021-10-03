@@ -8,8 +8,8 @@ protocol-https-only-oas3:
   severity: error
   then: 
     function: pattern
-    functionOptions: ~
-    match: "/^https:/"
+    functionOptions:
+      match: "/^https:/"
   x-status: draft
   x-tags:
     - Tag      
@@ -23,8 +23,8 @@ protocol-https-only-oas3:
   severity: error
   then: 
     function: pattern
-    functionOptions: ~
-    match: "/^https:/"
+    functionOptions:
+      match: "/^https:/"
   x-status: draft
   x-tags:
-    - Tag      
+    - Tag  
