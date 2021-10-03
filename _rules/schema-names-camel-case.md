@@ -3,7 +3,7 @@ schema-names-camel-case:
   description: Schema names should be camel case.
   message: Schema name should be camel case.
   severity: error
-  given: $.components.schemas.*
+  given: $.components.schemas.
   then:
     field: "@key"
     function: casing
@@ -18,7 +18,7 @@ schema-names-camel-case:
   description: Schema names should be camel case.
   message: Schema name should be camel case.
   severity: error
-  given: $.components.schemas.*
+  given: $.components.schemas.
   then:
     field: "@key"
     function: casing
