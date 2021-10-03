@@ -1,5 +1,5 @@
 ---
-schema-properties-required:
+schema-required:
   description: All schemas properties should have a required.
   message: Should have schema property {{ property }}.
   severity: warn
@@ -13,7 +13,7 @@ schema-properties-required:
   x-tags:
       - Schema         
 ...
-schema-properties-required:
+schema-required:
   description: All schemas properties should have a required.
   message: Should have schema property {{ property }}.
   severity: warn
