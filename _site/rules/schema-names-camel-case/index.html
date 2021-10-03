@@ -25,7 +25,16 @@
     
             
             
-                "severity": "hint",
+                "severity": "error",
+            
+        
+    
+    
+
+    
+            
+            
+                "given": "$.components.schemas.*",
             
         
     
@@ -33,23 +42,7 @@
 
     
           
-        "formats": ["oas2"],
-        
-    
-    
-
-    
-            
-            
-                "given": "$.definitions.*~",
-            
-        
-    
-    
-
-    
-          
-        "then": {"function":"casing","functionOptions":{"type":"camel"}},
+        "then": {"field":"@key","function":"casing","functionOptions":{"type":"camel"}},
         
     
     

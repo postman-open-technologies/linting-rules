@@ -2,11 +2,10 @@
 schema-names-pascal-case:
   description: Schema names should be Pascal case.
   message: Schema name should be Pascal case.
-  severity: hint
-  formats:
-  - oas2
-  given: $.definitions.*~
+  severity: error
+  given: $.components.schemas.*
   then:
+    field: "@key"
     function: casing
     functionOptions:
       type: pascal
