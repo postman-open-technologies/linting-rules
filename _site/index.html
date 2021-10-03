@@ -26898,6 +26898,9 @@ function: truthy
                                                                 
            
             
+                                                                
+           
+            
             
                <div class="row collection">                 
                   <div class="col-md-11" style="border: 0px solid #000;">
@@ -26929,9 +26932,6 @@ function: truthy
                      <strong>Link</strong></a>
                   </div>   
                </div>   
-                                                                
-           
-            
                                                                 
            
             
@@ -30173,6 +30173,30 @@ x&#8211;tags:
             
                <div class="row collection">                 
                   <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Response Get 201 No Body - </span> (<a href="http://localhost:4000//rules/response-get-201-no-body/" style="color:#000">response-get-201-no-body</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;get&#8211;201&#8211;no&#8211;body:
+  severity: error
+  description: GET responses should not have  body.
+  given: $paths.get.responses.201.content
+  then:
+    field: “application/json”
+    function: truthy
+  x&#8211;status: draft
+  x&#8211;tags:
+      &#8211; Responses
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/response-get-201-no-body/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
+                                                                
+           
+            
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;">Response Get 500 Media Type - </span> (<a href="http://localhost:4000//rules/response-get-500-media-type/" style="color:#000">response-get-500-media-type</a>)</p>
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;get&#8211;500&#8211;media&#8211;type:
   severity: error
@@ -30263,9 +30287,6 @@ function: pagination&#8211;response
                      <strong>Link</strong></a>
                   </div>   
                </div>   
-                                                                
-           
-            
                                                                 
            
             
