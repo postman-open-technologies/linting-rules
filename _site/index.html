@@ -25615,23 +25615,17 @@ function: truthy
                      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">schema&#8211;names&#8211;camel&#8211;case:
   description: Schema names should be camel case.
   message: Schema name should be camel case.
-  severity: hint
-  formats:
-
-  oas2
-  given: $.definitions.*~
+  severity: error
+  given: $.components.schemas.*
   then:
-function: casing
-functionOptions:
-  type: camel
+    field: “@key”
+    function: casing
+    functionOptions:
+      type: camel
   x&#8211;status: validated
   x&#8211;tags:
-    
-      Schema
-      Casing
-    
-  
-
+      &#8211; Schema
+      &#8211; Casing
 </code></pre>                  
                   </div>            
                   <div class="col-md-1" style="border: 0px solid #000;">
