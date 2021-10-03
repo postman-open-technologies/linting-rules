@@ -2,9 +2,9 @@
 response-delete-204-no-body:
   severity: error
   description: DELETE responses should not have  body.
-  given: $paths.delete.responses
+  given: $paths.delete.responses.204
   then:
-    field: "204"
+    field: "cont3ent"
     function: truthy
   x-status: draft
   x-tags:
@@ -14,9 +14,9 @@ response-delete-204-no-body:
 response-delete-204-no-body:
   severity: error
   description: DELETE responses should not have  body.
-  given: $paths.delete.responses
+  given: $paths.delete.responses.204
   then:
-    field: "204"
+    field: "cont3ent"
     function: truthy
   x-status: draft
   x-tags:

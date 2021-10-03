@@ -1,6 +1,6 @@
 {
 "rules": {
-"response-delete-204-no-body":{
+"response-put-204-no-body":{
 
 
 
@@ -16,7 +16,7 @@
     
             
             
-                "description": "DELETE responses should not have  body.",
+                "description": "PUT responses should not have  body.",
             
         
     
@@ -25,7 +25,7 @@
     
             
             
-                "given": "$paths.delete.responses.204",
+                "given": "$paths.put.responses.204",
             
         
     
@@ -33,7 +33,7 @@
 
     
           
-        "then": {"field":"cont3ent","function":"truthy"},
+        "then": {"field":"content","function":"truthy"},
         
     
     

@@ -1,6 +1,6 @@
 {
 "rules": {
-"response-delete-204-no-body":{
+"response-get-200-media-type":{
 
 
 
@@ -16,7 +16,7 @@
     
             
             
-                "description": "DELETE responses should not have  body.",
+                "description": "GET responses should not have  body.",
             
         
     
@@ -25,7 +25,7 @@
     
             
             
-                "given": "$paths.delete.responses.204",
+                "given": "$paths.get.responses.200.content",
             
         
     
@@ -33,7 +33,7 @@
 
     
           
-        "then": {"field":"cont3ent","function":"truthy"},
+        "then": {"field":"application/json","function":"truthy"},
         
     
     
