@@ -3,7 +3,7 @@ schema-names-snake-case:
   description: Schema names should be snake case.
   message: Schema name should be snake case.
   severity: error
-  given: $.components.schemas.*
+  given: $.components.schemas
   then:
     field: "@key"
     function: casing
