@@ -1,5 +1,5 @@
 ---
-schema-should-have-description-or-title-oas3:
+schema-descriptions:
   description: All schemas should have a description or title.
   message: Schema should have a description or title.
   severity: warn
@@ -13,7 +13,7 @@ schema-should-have-description-or-title-oas3:
   x-tags:
       - Tag         
 ...
-schema-should-have-description-or-title-oas3:
+schema-descriptions:
   description: All schemas should have a description or title.
   message: Schema should have a description or title.
   severity: warn

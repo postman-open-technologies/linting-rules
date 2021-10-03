@@ -2405,6 +2405,58 @@
         
         
             "schema-descriptions": {            
+                
+                    
+                           
+                            
+                                "description": "All schemas should have a description or title.",
+                            
+                        
+                    
+                
+                    
+                           
+                            
+                                "message": "Schema should have a description or title.",
+                            
+                        
+                    
+                
+                    
+                           
+                            
+                                "severity": "warn",
+                            
+                        
+                    
+                
+                    
+                            
+                        "formats": ["oas3"],
+                        
+                    
+                
+                    
+                           
+                            
+                                "given": "$..properties.*",
+                            
+                        
+                    
+                
+                    
+                            
+                        "then": {"field":"description","function":"truthy"},
+                        
+                    
+                
+                    
+                        
+                    
+                
+                    
+                        
+                    
                  
             }
             

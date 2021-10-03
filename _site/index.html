@@ -28965,6 +28965,35 @@ functionOptions:
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Schema Descriptions - </span> (<a href="http://localhost:4000//rules/schema-descriptions/" style="color:#000">schema-descriptions</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">schema&#8211;descriptions:
+  description: All schemas should have a description or title.
+  message: Schema should have a description or title.
+  severity: warn
+  formats:
+
+  oas3
+  given: $..properties.*
+  then:
+  field: description
+  function: truthy
+  x&#8211;status: draft
+  x&#8211;tags:
+    
+      Tag
+    
+  
+
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/schema-descriptions/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
