@@ -1,7 +1,7 @@
 ---
-schema-names-should-be-pascal-case:
-  description: Schema names should be Pascal case.
-  message: Schema name should be Pascal case.
+schema-names-snake-case:
+  description: Schema names should be snake case.
+  message: Schema name should be snake case.
   severity: hint
   formats:
   - oas2
@@ -9,14 +9,14 @@ schema-names-should-be-pascal-case:
   then:
     function: casing
     functionOptions:
-      type: pascal
+      type: snake
   x-status: draft
   x-tags:
       - Tag          
 ...
-schema-names-should-be-pascal-case:
-  description: Schema names should be Pascal case.
-  message: Schema name should be Pascal case.
+schema-names-snake-case:
+  description: Schema names should be snake case.
+  message: Schema name should be snake case.
   severity: hint
   formats:
   - oas2
@@ -24,7 +24,7 @@ schema-names-should-be-pascal-case:
   then:
     function: casing
     functionOptions:
-      type: pascal
+      type: snake
   x-status: draft
   x-tags:
       - Tag          
