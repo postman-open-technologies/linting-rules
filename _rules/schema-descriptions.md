@@ -5,10 +5,10 @@ schema-should-have-description-or-title-oas3:
   severity: warn
   formats:
   - oas3
-  given:
-  - $.components.schemas[?(!@.description && !@.title)]
+  given: $..properties.*
   then:
-    function: falsy
+      field: description
+      function: truthy
   x-status: draft
   x-tags:
       - Tag         
@@ -19,10 +19,10 @@ schema-should-have-description-or-title-oas3:
   severity: warn
   formats:
   - oas3
-  given:
-  - $.components.schemas[?(!@.description && !@.title)]
+  given: $..properties.*
   then:
-    function: falsy
+      field: description
+      function: truthy
   x-status: draft
   x-tags:
       - Tag      
