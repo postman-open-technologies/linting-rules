@@ -1,24 +1,28 @@
 ---
-schema-descriptions:
-  description: All schema should have a description.
-  message: No description in {{property}}.
+schema-should-have-description-or-title-oas3:
+  description: All schemas should have a description or title.
+  message: Schema should have a description or title.
   severity: warn
-  given: $components.schemas.properties.*
+  formats:
+  - oas3
+  given:
+  - $.components.schemas[?(!@.description && !@.title)]
   then:
-    field: description
-    function: truthy
+    function: falsy
   x-status: draft
   x-tags:
-      - Tag        
+      - Tag         
 ...
-schema-descriptions:
-  description: All schema should have a description.
-  message: No description in {{property}}.
+schema-should-have-description-or-title-oas3:
+  description: All schemas should have a description or title.
+  message: Schema should have a description or title.
   severity: warn
-  given: $components.schemas.properties.*
+  formats:
+  - oas3
+  given:
+  - $.components.schemas[?(!@.description && !@.title)]
   then:
-    field: description
-    function: truthy
+    function: falsy
   x-status: draft
   x-tags:
       - Tag      
