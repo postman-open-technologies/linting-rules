@@ -1,6 +1,6 @@
 {
 "rules": {
-"response-status-204-no-body":{
+"response-delete-204-no-body":{
 
 
 
@@ -16,7 +16,7 @@
     
             
             
-                "description": "204 response should have no body. Use e.g. 200 otherwise.",
+                "description": "DELETE responses should not have  body.",
             
         
     
@@ -25,7 +25,7 @@
     
             
             
-                "given": "$..responses.204",
+                "given": "$paths.delete.responses",
             
         
     
@@ -33,7 +33,7 @@
 
     
           
-        "then": {"field":"content","function":"falsy"},
+        "then": {"field":"204","function":"truthy"},
         
     
     

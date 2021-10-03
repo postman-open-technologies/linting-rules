@@ -25303,6 +25303,38 @@ function: truthy
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Response Delete 204 Status Code - </span> (<a href="http://localhost:4000//rules/response-delete-204-status-code/" style="color:#000">response-delete-204-status-code</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;delete&#8211;204&#8211;status&#8211;code:
+  description: A delete operation should have a 204 response.
+  message: A delete operation should have a 204 response.
+  severity: warn
+  formats:
+
+  oas2
+  oas3d
+  given: $.paths[*].delete.responses
+  then:
+field: “204”
+function: truthy
+  x&#8211;status: draft
+  x&#8211;status: validated
+  x&#8211;tags:
+    
+      Methods
+      Status Codes
+    
+  
+
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/response-delete-204-status-code/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
@@ -27942,36 +27974,34 @@ function: truthy
                                                                 
            
             
+                                                                
+           
+            
             
                <div class="row collection">                 
                   <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Response Delete 204 Status Code - </span> (<a href="http://localhost:4000//rules/response-delete-204-status-code/" style="color:#000">response-delete-204-status-code</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;delete&#8211;204&#8211;status&#8211;code:
-  description: A delete operation should have a 204 response.
-  message: A delete operation should have a 204 response.
-  severity: warn
-  formats:
-
-  oas2
-  oas3d
-  given: $.paths[*].delete.responses
+                     <span style="font-size: 18px; font-weight: bold;">Response Delete 204 No Body - </span> (<a href="http://localhost:4000//rules/response-delete-204-no-body/" style="color:#000">response-delete-204-no-body</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;delete&#8211;204&#8211;no&#8211;body:
+  severity: error
+  description: DELETE responses should not have  body.
+  given: $paths.delete.responses
   then:
-field: “204”
-function: truthy
+    field: “204”
+    function: truthy
   x&#8211;status: draft
   x&#8211;tags:
-    
-      Tag
-    
-  
-
+      &#8211; Methods
+      &#8211; Bodies
 </code></pre>                  
                   </div>            
                   <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/response-delete-204-status-code/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <a href="http://localhost:4000//rules/response-delete-204-no-body/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
                      <strong>Link</strong></a>
                   </div>   
                </div>   
+                                                                
+           
+            
                                                                 
            
             
@@ -28185,61 +28215,6 @@ function: falsy
                                                                 
            
             
-                                                                
-           
-            
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Response Status 202 Header Oas2 - </span> (<a href="http://localhost:4000//rules/response-status-202-header-oas2/" style="color:#000">response-status-202-header-oas2</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;status&#8211;202&#8211;header&#8211;oas2:
-  description: A 202 response should include an Operation&#8211;Location response header.
-  severity: warn
-  formats:
-
-  oas2
-  given: $.paths[][].responses[?(@property == ‘202’)]
-  then:
-field: headers.Operation&#8211;location
-function: truthy
-  x&#8211;status: draft
-  x&#8211;tags:
-    
-      Tag
-    
-  
-
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/response-status-202-header-oas2/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
-                                                                
-           
-            
-            
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">Response Status 204 No Body - </span> (<a href="http://localhost:4000//rules/response-status-204-no-body/" style="color:#000">response-status-204-no-body</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">response&#8211;status&#8211;204&#8211;no&#8211;body:
-  severity: error
-  description: 204 response should have no body. Use e.g. 200 otherwise.
-  given: $..responses.204
-  then:
-    field: content
-    function: falsy
-  x&#8211;status: draft
-  x&#8211;tags:
-      &#8211; Tag
-</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="http://localhost:4000//rules/response-status-204-no-body/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
                                                                 
            
             

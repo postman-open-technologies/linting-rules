@@ -1,30 +1,32 @@
 ---
-response-delete-200-status-code:
-  description: A delete operation should have a 200 response.
-  message: A delete operation should have a 200 response.
+response-put-204-status-code:
+  description: A put operation should have a 204 response.
+  message: A delete operation should have a 204 response.
   severity: warn
   formats:
   - oas2
   - oas3
   given: $.paths[*].delete.responses
   then:
-    field: "200"
+    field: "204"
     function: truthy
-  x-status: draft
+  x-status: valiated
   x-tags:
-      - Tag        
+      - Methods
+      - Status Codes        
 ...
-response-delete-200-status-code:
-  description: A delete operation should have a 200 response.
-  message: A delete operation should have a 200 response.
+response-put-204-status-code:
+  description: A put operation should have a 204 response.
+  message: A delete operation should have a 204 response.
   severity: warn
   formats:
   - oas2
-  - oas3d
+  - oas3
   given: $.paths[*].delete.responses
   then:
-    field: "200"
+    field: "204"
     function: truthy
-  x-status: draft
+  x-status: valiated
   x-tags:
-      - Tag        
+      - Methods
+      - Status Codes        
