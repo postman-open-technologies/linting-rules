@@ -3,7 +3,7 @@ schema-names-pascal-case:
   description: Schema names should be Pascal case.
   message: Schema name should be Pascal case.
   severity: error
-  given: $.components.schemas.*
+  given: $.components.schemas
   then:
     field: "@key"
     function: casing
