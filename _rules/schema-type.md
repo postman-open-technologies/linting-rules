@@ -5,7 +5,7 @@ schema-type:
   severity: error
   formats:
     - oas3
-  given: $.components.schema
+  given: $.components.schemas
   then:
       field: type
       function: truthy
@@ -19,7 +19,7 @@ schema-type:
   severity: error
   formats:
     - oas3
-  given: $.components.schema
+  given: $.components.schemas
   then:
       field: type
       function: truthy
