@@ -1,8 +1,8 @@
 ---
-response-get-201-no-body:
+response-get-200-no-body:
   severity: error
   description: GET responses should not have  body.
-  given: $paths.get.responses.201.content
+  given: $paths.get.responses.200.content
   then:
     field: "application/json"
     function: truthy
