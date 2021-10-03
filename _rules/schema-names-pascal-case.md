@@ -10,9 +10,10 @@ schema-names-pascal-case:
     function: casing
     functionOptions:
       type: pascal
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing         
 ...
 schema-names-pascal-case:
   description: Schema names should be Pascal case.
@@ -25,6 +26,7 @@ schema-names-pascal-case:
     function: casing
     functionOptions:
       type: pascal
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing          

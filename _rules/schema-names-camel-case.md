@@ -10,9 +10,10 @@ schema-names-camel-case:
     function: casing
     functionOptions:
       type: camel
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing          
 ...
 schema-names-camel-case:
   description: Schema names should be camel case.
@@ -25,6 +26,7 @@ schema-names-camel-case:
     function: casing
     functionOptions:
       type: camel
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing        

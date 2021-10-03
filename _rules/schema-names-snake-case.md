@@ -25,6 +25,7 @@ schema-names-snake-case:
     function: casing
     functionOptions:
       type: snake
-  x-status: draft
+  x-status: validated
   x-tags:
-      - Tag          
+      - Schema
+      - Casing          
