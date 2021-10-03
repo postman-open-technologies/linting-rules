@@ -25366,6 +25366,29 @@ function: truthy
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Delete Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-delete-oas3/" style="color:#000">request-bodies-delete-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;delete&#8211;oas3: 
+  description: “DELETE methods must have a request body.”
+  given: $.paths.*.delete
+  message: “Method must not have a request body “
+  recommended: true
+  severity: error
+  then: 
+    field: “requestBody”
+    function: falsy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Methods
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-delete-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
