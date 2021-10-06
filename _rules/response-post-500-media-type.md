@@ -1,8 +1,8 @@
 ---
-response-put-500-media-type:
+response-post-500-media-type:
   severity: error
-  description: PUT responses should have a 500 with Problem JSON media type.
-  given: $paths.put.responses.500.content
+  description: POST responses should have a 500 with Problem JSON media type.
+  given: $paths.post.responses.500.content
   then:
     field: "application/problem+json"
     function: truthy
@@ -10,10 +10,10 @@ response-put-500-media-type:
   x-tags:
       - Responses       
 ...
-response-put-500-media-type:
+response-post-500-media-type:
   severity: error
-  description: PUT responses should have a 500 with Problem JSON media type.
-  given: $paths.put.responses.500.content
+  description: POST responses should have a 500 with Problem JSON media type.
+  given: $paths.post.responses.500.content
   then:
     field: "application/problem+json"
     function: truthy

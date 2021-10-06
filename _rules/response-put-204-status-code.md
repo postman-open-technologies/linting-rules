@@ -1,7 +1,7 @@
 ---
 response-put-204-status-code:
   description: A put operation should have a 204 response.
-  message: A delete operation should have a 204 response.
+  message: A put operation should have a 204 response.
   severity: warn
   formats:
   - oas2
@@ -17,7 +17,7 @@ response-put-204-status-code:
 ...
 response-put-204-status-code:
   description: A put operation should have a 204 response.
-  message: A delete operation should have a 204 response.
+  message: A put operation should have a 204 response.
   severity: warn
   formats:
   - oas2

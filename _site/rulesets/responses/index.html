@@ -3900,6 +3900,66 @@
                 
                   
                                
+                
+                    
+                           
+                            
+                                "description": "A post operation should have a 201 response.",
+                            
+                        
+                    
+                    
+                
+                    
+                           
+                            
+                                "message": "A POST operation should have a 201 response.",
+                            
+                        
+                    
+                    
+                
+                    
+                           
+                            
+                                "severity": "warn",
+                            
+                        
+                    
+                    
+                
+                    
+                            
+                        "formats": ["oas3"],
+                        
+                    
+                    
+                
+                    
+                           
+                            
+                                "given": "$.paths[*].post.responses",
+                            
+                        
+                    
+                    
+                
+                    
+                            
+                        "then": {"field":"201","function":"truthy"}
+                        
+                    
+                    
+                
+                    
+                        
+                    
+                    
+                
+                    
+                        
+                    
+                    
                  
             }
             
@@ -5912,6 +5972,50 @@
                 
                   
                                
+                
+                    
+                           
+                            
+                                "severity": "error",
+                            
+                        
+                    
+                    
+                
+                    
+                           
+                            
+                                "description": "POST responses should have a 500 with Problem JSON media type.",
+                            
+                        
+                    
+                    
+                
+                    
+                           
+                            
+                                "given": "$paths.post.responses.500.content",
+                            
+                        
+                    
+                    
+                
+                    
+                            
+                        "then": {"field":"application/problem+json","function":"truthy"}
+                        
+                    
+                    
+                
+                    
+                        
+                    
+                    
+                
+                    
+                        
+                    
+                    
                  
             }
             
@@ -6569,7 +6673,7 @@
                     
                            
                             
-                                "message": "A delete operation should have a 204 response.",
+                                "message": "A put operation should have a 204 response.",
                             
                         
                     
