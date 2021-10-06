@@ -201,12 +201,16 @@
         
             "info-title": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must have a #/info/title.",
                             
                         
+                    
                     
                 
                     
@@ -216,6 +220,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -223,6 +228,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -232,6 +238,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -240,25 +247,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"title","function":"truthy"},
+                        "then": {"field":"title","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -887,12 +899,16 @@
         
             "info-title-max-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The title must not be greater than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -902,6 +918,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -909,6 +926,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -918,6 +936,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -926,25 +945,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"title","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"title","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -1582,12 +1606,16 @@
         
             "info-title-word-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -1597,6 +1625,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -1604,6 +1633,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -1613,6 +1643,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -1621,25 +1652,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}},
+                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -2268,6 +2304,9 @@
         
             "info-title-in-kebab-case": {            
                 
+                  
+                               
+                
                     
                            
                             
@@ -2275,11 +2314,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"pattern","functionOptions":{"match":"^[a-z][a-z0-9\\-]*$"}},
                         
+                    
                     
                 
                     
@@ -2289,6 +2330,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2297,11 +2339,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas2","oas3"],
                         
+                    
                     
                 
                     
@@ -2311,6 +2355,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2319,17 +2364,20 @@
                             
                         
                     
+                    
                 
                     
                            
                             
-                                "severity": "error",
+                                "severity": "error"
                             
                         
+                    
                     
                 
                     
                         
+                    
                     
                  
             }
@@ -2958,12 +3006,16 @@
         
             "info-summary": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Mus have #/info/summary.",
                             
                         
+                    
                     
                 
                     
@@ -2973,6 +3025,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2980,6 +3033,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -2989,6 +3043,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2997,25 +3052,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"summary","function":"truthy"},
+                        "then": {"field":"summary","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -3644,12 +3704,16 @@
         
             "info-summary-max-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The summary must not be greater than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -3659,6 +3723,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -3666,6 +3731,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -3675,6 +3741,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -3683,25 +3750,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -4339,12 +4411,16 @@
         
             "info-summary-word-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -4354,6 +4430,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -4361,6 +4438,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -4370,6 +4448,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -4378,25 +4457,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}},
+                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -5010,8 +5094,12 @@
         
             "info-description": {            
                 
+                  
+                               
+                
                     
                         
+                    
                     
                 
                     
@@ -5021,6 +5109,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5028,6 +5117,7 @@
                                 "given": "$.info",
                             
                         
+                    
                     
                 
                     
@@ -5037,6 +5127,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5044,6 +5135,7 @@
                                 "recommended": true,
                             
                         
+                    
                     
                 
                     
@@ -5053,11 +5145,13 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "formats": ["oas3"],
+                        "formats": ["oas3"]
                         
+                    
                     
                 
                     
@@ -5065,9 +5159,11 @@
                         "then": {"field":"description","function":"truthy"},
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -5696,12 +5792,16 @@
         
             "info-description-max-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The description must not be greater than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -5711,6 +5811,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5718,6 +5819,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -5727,6 +5829,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5735,25 +5838,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -6391,12 +6499,16 @@
         
             "info-description-word-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -6406,6 +6518,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -6413,6 +6526,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -6422,6 +6536,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -6430,25 +6545,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}},
+                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -7077,12 +7197,16 @@
         
             "info-contact": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Mus have #/info/contact.",
                             
                         
+                    
                     
                 
                     
@@ -7092,6 +7216,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -7099,6 +7224,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -7108,6 +7234,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -7116,25 +7243,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"contact","function":"truthy"},
+                        "then": {"field":"contact","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -7763,12 +7895,16 @@
         
             "info-contact-name": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Contact name should be Manual.",
                             
                         
+                    
                     
                 
                     
@@ -7778,6 +7914,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -7786,19 +7923,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"truthy"},
+                        "then": {"field":"name","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -8430,12 +8571,16 @@
         
             "info-contact-email": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a contact email.",
                             
                         
+                    
                     
                 
                     
@@ -8445,6 +8590,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -8453,19 +8599,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"email","function":"truthy"},
+                        "then": {"field":"email","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -9106,12 +9256,16 @@
         
             "info-contact-url": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a contact url.",
                             
                         
+                    
                     
                 
                     
@@ -9121,6 +9275,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -9129,19 +9284,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"url","function":"truthy"},
+                        "then": {"field":"url","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -9803,12 +9962,16 @@
         
             "info-license": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Mus have #/info/license.",
                             
                         
+                    
                     
                 
                     
@@ -9818,6 +9981,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -9825,6 +9989,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -9834,6 +9999,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -9842,25 +10008,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"license","function":"truthy"},
+                        "then": {"field":"license","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -10483,12 +10654,16 @@
         
             "info-license-name": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a license name.",
                             
                         
+                    
                     
                 
                     
@@ -10498,6 +10673,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -10506,19 +10682,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"truthy"},
+                        "then": {"field":"name","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -11162,12 +11342,16 @@
         
             "info-license-url": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a license url.",
                             
                         
+                    
                     
                 
                     
@@ -11177,6 +11361,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -11185,19 +11370,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"url","function":"truthy"},
+                        "then": {"field":"url","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -11826,12 +12015,16 @@
         
             "info-license-url-apache": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a license url.",
                             
                         
+                    
                     
                 
                     
@@ -11841,6 +12034,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -11849,19 +12043,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"match":"apache.org"}},
+                        "then": {"function":"pattern","functionOptions":{"match":"apache.org"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -12499,12 +12697,16 @@
         
             "info-license-url-mit": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Should have a MIT license.",
                             
                         
+                    
                     
                 
                     
@@ -12514,6 +12716,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -12522,19 +12725,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"match":"mit.edu"}},
+                        "then": {"function":"pattern","functionOptions":{"match":"mit.edu"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -13187,12 +13394,16 @@
         
             "info-terms-of-service": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Mus have #/info/termsOfService.",
                             
                         
+                    
                     
                 
                     
@@ -13202,6 +13413,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -13209,6 +13421,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -13218,6 +13431,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -13226,25 +13440,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"termsOfService","function":"truthy"},
+                        "then": {"field":"termsOfService","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -13894,12 +14113,16 @@
         
             "info-version": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Mus have #/info/version.",
                             
                         
+                    
                     
                 
                     
@@ -13909,6 +14132,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -13916,6 +14140,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -13925,6 +14150,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -13933,25 +14159,30 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"version","function":"truthy"},
+                        "then": {"field":"version","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -14589,8 +14820,12 @@
         
             "info-x-api-id": {            
                 
+                  
+                               
+                
                     
                         
+                    
                     
                 
                     
@@ -14599,6 +14834,7 @@
                                 "message": "API must have an unique identifier in x-api-id in #/info/x-api-id.",
                             
                         
+                    
                     
                 
                     
@@ -14609,6 +14845,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -14616,6 +14853,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                                 "given": "$.info",
                             
                         
+                    
                     
                 
                     
@@ -14625,6 +14863,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -14633,19 +14872,22 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
+                    
                     
                 
                     
                             
                         "then": {"field":"x-api-id","function":"truthy"}
                         
+                    
                     
                  
             }
@@ -15283,12 +15525,16 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
         
             "info-x-audience": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "message": "Missing info.x-audience.",
                             
                         
+                    
                     
                 
                     
@@ -15298,6 +15544,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -15305,6 +15552,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                                 "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#218",
                             
                         
+                    
                     
                 
                     
@@ -15314,6 +15562,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -15322,11 +15571,13 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"field":"x-audience","function":"truthy"}
                         
+                    
                     
                  
             }
@@ -15964,8 +16215,12 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
         
             "info-x-summary": {            
                 
+                  
+                               
+                
                     
                         
+                    
                     
                 
                     
@@ -15975,6 +16230,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -15982,6 +16238,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                                 "description": "The `#/info/x-summary` can be used to specify a brief, one-liner description of your API: this is very useful for catalog purposes (eg. this can be shown as your API subtitle in catalogs and developer portals). In OAS3.1 you can use the standard `#/info/summary` field.",
                             
                         
+                    
                     
                 
                     
@@ -15991,6 +16248,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -15998,6 +16256,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -16007,6 +16266,7 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                            
@@ -16015,17 +16275,20 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                             
                         
                     
+                    
                 
                     
                             
-                        "formats": ["oas3"],
+                        "formats": ["oas3"]
                         
+                    
                     
                 
                     
                             
                         "then": {"field":"x-summary","function":"truthy"}
                         
+                    
                     
                  
             }

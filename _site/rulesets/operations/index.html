@@ -300,12 +300,16 @@
         
             "operations-tags": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -315,6 +319,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -323,19 +328,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": [{"field":"tags","function":"truthy"}],
+                        "then": [{"field":"tags","function":"truthy"}]
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -937,12 +946,16 @@
         
             "operations-description-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operation description should be short and sweet, no full stops, and less than 20 characters",
                             
                         
+                    
                     
                 
                     
@@ -952,6 +965,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -960,27 +974,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": [{"field":"description","function":"length","functionOptions":{"max":20}}],
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -1618,12 +1637,16 @@
         
             "operations-description-words-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -1633,6 +1656,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -1641,27 +1665,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -2299,12 +2328,16 @@
         
             "operations-description": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -2314,6 +2347,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2322,19 +2356,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": [{"field":"description","function":"truthy"}],
+                        "then": [{"field":"description","function":"truthy"}]
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -2972,12 +3010,16 @@
         
             "operations-operationids-camel-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operation IDs MUST be written in camelCase.",
                             
                         
+                    
                     
                 
                     
@@ -2987,6 +3029,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2994,6 +3037,7 @@
                                 "message": "{{property}} is not camelCase {{error}}",
                             
                         
+                    
                     
                 
                     
@@ -3003,27 +3047,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"casing","functionOptions":{"type":"camel"}},
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -3661,12 +3710,16 @@
         
             "operations-operationids-kebab-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operation IDs MUST be written in kebab-case.",
                             
                         
+                    
                     
                 
                     
@@ -3676,6 +3729,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -3683,6 +3737,7 @@
                                 "message": "{{property}} is not kebab-case {{error}}",
                             
                         
+                    
                     
                 
                     
@@ -3692,27 +3747,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"casing","functionOptions":{"type":"kebab"}},
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -4350,12 +4410,16 @@
         
             "operations-operationids-pascal-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operation IDs MUST be written in PascalCase.",
                             
                         
+                    
                     
                 
                     
@@ -4365,6 +4429,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -4372,6 +4437,7 @@
                                 "message": "{{property}} is not PascalCase {{error}}",
                             
                         
+                    
                     
                 
                     
@@ -4381,27 +4447,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"casing","functionOptions":{"type":"pascal"}},
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -5039,12 +5110,16 @@
         
             "operations-summary-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operation summary should be short and sweet, no full stops, and less than 20 characters",
                             
                         
+                    
                     
                 
                     
@@ -5054,6 +5129,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5062,27 +5138,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": [{"field":"summary","function":"length","functionOptions":{"max":20}}],
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -5723,12 +5804,16 @@
         
             "operations-summary-words-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -5738,6 +5823,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5746,27 +5832,32 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
                     
+                    
                 
                     
                            
                             
-                                "type": "style",
+                                "type": "style"
                             
                         
                     
-                
-                    
-                        
                     
                 
                     
                         
+                    
+                    
+                
+                    
+                        
+                    
                     
                  
             }
@@ -6404,12 +6495,16 @@
         
             "operations-summary": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -6419,6 +6514,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -6427,19 +6523,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": [{"field":"summary","function":"truthy"}],
+                        "then": [{"field":"summary","function":"truthy"}]
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -7077,12 +7177,16 @@
         
             "operations-tags-one": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Operations must have at least one tag value.",
                             
                         
+                    
                     
                 
                     
@@ -7092,6 +7196,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -7100,11 +7205,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "then": {"field":"tags","function":"length","functionOptions":{"min":1}},
                         
+                    
                     
                 
                     
@@ -7113,6 +7220,7 @@
                                 "type": "style"
                             
                         
+                    
                     
                  
             }

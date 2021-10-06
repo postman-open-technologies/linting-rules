@@ -522,12 +522,16 @@
         
             "schema-description": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a description.",
                             
                         
+                    
                     
                 
                     
@@ -537,6 +541,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -545,11 +550,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -559,19 +566,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
+                        "then": {"field":"description","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -1200,12 +1211,16 @@
         
             "schema-description-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas descriptions should be shorter than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -1215,6 +1230,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -1223,11 +1239,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -1237,19 +1255,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -1887,12 +1909,16 @@
         
             "schema-description-words": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Some words should not be be contained within the schema description.",
                             
                         
+                    
                     
                 
                     
@@ -1902,6 +1928,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -1910,11 +1937,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -1924,19 +1953,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
+                        "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -2577,12 +2610,16 @@
         
             "schema-names-camel-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Schema names should be camel case.",
                             
                         
+                    
                     
                 
                     
@@ -2592,6 +2629,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -2599,6 +2637,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -2608,19 +2647,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"camel"}},
+                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"camel"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -3261,12 +3304,16 @@
         
             "schema-names-pascal-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Schema names should be pascal case.",
                             
                         
+                    
                     
                 
                     
@@ -3276,6 +3323,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -3283,6 +3331,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -3292,19 +3341,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal"}},
+                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -3942,12 +3995,16 @@
         
             "schema-names-snake-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Schema names should be snake case.",
                             
                         
+                    
                     
                 
                     
@@ -3957,6 +4014,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -3964,6 +4022,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -3973,19 +4032,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"snake"}},
+                        "then": {"field":"@key","function":"casing","functionOptions":{"type":"snake"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -4614,12 +4677,16 @@
         
             "schema-names-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Schema names should be no more than 10 characters.",
                             
                         
+                    
                     
                 
                     
@@ -4629,6 +4696,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -4636,6 +4704,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -4645,19 +4714,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"@key","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"@key","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -5301,12 +5374,16 @@
         
             "schema-names-words": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Schema names should not contain certain words.",
                             
                         
+                    
                     
                 
                     
@@ -5316,6 +5393,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -5323,6 +5401,7 @@
                                 "severity": "error",
                             
                         
+                    
                     
                 
                     
@@ -5332,19 +5411,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"@key","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
+                        "then": {"field":"@key","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -6000,12 +6083,16 @@
         
             "schema-properties": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas should have a properties.",
                             
                         
+                    
                     
                 
                     
@@ -6015,6 +6102,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -6023,11 +6111,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -6037,19 +6127,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"properties","function":"truthy"},
+                        "then": {"field":"properties","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -6687,12 +6781,16 @@
         
             "schema-required": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a required.",
                             
                         
+                    
                     
                 
                     
@@ -6702,6 +6800,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -6710,11 +6809,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -6724,19 +6825,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"required","function":"truthy"},
+                        "then": {"field":"required","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -7374,12 +7479,16 @@
         
             "schema-type": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas should have a type.",
                             
                         
+                    
                     
                 
                     
@@ -7389,6 +7498,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -7397,11 +7507,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -7411,19 +7523,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"type","function":"truthy"},
+                        "then": {"field":"type","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -8049,12 +8165,16 @@
         
             "schema-properties-type": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a type.",
                             
                         
+                    
                     
                 
                     
@@ -8064,6 +8184,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -8072,11 +8193,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -8086,19 +8209,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"type","function":"truthy"},
+                        "then": {"field":"type","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -8724,12 +8851,16 @@
         
             "schema-properties-descriptions": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a description.",
                             
                         
+                    
                     
                 
                     
@@ -8739,6 +8870,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -8747,11 +8879,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -8761,19 +8895,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
+                        "then": {"field":"description","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -9402,12 +9540,16 @@
         
             "schema-properties-descriptions-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The length of the description needs to be lest than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -9417,6 +9559,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -9425,11 +9568,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -9439,19 +9584,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -10089,12 +10238,16 @@
         
             "schema-properties-descriptions-words": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Some words should not exist within the property description.",
                             
                         
+                    
                     
                 
                     
@@ -10104,6 +10257,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -10112,11 +10266,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -10126,19 +10282,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
+                        "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -10779,12 +10939,16 @@
         
             "schema-properties-maximum": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a maximum.",
                             
                         
+                    
                     
                 
                     
@@ -10794,6 +10958,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -10802,11 +10967,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -10816,19 +10983,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"maximum","function":"truthy"},
+                        "then": {"field":"maximum","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -11466,12 +11637,16 @@
         
             "schema-properties-minimum": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "All schemas properties should have a minimum.",
                             
                         
+                    
                     
                 
                     
@@ -11481,6 +11656,7 @@
                             
                         
                     
+                    
                 
                     
                            
@@ -11489,11 +11665,13 @@
                             
                         
                     
+                    
                 
                     
                             
                         "formats": ["oas3"],
                         
+                    
                     
                 
                     
@@ -11503,19 +11681,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"minimum","function":"truthy"},
+                        "then": {"field":"minimum","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }

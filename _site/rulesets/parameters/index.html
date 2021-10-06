@@ -303,12 +303,16 @@
         
             "parameters-default-not-allowed": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "A required parameter should not specify a default value.",
                             
                         
+                    
                     
                 
                     
@@ -318,17 +322,20 @@
                             
                         
                     
+                    
                 
                     
                             
                         "given": ["$.paths[*].parameters.[?(@.required)]"],
                         
                     
+                    
                 
                     
                             
                         "then": {"field":"default","function":"falsy"}
                         
+                    
                     
                  
             }
@@ -966,12 +973,16 @@
         
             "parameters-description-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The description can't be more than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -981,19 +992,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -1631,12 +1646,16 @@
         
             "parameters-description-word-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -1646,19 +1665,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
+                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -2296,12 +2319,16 @@
         
             "parameters-description": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -2311,19 +2338,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
+                        "then": {"field":"description","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -2961,12 +2992,16 @@
         
             "parameters-example": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Parameters must have a example.",
                             
                         
+                    
                     
                 
                     
@@ -2976,19 +3011,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": [{"field":"example","function":"truthy"},{"field":"examples","function":"truthy"}],
+                        "then": [{"field":"example","function":"truthy"},{"field":"examples","function":"truthy"}]
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -3626,12 +3665,16 @@
         
             "parameters-in": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Parameters must have an in.",
                             
                         
+                    
                     
                 
                     
@@ -3641,19 +3684,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"in","function":"truthy"},
+                        "then": {"field":"in","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -4291,12 +4338,16 @@
         
             "parameters-name-camel-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Path and query parmeters must use camelCase.",
                             
                         
+                    
                     
                 
                     
@@ -4306,19 +4357,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}},
+                        "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -4956,12 +5011,16 @@
         
             "parameters-name-length": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "The name can't be more than 20 characters.",
                             
                         
+                    
                     
                 
                     
@@ -4971,19 +5030,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}},
+                        "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -5621,12 +5684,16 @@
         
             "parameters-name-pascal-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Path and query parmeters must use PascalCase.",
                             
                         
+                    
                     
                 
                     
@@ -5636,19 +5703,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"casing","functionOptions":{"type":"pascal"}},
+                        "then": {"field":"name","function":"casing","functionOptions":{"type":"pascal"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -6286,12 +6357,16 @@
         
             "parameters-name-snake-case": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Path and query parmeters must use snake_case.",
                             
                         
+                    
                     
                 
                     
@@ -6301,19 +6376,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"casing","functionOptions":{"type":"snake"}},
+                        "then": {"field":"name","function":"casing","functionOptions":{"type":"snake"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -6951,12 +7030,16 @@
         
             "parameters-name-word-check": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -6966,19 +7049,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
+                        "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -7616,12 +7703,16 @@
         
             "parameters-name": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
+                    
                     
                 
                     
@@ -7631,19 +7722,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"name","function":"truthy"},
+                        "then": {"field":"name","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -8281,12 +8376,16 @@
         
             "parameters-schema-type": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Parameters must have a schema.",
                             
                         
+                    
                     
                 
                     
@@ -8296,19 +8395,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"type","function":"truthy"},
+                        "then": {"field":"type","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
@@ -8946,12 +9049,16 @@
         
             "parameters-schema": {            
                 
+                  
+                               
+                
                     
                            
                             
                                 "description": "Parameters must have a schema.",
                             
                         
+                    
                     
                 
                     
@@ -8961,19 +9068,23 @@
                             
                         
                     
+                    
                 
                     
                             
-                        "then": {"field":"schema","function":"truthy"},
+                        "then": {"field":"schema","function":"truthy"}
                         
+                    
                     
                 
                     
                         
                     
+                    
                 
                     
                         
+                    
                     
                  
             }
