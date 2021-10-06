@@ -4,12 +4,12 @@ description: A ruleset that focus on governance applied to the request body obje
 rules:
   - request-bodies-delete-oas3
   - request-bodies-get-oas3
-  - request-bodies-patch-media-type-oa3
-  - request-bodies-patch-oa3
-  - request-bodies-post-media-type-oa3
-  - request-bodies-post-oa3
-  - request-bodies-put-media-type-oa3
-  - request-bodies-put-oa3
+  - request-bodies-patch-media-type-oas3
+  - request-bodies-patch-oas3
+  - request-bodies-post-media-type-oas3
+  - request-bodies-post-oas3
+  - request-bodies-put-media-type-oas3
+  - request-bodies-put-oas3
 image: /images/request-icon.png
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/17
 ...
