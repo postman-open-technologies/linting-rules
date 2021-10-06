@@ -44474,21 +44474,159 @@ function: truthy
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Patch Media Type Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-patch-media-type-oas3/" style="color:#000">request-bodies-patch-media-type-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;media&#8211;type&#8211;oas3: 
+  description: “POST request bodies must have a application/json media type.”
+  given: $.paths.*.post[requestBody].content
+  message: “application/json is required for POST requests “
+  recommended: true
+  severity: error
+  then: 
+    field: “application/json”
+    function: truthy
+  x&#8211;status: draft
+  x&#8211;tags:
+    &#8211; Tag
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-patch-media-type-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Patch Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-patch-oas3/" style="color:#000">request-bodies-patch-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;patch&#8211;oas3: 
+  description: “PATCH methods must have a request body.”
+  given: $.paths.*.patch
+  message: “Method must have a request body “
+  recommended: true
+  severity: error
+  then: 
+    field: “requestBody”
+    function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Methods
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-patch-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Post Media Type Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-post-media-type-oas3/" style="color:#000">request-bodies-post-media-type-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;media&#8211;type&#8211;oas3: 
+  description: “POST request bodies must have a application/json media type.”
+  given: $.paths.*.post[requestBody].content
+  message: “application/json is required for POST requests “
+  recommended: true
+  severity: error
+  then: 
+    field: “application/json”
+    function: truthy
+  x&#8211;status: draft
+  x&#8211;tags:
+    &#8211; Tag
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-post-media-type-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Post Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-post-oas3/" style="color:#000">request-bodies-post-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;post&#8211;oas3: 
+  description: “POST methods must have a request body.”
+  given: $.paths.*.post
+  message: “Method must have a request body “
+  recommended: true
+  severity: error
+  then: 
+    field: “requestBody”
+    function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Methods
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-post-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Put Media Type Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-put-media-type-oas3/" style="color:#000">request-bodies-put-media-type-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;put&#8211;media&#8211;type&#8211;oas3: 
+  description: “PUT request bodies must have a application/json media type.”
+  given: $.paths.*.put[requestBody].content
+  message: “application/json is required for PUT requests “
+  recommended: true
+  severity: error
+  then: 
+    field: “application/json”
+    function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Methods
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-put-media-type-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
+            
+               <div class="row collection">                 
+                  <div class="col-md-11" style="border: 0px solid #000;">
+                     <span style="font-size: 18px; font-weight: bold;">Request Bodies Put Oas3 - </span> (<a href="http://localhost:4000//rules/request-bodies-put-oas3/" style="color:#000">request-bodies-put-oas3</a>)</p>
+                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">request&#8211;bodies&#8211;put&#8211;oas3: 
+  description: “PUT methods must have a request body.”
+  given: $.paths.*.put
+  message: “Method must have a request body “
+  recommended: true
+  severity: error
+  then: 
+    field: “requestBody”
+    function: truthy
+  x&#8211;status: validated
+  x&#8211;tags:
+    &#8211; Methods
+</code></pre>                  
+                  </div>            
+                  <div class="col-md-1" style="border: 0px solid #000;">
+                     <a href="http://localhost:4000//rules/request-bodies-put-oas3/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+                     <strong>Link</strong></a>
+                  </div>   
+               </div>   
                                                                 
            
             
