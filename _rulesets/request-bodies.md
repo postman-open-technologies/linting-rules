@@ -2,8 +2,6 @@
 name: Request Bodies
 description: A ruleset that focus on governance applied to the request body object of the OpenAPI.
 rules:
-  - request-bodies-schema-object
-  - request-bodies-components
   - request-bodies-delete-oas3
   - request-bodies-get-oas3
   - request-bodies-patch-media-type-oa3
