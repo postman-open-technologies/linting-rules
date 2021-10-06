@@ -2,6 +2,7 @@
 "rules": {
 "responses-headers-rate-limits-oas3":{
 
+ 
 
 
     
@@ -58,7 +59,7 @@
 
     
           
-        "then": [{"function":"xor","functionOptions":{"properties":["X-RateLimit-Limit","RateLimit-Limit"]}},{"function":"xor","functionOptions":{"properties":["X-RateLimit-Remaining","RateLimit-Remaining"]}},{"function":"xor","functionOptions":{"properties":["X-RateLimit-Reset","RateLimit-Reset"]}}],
+        "then": [{"function":"xor","functionOptions":{"properties":["X-RateLimit-Limit","RateLimit-Limit"]}},{"function":"xor","functionOptions":{"properties":["X-RateLimit-Remaining","RateLimit-Remaining"]}},{"function":"xor","functionOptions":{"properties":["X-RateLimit-Reset","RateLimit-Reset"]}}]
         
     
     

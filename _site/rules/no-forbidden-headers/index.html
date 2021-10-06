@@ -2,6 +2,7 @@
 "rules": {
 "no-forbidden-headers":{
 
+ 
 
 
     
@@ -40,7 +41,7 @@ You MUST use the associate functionalities provided by OAS, instead.",
 
     
           
-        "given": ["$..parameters[?(@.in == 'header')].name","$.[responses][*].headers.*~"],
+        "given": ["$..parameters[?(@.in == 'header')].name","$.[responses][*].headers.*~"]
         
     
     

@@ -8,8 +8,8 @@ schema-description-words:
   given: $.components.schemas.*
   then:
       field: description
-        function: pattern
-        functionOptions:
+      function: pattern
+      functionOptions:
         notMatch: \b(word|word|word)\b
   x-status: validated
   x-tags:
@@ -24,8 +24,8 @@ schema-description-words:
   given: $.components.schemas.*
   then:
       field: description
-        function: pattern
-        functionOptions:
+      function: pattern
+      functionOptions:
         notMatch: \b(word|word|word)\b
   x-status: validated
   x-tags:
