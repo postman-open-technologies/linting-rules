@@ -1,6 +1,6 @@
 {
 "rules": {
-"operations-tags-one":{
+"tags-name":{
 
  
 
@@ -8,7 +8,7 @@
     
             
             
-                "description": "Must have at least one tag.",
+                "description": "Tags must have a name.",
             
         
     
@@ -17,7 +17,7 @@
     
             
             
-                "given": "$",
+                "given": "$.tags[*]",
             
         
     
@@ -34,16 +34,17 @@
 
     
           
-        "then": {"field":"tags","function":"length","functionOptions":{"min":1}},
+        "then": {"field":"name","function":"truthy"}
         
     
     
 
     
-            
-            
-                "type": "style"
-            
+        
+    
+    
+
+    
         
     
     

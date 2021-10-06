@@ -1,5 +1,5 @@
 ---
-operations-tags-one:
+tags-one:
   description: Must have at least one tag.
   given: $
   severity: error
@@ -10,7 +10,7 @@ operations-tags-one:
       min: 1
   type: style
 ...
-operations-tags-one:
+tags-one:
   description: Must have at least one tag.
   given: $
   severity: error
