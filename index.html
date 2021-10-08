@@ -63,6 +63,7 @@ layout: default
          {% for rule in rules %}  
             {% assign status = rule[rule.slug]['x-status'] %}
             {% if status == 'validated' %}
+               <a name="{{ rule.slug }}"></a>
                <div class="row collection">                 
                   <div class="col-md-11" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
@@ -81,6 +82,7 @@ layout: default
          {% for rule in rules %}  
             {% assign status = rule[rule.slug]['x-status'] %}
             {% if status == 'draft' %}
+            <a name="{{ rule.slug }}"></a>
                <div class="row collection">                 
                   <div class="col-md-11" style="border: 0px solid #000;">
                      <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>

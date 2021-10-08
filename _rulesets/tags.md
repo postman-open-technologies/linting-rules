@@ -7,7 +7,7 @@ rules:
     - tags
     - tags-one
     - tags-name
-    - tags-descriptions
+    - tags-description
 image: /images/tags-icon.png    
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/20
 ...
