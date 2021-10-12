@@ -18,7 +18,7 @@
             {% for this_rule in ruleset.rules %}
                 {% for rule in rules %}
                     {% if this_rule == rule.slug %}
-                    <li><strong>{{ rule.title }}</strong></li>
+                    <li><strong>{{ rule.title }}</strong> - {{ rule[rule.slug].description }}</li>
                     {% endif %}
                 {% endfor %}  
             {% endfor %}          

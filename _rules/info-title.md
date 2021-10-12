@@ -1,6 +1,6 @@
 ---
 info-title:
-  description: "Must have a #/info/title."
+  description: "API must have a title."
   given: "$.info"
   severity: error
   recommended: true
@@ -15,7 +15,7 @@ info-title:
     - Info
 ...
 info-title:
-  description: "Must have a #/info/title."
+  description: "API must have a title."
   given: "$.info"
   severity: error
   recommended: true
