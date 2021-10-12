@@ -6,7 +6,7 @@ tags-description:
     then:
         field: description
         function: truthy  
-    x-status: draft
+    x-status: validated
     x-tags:
         - Tag           
 ...
@@ -17,6 +17,6 @@ tags-description:
     then:
         field: description
         function: truthy  
-    x-status: draft
+    x-status: validated
     x-tags:
         - Tag          

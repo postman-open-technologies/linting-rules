@@ -9,6 +9,9 @@ tags-one:
     functionOptions:
       min: 1
   type: style
+  x-status: validated
+  x-tags:
+      - Tags    
 ...
 tags-one:
   description: Must have at least one tag.
@@ -20,3 +23,6 @@ tags-one:
     functionOptions:
       min: 1
   type: style
+  x-status: validated
+  x-tags:
+      - Tags    

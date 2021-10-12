@@ -87450,15 +87450,106 @@ functionOptions:
                                                                 
            
             
+            
+            <a name="tags-description"></a>
+<div class="row collection">                 
+   <div class="col-md-11" style="border: 0px solid #000;">
+      <span style="font-size: 18px; font-weight: bold;">Tags Description - </span> (<a href="http://localhost:4000//rules/tags-description/" style="color:#000">tags-description</a>)</p>
+      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;description:
+    description: “Tags must have a description.”
+    given: $.tags[*]
+    severity: error
+    then:
+        field: description
+        function: truthy
+    x&#8211;status: validated
+    x&#8211;tags:
+        &#8211; Tag
+</code></pre>                  
+   </div>            
+   <div class="col-md-1" style="border: 0px solid #000;">
+      <a href="http://localhost:4000//rules/tags-description/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+      <strong>Link</strong></a>
+   </div>   
+</div>  
                                                                 
            
             
+            
+            <a name="tags-name"></a>
+<div class="row collection">                 
+   <div class="col-md-11" style="border: 0px solid #000;">
+      <span style="font-size: 18px; font-weight: bold;">Tags Name - </span> (<a href="http://localhost:4000//rules/tags-name/" style="color:#000">tags-name</a>)</p>
+      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;name:
+    description: “Tags must have a name.”
+    given: $.tags[*]
+    severity: error
+    then:
+        field: name
+        function: truthy
+    x&#8211;status: validated
+    x&#8211;tags:
+        &#8211; Tags
+</code></pre>                  
+   </div>            
+   <div class="col-md-1" style="border: 0px solid #000;">
+      <a href="http://localhost:4000//rules/tags-name/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+      <strong>Link</strong></a>
+   </div>   
+</div>  
                                                                 
            
             
+            
+            <a name="tags-object"></a>
+<div class="row collection">                 
+   <div class="col-md-11" style="border: 0px solid #000;">
+      <span style="font-size: 18px; font-weight: bold;">Tags Object - </span> (<a href="http://localhost:4000//rules/tags-object/" style="color:#000">tags-object</a>)</p>
+      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;object:
+    description: “Must have tags object.”
+    given: $
+    severity: error
+    then:
+        field: tags
+        function: truthy
+    x&#8211;status: validated
+    x&#8211;tags:
+        &#8211; Tags
+</code></pre>                  
+   </div>            
+   <div class="col-md-1" style="border: 0px solid #000;">
+      <a href="http://localhost:4000//rules/tags-object/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+      <strong>Link</strong></a>
+   </div>   
+</div>  
                                                                 
            
             
+            
+            <a name="tags-one"></a>
+<div class="row collection">                 
+   <div class="col-md-11" style="border: 0px solid #000;">
+      <span style="font-size: 18px; font-weight: bold;">Tags One - </span> (<a href="http://localhost:4000//rules/tags-one/" style="color:#000">tags-one</a>)</p>
+      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;one:
+  description: Must have at least one tag.
+  given: $
+  severity: error
+  then:
+    field: tags
+    function: length
+    functionOptions:
+      min: 1
+  type: style
+  x&#8211;status: validated
+  x&#8211;tags:
+      &#8211; Tags
+</code></pre>                  
+   </div>            
+   <div class="col-md-1" style="border: 0px solid #000;">
+      <a href="http://localhost:4000//rules/tags-one/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
+      <strong>Link</strong></a>
+   </div>   
+</div>  
                                                                 
            
             
@@ -91169,78 +91260,12 @@ functionOptions:
                                                                 
            
             
-            
-            <a name="tags-description"></a>
-<div class="row collection">                 
-   <div class="col-md-11" style="border: 0px solid #000;">
-      <span style="font-size: 18px; font-weight: bold;">Tags Description - </span> (<a href="http://localhost:4000//rules/tags-description/" style="color:#000">tags-description</a>)</p>
-      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;description:
-    description: “Tags must have a description.”
-    given: $.tags[*]
-    severity: error
-    then:
-        field: description
-        function: truthy
-    x&#8211;status: draft
-    x&#8211;tags:
-        &#8211; Tag
-</code></pre>                  
-   </div>            
-   <div class="col-md-1" style="border: 0px solid #000;">
-      <a href="http://localhost:4000//rules/tags-description/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-      <strong>Link</strong></a>
-   </div>   
-</div>  
                                                                 
            
             
-            
-            <a name="tags-name"></a>
-<div class="row collection">                 
-   <div class="col-md-11" style="border: 0px solid #000;">
-      <span style="font-size: 18px; font-weight: bold;">Tags Name - </span> (<a href="http://localhost:4000//rules/tags-name/" style="color:#000">tags-name</a>)</p>
-      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;name:
-    description: “Tags must have a name.”
-    given: $.tags[*]
-    severity: error
-    then:
-        field: name
-        function: truthy
-    x&#8211;status: draft
-    x&#8211;tags:
-        &#8211; Tags
-</code></pre>                  
-   </div>            
-   <div class="col-md-1" style="border: 0px solid #000;">
-      <a href="http://localhost:4000//rules/tags-name/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-      <strong>Link</strong></a>
-   </div>   
-</div>  
                                                                 
            
             
-            
-            <a name="tags-object"></a>
-<div class="row collection">                 
-   <div class="col-md-11" style="border: 0px solid #000;">
-      <span style="font-size: 18px; font-weight: bold;">Tags Object - </span> (<a href="http://localhost:4000//rules/tags-object/" style="color:#000">tags-object</a>)</p>
-      <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">tags&#8211;object:
-    description: “Must have tags object.”
-    given: $
-    severity: error
-    then:
-        field: tags
-        function: truthy
-    x&#8211;status: draft
-    x&#8211;tags:
-        &#8211; Tags
-</code></pre>                  
-   </div>            
-   <div class="col-md-1" style="border: 0px solid #000;">
-      <a href="http://localhost:4000//rules/tags-object/" style="color:#000" target="_blank"><img src="http://localhost:4000/images/link-icon.png" width="90">
-      <strong>Link</strong></a>
-   </div>   
-</div>  
                                                                 
            
             
