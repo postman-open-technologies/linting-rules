@@ -207,71 +207,69 @@
                     
                            
                             
+                            
                                 "description": "Must have a #/info/title.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"title","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -929,71 +927,69 @@
                     
                            
                             
+                            
                                 "description": "The title must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"title","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1660,71 +1656,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.title",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2382,75 +2376,74 @@
                     
                            
                             
+                            
                                 "given": "$.info.title",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"match":"^[a-z][a-z0-9\\-]*$"}},
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Error in the format of the api title",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "Error in the format of the api title must be in kebab-case",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3108,71 +3101,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/summary.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3830,71 +3821,69 @@
                     
                            
                             
+                            
                                 "description": "The summary must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4561,71 +4550,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.summary",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5267,72 +5254,70 @@
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "Mus have #/info/description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
-                        "formats": ["oas3"]
                         
-                    
-                    
+                        "formats": ["oas3"],
+                        
+                                        
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
                         
-                    
-                    
+                        "then": {"field":"description","function":"truthy"}
+                        
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5990,71 +5975,69 @@
                     
                            
                             
+                            
                                 "description": "The description must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6721,71 +6704,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.description",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7443,71 +7424,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/contact.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"contact","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8165,46 +8144,44 @@
                     
                            
                             
+                            
                                 "description": "Contact name should be Manual.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8865,46 +8842,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a contact email.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"email","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9574,46 +9549,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a contact url.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"url","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -10304,71 +10277,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/license.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"license","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11020,46 +10991,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a license name.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11732,46 +11701,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a license url.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"url","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -12429,46 +12396,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a license url.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license.url",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"match":"apache.org"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -13135,46 +13100,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a MIT license.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license.url",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"match":"mit.edu"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -13856,71 +13819,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/termsOfService.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"termsOfService","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -14599,71 +14560,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/version.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"version","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -15329,70 +15288,69 @@
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "API must have an unique identifier in x-api-id in #/info/x-api-id.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "The `#/info/x-api-id` field can be used to associate an identifier
 to an API. This is useful to track an API even when its `#/info/title` changes.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
-                                "type": "style"
+                            
+                                "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"x-api-id","function":"truthy"}
                         
-                    
-                    
+                                        
                  
             }
             
@@ -16059,54 +16017,54 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                     
                            
                             
+                            
                                 "message": "Missing info.x-audience.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "MUST contain API meta information [218]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#218",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"x-audience","function":"truthy"}
                         
-                    
-                    
+                                        
                  
             }
             
@@ -16772,76 +16730,75 @@ to an API. This is useful to track an API even when its `#/info/title` changes."
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "API MUST have an one-liner #/info/x-summary field containing a brief description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "The `#/info/x-summary` can be used to specify a brief, one-liner description of your API: this is very useful for catalog purposes (eg. this can be shown as your API subtitle in catalogs and developer portals). In OAS3.1 you can use the standard `#/info/summary` field.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
-                        "formats": ["oas3"]
                         
-                    
-                    
+                        "formats": ["oas3"],
+                        
+                                        
                 
                     
                             
+                        
                         "then": {"field":"x-summary","function":"truthy"}
                         
-                    
-                    
+                                        
                  
             }
             

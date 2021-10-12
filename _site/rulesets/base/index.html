@@ -207,71 +207,69 @@
                     
                            
                             
+                            
                                 "description": "Must have a #/info/title.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"title","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -929,71 +927,69 @@
                     
                            
                             
+                            
                                 "description": "The title must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"title","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1660,71 +1656,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.title",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2382,75 +2376,74 @@
                     
                            
                             
+                            
                                 "given": "$.info.title",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"match":"^[a-z][a-z0-9\\-]*$"}},
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Error in the format of the api title",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "Error in the format of the api title must be in kebab-case",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3108,71 +3101,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/summary.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3830,71 +3821,69 @@
                     
                            
                             
+                            
                                 "description": "The summary must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4561,71 +4550,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.summary",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5267,72 +5254,70 @@
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "Mus have #/info/description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
-                        "formats": ["oas3"]
                         
-                    
-                    
+                        "formats": ["oas3"],
+                        
+                                        
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
                         
-                    
-                    
+                        "then": {"field":"description","function":"truthy"}
+                        
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5990,71 +5975,69 @@
                     
                            
                             
+                            
                                 "description": "The description must not be greater than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6721,71 +6704,69 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.description",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(REST|Public|Developer)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7443,71 +7424,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/contact.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"contact","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8165,46 +8144,44 @@
                     
                            
                             
+                            
                                 "description": "Contact name should be Manual.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8865,46 +8842,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a contact email.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"email","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9574,46 +9549,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a contact url.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.contact",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"url","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -10304,71 +10277,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/license.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"license","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11020,46 +10991,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a license name.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11732,46 +11701,44 @@
                     
                            
                             
+                            
                                 "description": "Should have a license url.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info.license",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"url","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -12450,71 +12417,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/termsOfService.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"termsOfService","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -13193,71 +13158,69 @@
                     
                            
                             
+                            
                                 "description": "Mus have #/info/version.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"version","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -14086,64 +14049,62 @@
                     
                            
                             
+                            
                                 "message": "Path with trailing slash is not allowed",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "MUST use normalized paths without empty path segments and trailing slashes [136]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#136",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*~",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"match":"/$"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -14795,64 +14756,62 @@
                     
                            
                             
+                            
                                 "message": "Empty path segments are not allowed",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "MUST use normalized paths without empty path segments and trailing slashes [136]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "documentationUrl": "https://opensource.zalando.com/restful-api-guidelines/#136",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*~",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"//"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -15432,46 +15391,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"description","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -16129,55 +16086,53 @@
                     
                            
                             
+                            
                                 "description": "Operation description should be short and sweet, no full stops, and less than 20 characters",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"description","function":"length","functionOptions":{"max":20}}],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -16844,55 +16799,53 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -17580,46 +17533,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"summary","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -18274,55 +18225,53 @@
                     
                            
                             
+                            
                                 "description": "Operation summary should be short and sweet, no full stops, and less than 20 characters",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"summary","function":"length","functionOptions":{"max":20}}],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -18992,55 +18941,53 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].summary",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -19713,46 +19660,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"tags","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -20413,45 +20358,45 @@
                     
                            
                             
+                            
                                 "description": "Must have at least one tag.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"tags","function":"length","functionOptions":{"min":1}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                  
             }
             
@@ -21154,37 +21099,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -21836,37 +21779,35 @@
                     
                            
                             
+                            
                                 "description": "The name can't be more than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -22539,37 +22480,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -23212,37 +23151,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -23900,37 +23837,35 @@
                     
                            
                             
+                            
                                 "description": "The description can't be more than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -24597,37 +24532,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -25300,37 +25233,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have an in.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"in","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -25991,37 +25922,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a example.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.example=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"example","function":"truthy"},{"field":"examples","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -26712,37 +26641,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a schema.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.schema=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"schema","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -27403,37 +27330,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a schema.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.schema=='query')].schema",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -28145,64 +28070,62 @@
                     
                            
                             
+                            
                                 "description": "GET methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.get",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must not have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"falsy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -28878,64 +28801,62 @@
                     
                            
                             
+                            
                                 "description": "POST methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.post",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -29596,64 +29517,62 @@
                     
                            
                             
+                            
                                 "description": "POST request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.post[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for POST requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -30314,64 +30233,62 @@
                     
                            
                             
+                            
                                 "description": "PATCH methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.patch",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -31032,64 +30949,62 @@
                     
                            
                             
+                            
                                 "description": "PATCH request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.patch[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for PATCH requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -31768,64 +31683,62 @@
                     
                            
                             
+                            
                                 "description": "PUT methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.put",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -32486,64 +32399,62 @@
                     
                            
                             
+                            
                                 "description": "PUT request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.put[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for PUT requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -33189,64 +33100,62 @@
                     
                            
                             
+                            
                                 "description": "DELETE methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.delete",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must not have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"falsy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -33979,62 +33888,60 @@
                     
                            
                             
+                            
                                 "description": "A get operation should have a 200 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A GET operation should have a 200 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].get.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"200","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -34692,46 +34599,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.200.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -35398,46 +35303,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.200.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -36110,62 +36013,60 @@
                     
                            
                             
+                            
                                 "description": "A get operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A GET operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].get.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -36826,46 +36727,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -37544,62 +37443,60 @@
                     
                            
                             
+                            
                                 "description": "A post operation should have a 201 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A POST operation should have a 201 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].post.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"201","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -38260,46 +38157,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "POST responses should have a JSON body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.post.responses.201.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -38972,62 +38867,60 @@
                     
                            
                             
+                            
                                 "description": "A post operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A POST operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].post.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -39688,46 +39581,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "POST responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.post.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -40400,62 +40291,60 @@
                     
                            
                             
+                            
                                 "description": "A put operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A put operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"204","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -41116,46 +41005,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "PUT responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.put.responses.204",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"content","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -41828,62 +41715,60 @@
                     
                            
                             
+                            
                                 "description": "A put operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A PUT operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].put.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -42544,46 +42429,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "PUT responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.put.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -43196,62 +43079,60 @@
                     
                            
                             
+                            
                                 "description": "A delete operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A delete operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"204","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -43912,46 +43793,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "DELETE responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.delete.responses.204",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"cont3ent","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -44624,62 +44503,60 @@
                     
                            
                             
+                            
                                 "description": "A delete operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A DELETE operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -45340,46 +45217,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "DELETE responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.delete.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -46133,55 +46008,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should be no more than 10 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should be less than 10 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -46854,55 +46727,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should not contain certain words.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should not contains certain words {{ parameter }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -47551,62 +47422,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -48264,62 +48133,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas descriptions should be shorter than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Description needs to be less than 20 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -48986,62 +48853,60 @@
                     
                            
                             
+                            
                                 "description": "Some words should not be be contained within the schema description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Words should not be contained within description {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -49762,62 +49627,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a required.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"required","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -50484,62 +50347,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas should have a type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -51197,62 +51058,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas should have a properties.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema properties {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"properties","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -51913,62 +51772,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -52608,62 +52465,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -53321,62 +53176,60 @@
                     
                            
                             
+                            
                                 "description": "The length of the description needs to be lest than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "The description length needs to be less than 20 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -54043,62 +53896,60 @@
                     
                            
                             
+                            
                                 "description": "Some words should not exist within the property description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Words should not exist within description {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -54768,62 +54619,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a maximum.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"maximum","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -55490,62 +55339,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a minimum.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"minimum","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -56946,45 +56793,45 @@
                     
                            
                             
+                            
                                 "description": "Must have at least one tag.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"tags","function":"length","functionOptions":{"min":1}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                  
             }
             
@@ -57645,46 +57492,44 @@
                     
                            
                             
+                            
                                 "description": "Tags must have a name.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.tags[*]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -58345,46 +58190,44 @@
                     
                            
                             
+                            
                                 "description": "Tags must have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.tags[*]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             

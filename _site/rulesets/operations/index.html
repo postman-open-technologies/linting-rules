@@ -306,46 +306,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"tags","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -976,55 +974,53 @@
                     
                            
                             
+                            
                                 "description": "Operation description should be short and sweet, no full stops, and less than 20 characters",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"description","function":"length","functionOptions":{"max":20}}],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1691,55 +1687,53 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2406,46 +2400,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"description","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3112,64 +3104,62 @@
                     
                            
                             
+                            
                                 "description": "Operation IDs MUST be written in camelCase.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].operationId",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "{{property}} is not camelCase {{error}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"casing","functionOptions":{"type":"camel"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3836,64 +3826,62 @@
                     
                            
                             
+                            
                                 "description": "Operation IDs MUST be written in kebab-case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].operationId",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "{{property}} is not kebab-case {{error}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"casing","functionOptions":{"type":"kebab"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4560,64 +4548,62 @@
                     
                            
                             
+                            
                                 "description": "Operation IDs MUST be written in PascalCase.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].operationId",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "{{property}} is not PascalCase {{error}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"casing","functionOptions":{"type":"pascal"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5284,55 +5270,53 @@
                     
                            
                             
+                            
                                 "description": "Operation summary should be short and sweet, no full stops, and less than 20 characters",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"summary","function":"length","functionOptions":{"max":20}}],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6002,55 +5986,53 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*[get,post,patch,put,delete].summary",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6717,46 +6699,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"summary","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7423,45 +7403,45 @@
                     
                            
                             
+                            
                                 "description": "Must have at least one tag.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"tags","function":"length","functionOptions":{"min":1}},
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style"
                             
                         
-                    
-                    
+                                        
                  
             }
             

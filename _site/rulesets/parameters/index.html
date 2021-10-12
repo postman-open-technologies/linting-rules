@@ -309,34 +309,34 @@
                     
                            
                             
+                            
                                 "description": "A required parameter should not specify a default value.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "given": ["$.paths[*].parameters.[?(@.required)]"],
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"default","function":"falsy"}
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1003,37 +1003,35 @@
                     
                            
                             
+                            
                                 "description": "The description can't be more than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1700,37 +1698,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].description",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2397,37 +2393,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3094,37 +3088,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a example.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.example=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"example","function":"truthy"},{"field":"examples","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3791,37 +3783,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have an in.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"in","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4488,37 +4478,35 @@
                     
                            
                             
+                            
                                 "description": "Path and query parmeters must use camelCase.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"casing","functionOptions":{"type":"camel"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5185,37 +5173,35 @@
                     
                            
                             
+                            
                                 "description": "The name can't be more than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"summary","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5882,37 +5868,35 @@
                     
                            
                             
+                            
                                 "description": "Path and query parmeters must use PascalCase.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"casing","functionOptions":{"type":"pascal"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6579,37 +6563,35 @@
                     
                            
                             
+                            
                                 "description": "Path and query parmeters must use snake_case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"casing","functionOptions":{"type":"snake"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7276,37 +7258,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')].name",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7973,37 +7953,35 @@
                     
                            
                             
+                            
                                 "description": "Must not contain specific words, including REST, Public, and Developer.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.in=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"name","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8670,37 +8648,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a schema.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.schema=='query')].schema",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9367,37 +9343,35 @@
                     
                            
                             
+                            
                                 "description": "Parameters must have a schema.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*.*.parameters[?(@.schema=='query')]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"schema","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             

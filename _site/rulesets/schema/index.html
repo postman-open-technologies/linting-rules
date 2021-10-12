@@ -528,62 +528,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1241,62 +1239,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas descriptions should be shorter than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Description needs to be less than 20 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1963,62 +1959,60 @@
                     
                            
                             
+                            
                                 "description": "Some words should not be be contained within the schema description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Words should not be contained within description {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2688,55 +2682,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should be camel case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Schema name should be camel case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"casing","functionOptions":{"type":"camel"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3406,55 +3398,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should be pascal case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Schema name should be pascal case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"casing","functionOptions":{"type":"pascal"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4121,55 +4111,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should be snake case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Schema name should be snake case.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"casing","functionOptions":{"type":"snake"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4827,55 +4815,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should be no more than 10 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should be less than 10 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5548,55 +5534,53 @@
                     
                            
                             
+                            
                                 "description": "Schema names should not contain certain words.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should not contains certain words {{ parameter }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"@key","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6296,62 +6280,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas should have a properties.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema properties {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"properties","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7018,62 +7000,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a required.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"required","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7740,62 +7720,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas should have a type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.components.schemas.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8450,62 +8428,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"type","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9145,62 +9121,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9858,62 +9832,60 @@
                     
                            
                             
+                            
                                 "description": "The length of the description needs to be lest than 20 characters.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "The description length needs to be less than 20 characters {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"length","functionOptions":{"max":20}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -10580,62 +10552,60 @@
                     
                            
                             
+                            
                                 "description": "Some words should not exist within the property description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Words should not exist within description {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"pattern","functionOptions":{"notMatch":"\\b(word|word|word)\\b"}}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11305,62 +11275,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a maximum.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"maximum","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -12027,62 +11995,60 @@
                     
                            
                             
+                            
                                 "description": "All schemas properties should have a minimum.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Should have schema property {{ property }}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$..properties.*",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"minimum","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             

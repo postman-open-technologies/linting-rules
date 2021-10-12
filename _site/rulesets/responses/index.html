@@ -459,62 +459,60 @@
                     
                            
                             
+                            
                                 "description": "A get operation should have a 200 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A GET operation should have a 200 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].get.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"200","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1172,46 +1170,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.200.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1878,46 +1874,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.200.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2590,62 +2584,60 @@
                     
                            
                             
+                            
                                 "description": "A get operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A GET operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].get.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3306,46 +3298,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "GET responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.get.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4024,62 +4014,60 @@
                     
                            
                             
+                            
                                 "description": "A post operation should have a 201 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A POST operation should have a 201 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].post.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"201","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4740,46 +4728,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "POST responses should have a JSON body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.post.responses.201.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5452,62 +5438,60 @@
                     
                            
                             
+                            
                                 "description": "A post operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A POST operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].post.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6168,46 +6152,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "POST responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.post.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -6880,62 +6862,60 @@
                     
                            
                             
+                            
                                 "description": "A put operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A put operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"204","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -7596,46 +7576,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "PUT responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.put.responses.204",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"content","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -8308,62 +8286,60 @@
                     
                            
                             
+                            
                                 "description": "A put operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A PUT operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].put.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9024,46 +9000,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "PUT responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.put.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -9676,62 +9650,60 @@
                     
                            
                             
+                            
                                 "description": "A delete operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A delete operation should have a 204 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"204","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -10392,46 +10364,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "DELETE responses should not have  body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.delete.responses.204",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"cont3ent","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11104,62 +11074,60 @@
                     
                            
                             
+                            
                                 "description": "A delete operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "A DELETE operation should have a 500 response.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "warn",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "formats": ["oas2","oas3"],
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths[*].delete.responses",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"500","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -11820,46 +11788,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "DELETE responses should have a 500 with Problem JSON media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$paths.delete.responses.500.content",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/problem+json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             

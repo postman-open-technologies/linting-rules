@@ -167,72 +167,70 @@
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "description": "Mus have #/info/description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.info",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "type": "style",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
-                        "formats": ["oas3"]
                         
-                    
-                    
+                        "formats": ["oas3"],
+                        
+                                        
                 
                     
                             
-                        "then": {"field":"description","function":"truthy"},
                         
-                    
-                    
+                        "then": {"field":"description","function":"truthy"}
+                        
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1007,46 +1005,44 @@
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Missing {{property}} at {{path}}.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "given": "$.paths.*[get,post,patch,put,delete]",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": [{"field":"description","function":"truthy"}]
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3363,46 +3359,44 @@
                     
                            
                             
+                            
                                 "description": "Tags must have a description.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.tags[*]",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"description","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             

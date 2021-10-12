@@ -390,64 +390,62 @@
                     
                            
                             
+                            
                                 "description": "DELETE methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.delete",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must not have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"falsy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1114,64 +1112,62 @@
                     
                            
                             
+                            
                                 "description": "GET methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.get",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must not have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"falsy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -1838,64 +1834,62 @@
                     
                            
                             
+                            
                                 "description": "PATCH request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.patch[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for PATCH requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -2562,64 +2556,62 @@
                     
                            
                             
+                            
                                 "description": "PATCH methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.patch",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -3286,64 +3278,62 @@
                     
                            
                             
+                            
                                 "description": "POST request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.post[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for POST requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4010,64 +4000,62 @@
                     
                            
                             
+                            
                                 "description": "POST methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.post",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -4734,64 +4722,62 @@
                     
                            
                             
+                            
                                 "description": "PUT request bodies must have a application/json media type.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.put[requestBody].content",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "application/json is required for PUT requests {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"application/json","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
@@ -5458,64 +5444,62 @@
                     
                            
                             
+                            
                                 "description": "PUT methods must have a request body.",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "given": "$.paths.*.put",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                             
                                 "message": "Method must have a request body {{path}}",
                             
                         
-                    
-                    
+                                        
                 
                     
                            
+                            
                              
                                 "recommended": true,
                             
                         
-                    
-                    
+                                        
                 
                     
                            
                             
+                            
                                 "severity": "error",
                             
                         
-                    
-                    
+                                        
                 
                     
                             
+                        
                         "then": {"field":"requestBody","function":"truthy"}
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                 
                     
                         
-                    
-                    
+                                        
                  
             }
             
