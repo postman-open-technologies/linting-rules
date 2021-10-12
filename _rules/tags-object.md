@@ -1,5 +1,5 @@
 ---
-tags:
+tags-object:
     description: "Must have tags object."
     given: $
     severity: error
@@ -10,7 +10,7 @@ tags:
     x-tags:
         - Tags         
 ...
-tags:
+tags-object:
     description: "Must have tags object."
     given: $
     severity: error
