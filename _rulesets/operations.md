@@ -13,6 +13,8 @@ rules:
   - operations-summary-words-check
   - operations-summary
   - operations-tags-one
-image: /images/operations-icon.jpeg
+image: /images/operations-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/16
 ...

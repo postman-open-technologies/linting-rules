@@ -17,5 +17,7 @@ rules:
   - parameters-schema-type
   - parameters-schema
 image: /images/parameters-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/15
 ...

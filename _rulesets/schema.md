@@ -20,5 +20,7 @@ rules:
   - schema-properties-maximum
   - schema-properties-minimum
 image: /images/schema-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/19
 ...

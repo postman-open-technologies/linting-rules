@@ -9,5 +9,7 @@ rules:
     - tags-name
     - tags-description
 image: /images/tags-icon.png    
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/20
 ...

@@ -26,6 +26,8 @@ rules:
   - info-x-api-id
   - info-x-audience
   - info-x-summary
-image: /images/info-icon.jpeg
+image: /images/info-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/15
 ...

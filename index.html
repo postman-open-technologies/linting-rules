@@ -18,7 +18,7 @@ layout: default
 			<div class="row collection__header text-center">
          <div class="col-md-12">
             <h2 class="h1">Linting Rules</h2>
-            <p>This is project for managing linting rules that can be applied as part of API governance at design, develop, and build time. You can find <a href="https://www.postman.com/postman/workspace/openapi-linting/overview">a collection in this public workspace</a> where you can use these rules to lint an OpenAPI. </p>        
+            <p>This is project for managing linting rules that can be applied as part of API governance during design, development in the CLI, IDE, or in Postman, as well as via a Ci/CD pipeline. To use, just grab the link to one of rulesets, or individual rules and add as a parameter to this <a href="https://www.postman.com/postman/workspace/openapi-linting/overview">a collection in this public workspace</a> pass in an OpenAPI, and the rules will be applied.</p>        
          </div>
       </div>
 
@@ -26,54 +26,26 @@ layout: default
         
 
         <hr><br>
-        <h3>Rulesets</h3>
-        <p>These are a list of the rulesets.</p>
-        {% assign rulesets = site.rulesets %}
         {% assign rules = site.rules %}
-        {% for ruleset in rulesets %}
-            <div class="row collection">
-               <div class="col-md-1" style="border: 0px solid #000;">
-                  <img src="{{ site.url }}/{{ ruleset.image }}" width="100">
-               </div>               
-               <div class="col-md-8" style="border: 0px solid #000;">
-                  <span style="font-size: 18px; font-weight: bold;">{{ ruleset.name }}</span> - {{ ruleset.description }}</p>
-                  <ul>
-                    {% for this_rule in ruleset.rules %}
-                       {% for rule in rules %}
-                          {% if this_rule == rule.name %}
-                          <li><strong>{{ rule.name }}</strong> - {{ rule.description | escape }}</li>
-                          {% endif %}
-                       {% endfor %}  
-                    {% endfor %}          
-                  </ul>
-               </div>
-               <div class="col-md-1" style="border: 0px solid #000;">
-                  <a href="{{ site.url }}{{ ruleset.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
-                  <strong>Link</strong></a>
-               </div>                
-               <div class="col-md-1" style="border: 0px solid #000;">
-                  <a href="{{ ruleset.discussion }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/github-issues-icon.png" width="90">
-                  <strong>Discussion</strong></a>
-               </div>                
-            </div>
-         {% endfor %} 
-         <hr><br>
+
+        <h3>Base Rulesets</h3>
+        <p>These are base rulesets that can be used to jumpstart your linting.</p>
+        {% assign rulesets = site.rulesets %}
+        {% assign display_tag = "Base" %}
+        {% include rulesets.html %} 
+
+        <h3>Open API Rulesets</h3>
+        <p>These are rulesets organized to apply to specific OpenAPI objects.</p>
+        {% assign rulesets = site.rulesets %}
+        {% assign display_tag = "OpenAPI" %}   
+        {% include rulesets.html %}     
+
          <h3>Rules (Validated)</h3>
           <p>These are a list of the rules which have been validated as functional, are able to be used individually, or used as part of rulesets.</p>        
          {% for rule in rules %}  
             {% assign status = rule[rule.slug]['x-status'] %}
             {% if status == 'validated' %}
-               <a name="{{ rule.slug }}"></a>
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
+            {% include rules.html %} 
             {% endif %}                                                    
          {% endfor %}    
          <hr><br>
@@ -82,17 +54,7 @@ layout: default
          {% for rule in rules %}  
             {% assign status = rule[rule.slug]['x-status'] %}
             {% if status == 'draft' %}
-            <a name="{{ rule.slug }}"></a>
-               <div class="row collection">                 
-                  <div class="col-md-11" style="border: 0px solid #000;">
-                     <span style="font-size: 18px; font-weight: bold;">{{ rule.title }} - {{ rule.rules['x-status'] }}</span> (<a href="{{ site.url }}/{{ rule.url }}" style="color:#000">{{ rule.slug }}</a>)</p>
-                     <pre style="border: 0px solid #000; padding: 0px; margin: 25px;"><code style="padding: 0px; margin: 0px;">{{ rule.content | strip_html | replace: '-','&#8211;' }}</code></pre>                  
-                  </div>            
-                  <div class="col-md-1" style="border: 0px solid #000;">
-                     <a href="{{ site.url }}/{{ rule.url }}" style="color:#000" target="_blank"><img src="{{ site.url }}/images/link-icon.png" width="90">
-                     <strong>Link</strong></a>
-                  </div>   
-               </div>   
+            {% include rules.html %} 
             {% endif %}                                                    
          {% endfor %}                  
    </div>

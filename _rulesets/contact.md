@@ -7,5 +7,7 @@ rules:
   - info-contact-email
   - info-contact-url
 image: /images/contact-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/5
 ...

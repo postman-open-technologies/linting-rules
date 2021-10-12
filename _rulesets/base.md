@@ -1,0 +1,91 @@
+---
+name: Base
+description: This provides a base of rules that should be considered for all OpenAPI.
+rules:
+  - info-title
+  - info-title-max-length
+  - info-title-word-check
+  - info-title-in-kebab-case
+  - info-summary
+  - info-summary-max-length
+  - info-summary-word-check
+  - info-description
+  - info-description-max-length
+  - info-description-word-check
+  - info-contact
+  - info-contact-name
+  - info-contact-email
+  - info-contact-url
+  - info-license
+  - info-license-name
+  - info-license-url
+  - info-terms-of-service
+  - info-version
+  - paths-trailing-slash 
+  - paths-no-empty 
+  - operations-description
+  - operations-description-length
+  - operations-description-words-check
+  - operations-summary
+  - operations-summary-length
+  - operations-summary-words-check
+  - operations-tags  
+  - operations-tags-one  
+  - parameters-name
+  - parameters-name-length
+  - parameters-name-word-check  
+  - parameters-description
+  - parameters-description-length
+  - parameters-description-word-check
+  - parameters-in
+  - parameters-example
+  - parameters-schema 
+  - parameters-schema-type
+  - request-bodies-get-oas3
+  - request-bodies-post-oas3
+  - request-bodies-post-media-type-oas3  
+  - request-bodies-patch-oas3
+  - request-bodies-patch-media-type-oas3
+  - request-bodies-put-oas3  
+  - request-bodies-put-media-type-oas3
+  - request-bodies-delete-oas3
+  - response-get-200-status-code
+  - response-get-200-media-type
+  - response-get-200-no-body
+  - response-get-500-status-code
+  - response-get-500-media-type
+  - response-post-201-status-code
+  - response-post-201-media-type
+  - response-post-500-status-code
+  - response-post-500-media-type
+  - response-put-204-status-code
+  - response-put-204-no-body
+  - response-put-500-status-code
+  - response-put-500-media-type
+  - response-delete-204-status-code
+  - response-delete-204-no-body
+  - response-delete-500-status-code
+  - response-delete-500-media-type 
+  - schema-names-length
+  - schema-names-words  
+  - schema-description
+  - schema-description-length
+  - schema-description-words
+  - schema-required
+  - schema-type
+  - schema-properties
+  - schema-properties-type
+  - schema-properties-descriptions
+  - schema-properties-descriptions-length
+  - schema-properties-descriptions-words
+  - schema-properties-maximum
+  - schema-properties-minimum   
+  - tags
+  - tags-one
+  - tags-name
+  - tags-description  
+image: /images/base-icon.png  
+tags:
+  - Base
+discussion: https://github.com/postman-open-technologies/linting-rules/discussions/21
+...

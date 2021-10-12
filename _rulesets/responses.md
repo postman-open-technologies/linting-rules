@@ -20,5 +20,7 @@ rules:
     - response-delete-500-status-code
     - response-delete-500-media-type
 image: /images/responses-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/18
 ...

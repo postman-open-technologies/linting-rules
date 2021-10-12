@@ -11,5 +11,7 @@ rules:
   - request-bodies-put-media-type-oas3
   - request-bodies-put-oas3
 image: /images/request-icon.png
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/17
 ...

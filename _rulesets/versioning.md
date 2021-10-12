@@ -8,5 +8,7 @@ rules:
   - version-segment-second
   - version-semantic
 image: /images/version-icon.png  
+tags:
+  - OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/21
 ...

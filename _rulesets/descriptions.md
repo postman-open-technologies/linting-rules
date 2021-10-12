@@ -8,5 +8,7 @@ rules:
   - schema-descriptions
   - tags-description
 image: /images/description-icon.png
+tags:
+  - Area
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/6
 ...
