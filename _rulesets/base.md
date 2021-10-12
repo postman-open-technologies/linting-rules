@@ -80,7 +80,7 @@ rules:
   - schema-properties-descriptions-words
   - schema-properties-maximum
   - schema-properties-minimum   
-  - tags
+  - tags-object
   - tags-one
   - tags-name
   - tags-description  

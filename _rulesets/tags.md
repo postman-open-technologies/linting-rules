@@ -4,7 +4,7 @@ description: A ruleset that focus on governance applied to the tags object of th
 rules:
     - operations-tags
     - operations-tags-one
-    - tags
+    - tags-object
     - tags-one
     - tags-name
     - tags-description
