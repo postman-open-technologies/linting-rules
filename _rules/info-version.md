@@ -1,6 +1,6 @@
 ---
 info-version:
-  description: "Mus have #/info/version."
+  description: The API must have version information applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -16,7 +16,7 @@ info-version:
     - Info
 ...
 info-version:
-  description: "Mus have #/info/version."
+  description: The API must have version information applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,4 +29,4 @@ info-version:
   x-status: validated
   x-tags:
     - Versioning
-    - Info  
+    - Info

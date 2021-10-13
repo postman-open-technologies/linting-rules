@@ -1,6 +1,6 @@
 ---
 info-contact-email:
-  description: Should have a contact email.
+  description: API must have a contact email available.
   given: $.info.contact
   severity: error
   then:
@@ -12,7 +12,7 @@ info-contact-email:
     - Communication    
 ...
 info-contact-email:
-  description: Should have a contact email.
+  description: API must have a contact email available.
   given: $.info.contact
   severity: error
   then:
@@ -21,4 +21,4 @@ info-contact-email:
   x-status: validated
   x-tags:
     - Contact
-    - Communication    
+    - Communication      

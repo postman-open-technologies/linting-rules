@@ -1,6 +1,6 @@
 ---
 info-summary:
-  description: "Mus have #/info/summary."
+  description: The API must have a summary applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -12,11 +12,11 @@ info-summary:
       function: truthy  
   x-status: validated
   x-tags:
-    - summarying
+    - Summary
     - Info
 ...
 info-summary:
-  description: "Mus have #/info/summary."
+  description: The API must have a summary applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -28,5 +28,5 @@ info-summary:
       function: truthy  
   x-status: validated
   x-tags:
-    - summarying
-    - Info  
+    - Summary
+    - Info

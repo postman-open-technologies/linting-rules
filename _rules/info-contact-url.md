@@ -1,6 +1,6 @@
 ---
 info-contact-url:
-  description: Should have a contact url.
+  description:  API must have a contact url available.
   given: $.info.contact
   severity: error
   then:
@@ -12,7 +12,7 @@ info-contact-url:
     - Communication    
 ...
 info-contact-url:
-  description: Should have a contact url.
+  description:  API must have a contact url available.
   given: $.info.contact
   severity: error
   then:

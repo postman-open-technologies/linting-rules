@@ -1,6 +1,6 @@
 ---
 info-summary-max-length:
-  description: "The summary must not be greater than 20 characters."
+  description: The summary for the API should not be more than 50 characters in length.
   given: "$.info"
   severity: error
   recommended: true
@@ -11,14 +11,14 @@ info-summary-max-length:
       field: summary
       function: length
       functionOptions: 
-        max: 20      
+        max: 50      
   x-status: validated
   x-tags:
     - Info
     - Length
 ...
 info-summary-max-length:
-  description: "The summary must not be greater than 20 characters."
+  description: The summary for the API should not be more than 50 characters in length.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,8 +29,8 @@ info-summary-max-length:
       field: summary
       function: length
       functionOptions: 
-        max: 20      
+        max: 50      
   x-status: validated
   x-tags:
     - Info
-    - Length 
+    - Length

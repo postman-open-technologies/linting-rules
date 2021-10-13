@@ -1,6 +1,6 @@
 ---
 info-license-name:
-  description: Should have a license name.
+  description: API must have a license name applied.
   given: $.info.license
   severity: error
   then:
@@ -12,7 +12,7 @@ info-license-name:
     - Legal    
 ...
 info-license-name:
-  description: Should have a license name.
+  description: API must have a license name applied.
   given: $.info.license
   severity: error
   then:
@@ -21,4 +21,4 @@ info-license-name:
   x-status: validated
   x-tags:
     - License
-    - Legal     
+    - Legal   

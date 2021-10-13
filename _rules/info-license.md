@@ -1,6 +1,6 @@
 ---
 info-license:
-  description: "Mus have #/info/license."
+  description: API must have a license applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -16,7 +16,7 @@ info-license:
     - Legal
 ...
 info-license:
-  description: "Mus have #/info/license."
+  description: API must have a license applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,4 +29,4 @@ info-license:
   x-status: validated
   x-tags:
     - Licensing
-    - Legal     
+    - Legal  

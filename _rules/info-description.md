@@ -1,8 +1,6 @@
 ---
 info-description:
-  x-tags:
-      - metadata
-  description: "Mus have #/info/description."
+  description: API must have a description available.
   given: "$.info"
   severity: error
   recommended: true
@@ -18,9 +16,7 @@ info-description:
     - Documentation
 ...
 info-description:
-  x-tags:
-      - metadata
-  description: "Mus have #/info/description."
+  description: API must have a description available.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,8 +25,8 @@ info-description:
       - oas3
   then:
       field: description
-      function: truthy   
+      function: truthy  
   x-status: validated
   x-tags:
     - Info
-    - Documentation     
+    - Documentation  

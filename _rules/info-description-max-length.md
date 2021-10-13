@@ -1,6 +1,6 @@
 ---
 info-description-max-length:
-  description: "The description must not be greater than 20 characters."
+  description: The description of the API must not be greater than 250 characters.
   given: "$.info"
   severity: error
   recommended: true
@@ -11,14 +11,14 @@ info-description-max-length:
       field: description
       function: length
       functionOptions: 
-        max: 20      
+        max: 250      
   x-status: validated
   x-tags:
     - Info
     - Length
 ...
 info-description-max-length:
-  description: "The description must not be greater than 20 characters."
+  description: The description of the API must not be greater than 250 characters.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,8 +29,8 @@ info-description-max-length:
       field: description
       function: length
       functionOptions: 
-        max: 20      
+        max: 250      
   x-status: validated
   x-tags:
     - Info
-    - Length 
+    - Length

@@ -11,7 +11,7 @@ info-title-in-kebab-case:
     - oas2
     - oas3  
   message: Error in the format of the api title
-  description: Error in the format of the api title must be in kebab-case
+  description: The title of the API must be in kebab case.
   severity: error
   x-tags:
     - Info

@@ -1,6 +1,6 @@
 ---
 info-description-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The API description must not contain specific words, including REST, Public, and Developer.
   given: "$.info.description"
   severity: error
   recommended: true
@@ -18,7 +18,7 @@ info-description-word-check:
     - Dictionaries
 ...
 info-description-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The API description must not contain specific words, including REST, Public, and Developer.
   given: "$.info.description"
   severity: error
   recommended: true
@@ -33,4 +33,4 @@ info-description-word-check:
   x-tags:
     - Info
     - Filters
-    - Dictionaries   
+    - Dictionaries  

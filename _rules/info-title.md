@@ -1,6 +1,6 @@
 ---
 info-title:
-  description: "API must have a title."
+  description: The API must have a title.
   given: "$.info"
   severity: error
   recommended: true
@@ -15,7 +15,7 @@ info-title:
     - Info
 ...
 info-title:
-  description: "API must have a title."
+  description: The API must have a title.
   given: "$.info"
   severity: error
   recommended: true
@@ -27,4 +27,4 @@ info-title:
       function: truthy  
   x-status: validated
   x-tags:
-    - Info    
+    - Info 

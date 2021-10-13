@@ -1,6 +1,6 @@
 ---
 info-contact-name:
-  description: Contact name should be Manual.
+  description:  API must have a contact name available.
   given: $.info.contact
   severity: error
   then:
@@ -12,7 +12,7 @@ info-contact-name:
     - Communication    
 ...
 info-contact-name:
-  description: Contact name should be Manual.
+  description:  API must have a contact name available.
   given: $.info.contact
   severity: error
   then:
@@ -21,4 +21,4 @@ info-contact-name:
   x-status: validated
   x-tags:
     - Contact
-    - Communication    
+    - Communication 

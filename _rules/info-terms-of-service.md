@@ -1,6 +1,6 @@
 ---
 info-terms-of-service:
-  description: "Mus have #/info/termsOfService."
+  description: The API must have a terms of service applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -16,7 +16,7 @@ info-terms-of-service:
     - Legal
 ...
 info-terms-of-service:
-  description: "Mus have #/info/termsOfService."
+  description: The API must have a terms of service applied.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,4 +29,4 @@ info-terms-of-service:
   x-status: validated
   x-tags:
     - Terms of Service
-    - Legal     
+    - Legal

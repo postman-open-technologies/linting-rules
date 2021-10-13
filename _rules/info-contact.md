@@ -1,6 +1,6 @@
 ---
 info-contact:
-  description: "Mus have #/info/contact."
+  description:  API must have a contact information available.
   given: "$.info"
   severity: error
   recommended: true
@@ -16,7 +16,7 @@ info-contact:
     - Communication
 ...
 info-contact:
-  description: "Mus have #/info/contact."
+  description:  API must have a contact information available.
   given: "$.info"
   severity: error
   recommended: true
@@ -29,4 +29,4 @@ info-contact:
   x-status: validated
   x-tags:
     - Contact
-    - Communication    
+    - Communication  

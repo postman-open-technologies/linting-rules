@@ -1,6 +1,6 @@
 ---
 info-license-url-apache:
-  description: Should have a license url.
+  description: API must have an Apache license applied.
   given: $.info.license.url
   severity: error
   then:
@@ -13,7 +13,7 @@ info-license-url-apache:
     - Legal     
 ...
 info-license-url-apache:
-  description: Should have a license url.
+  description: API must have an Apache license applied.
   given: $.info.license.url
   severity: error
   then:
@@ -23,4 +23,4 @@ info-license-url-apache:
   x-status: validated
   x-tags:
     - License
-    - Legal    
+    - Legal   

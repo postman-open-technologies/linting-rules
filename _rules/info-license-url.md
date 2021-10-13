@@ -1,6 +1,6 @@
 ---
 info-license-url:
-  description: Should have a license url.
+  description: API must have a license url applied.
   given: $.info.license
   severity: error
   then:
@@ -12,7 +12,7 @@ info-license-url:
     - Legal     
 ...
 info-license-url:
-  description: Should have a license url.
+  description: API must have a license url applied.
   given: $.info.license
   severity: error
   then:
@@ -21,4 +21,4 @@ info-license-url:
   x-status: validated
   x-tags:
     - License
-    - Legal    
+    - Legal 

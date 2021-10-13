@@ -1,6 +1,6 @@
 ---
 info-title-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The title of the API must not contain specific words, including REST, Public, and Developer.
   given: "$.info.title"
   severity: error
   recommended: true
@@ -18,7 +18,7 @@ info-title-word-check:
     - Dictionaries
 ...
 info-title-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The title of the API must not contain specific words, including REST, Public, and Developer.
   given: "$.info.title"
   severity: error
   recommended: true
@@ -33,4 +33,4 @@ info-title-word-check:
   x-tags:
     - Info
     - Filters
-    - Dictionaries   
+    - Dictionaries

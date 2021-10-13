@@ -1,6 +1,6 @@
 ---
 info-license-url-mit:
-  description: Should have a MIT license.
+  description: API must have a MIT license applied.
   given: $.info.license.url
   severity: error
   then:
@@ -13,7 +13,7 @@ info-license-url-mit:
     - Legal     
 ...
 info-license-url-mit:
-  description: Should have a MIT license.
+  description: API must have a MIT license applied.
   given: $.info.license.url
   severity: error
   then:

@@ -1,6 +1,6 @@
 ---
 info-summary-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The API summary not contain specific words, including REST, Public, and Developer.
   given: "$.info.summary"
   severity: error
   recommended: true
@@ -18,7 +18,7 @@ info-summary-word-check:
     - Dictionaries
 ...
 info-summary-word-check:
-  description: "Must not contain specific words, including REST, Public, and Developer."
+  description: The API summary not contain specific words, including REST, Public, and Developer.
   given: "$.info.summary"
   severity: error
   recommended: true
@@ -33,4 +33,4 @@ info-summary-word-check:
   x-tags:
     - Info
     - Filters
-    - Dictionaries   
+    - Dictionaries  
