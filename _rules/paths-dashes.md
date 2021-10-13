@@ -1,6 +1,6 @@
 ---
 paths-dashes:
-  description: "Paths cannot contain dashes."
+  description: Paths should not contain dashes.
   severity: error
   recommended: true
   message: "Paths cannot contain dashes {{property}}"
@@ -14,7 +14,7 @@ paths-dashes:
       - Paths          
 ...
 paths-dashes:
-  description: "Paths cannot contain dashes."
+  description: Paths should not contain dashes.
   severity: error
   recommended: true
   message: "Paths cannot contain dashes {{property}}"
@@ -25,4 +25,4 @@ paths-dashes:
       notMatch: /-/
   x-status: validated
   x-tags:
-      - Paths          
+      - Paths        

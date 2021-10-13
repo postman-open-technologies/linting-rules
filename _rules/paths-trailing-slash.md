@@ -1,8 +1,7 @@
 ---
 paths-trailing-slash:
   message: Path with trailing slash is not allowed
-  description: MUST use normalized paths without empty path segments and trailing
-    slashes [136]
+  description: All paths must end with a trailing slash.
   documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
   severity: error
   given: $.paths.*~
@@ -16,8 +15,7 @@ paths-trailing-slash:
 ...
 paths-trailing-slash:
   message: Path with trailing slash is not allowed
-  description: MUST use normalized paths without empty path segments and trailing
-    slashes [136]
+  description: All paths must end with a trailing slash.
   documentationUrl: https://opensource.zalando.com/restful-api-guidelines/#136
   severity: error
   given: $.paths.*~
