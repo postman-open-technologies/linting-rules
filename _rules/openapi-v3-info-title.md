@@ -1,1 +1,0 @@
-description: Ensures that all OpenAPIs have a information object title.message: The info object should have a title.given: $.infoseverity: errorrecommended: truetype: styleformats:  - oas3then:  field: title  function: truthy
