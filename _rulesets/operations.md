@@ -6,9 +6,9 @@ rules:
   - openapi-v3-operations-description-length
   - openapi-v3-operations-description-words-check
   - openapi-v3-operations-description
-  - openapi-v3-operations-operationids-camel-case
-  - openapi-v3-operations-operationids-kebab-case
-  - openapi-v3-operations-operationids-pascal-case
+  - openapi-v3-operations-operation-ids-camel-case
+  - openapi-v3-operations-operation-ids-kebab-case
+  - openapi-v3-operations-operation-ids-pascal-case
   - openapi-v3-operations-summary-length
   - openapi-v3-operations-summary-words-check
   - openapi-v3-operations-summary
