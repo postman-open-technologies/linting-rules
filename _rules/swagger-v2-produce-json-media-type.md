@@ -1,11 +1,11 @@
 ---
 swagger-v2-produce-json-media-type:
-  description: Ensures that an API produces application/json media type.
-  message: APIs should produce a application/json media type.
+  description: Ensures that application/json media types are able to be produced.
+  message: The APIs should be able to produce application/json media types.
   severity: error
   recommended: true
   format: oas2
-  given: $..consumes.*
+  given: $..produces.*
   then:
     function: schema
     functionOptions:
@@ -15,12 +15,12 @@ swagger-v2-produce-json-media-type:
           - application/json
 ...
 swagger-v2-produce-json-media-type:
-  description: Ensures that an API produces application/json media type.
-  message: APIs should produce a application/json media type.
+  description: Ensures that application/json media types are able to be produced.
+  message: The APIs should be able to produce application/json media types.
   severity: error
   recommended: true
   format: oas2
-  given: $..consumes.*
+  given: $..produces.*
   then:
     function: schema
     functionOptions:
