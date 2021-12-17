@@ -2,22 +2,22 @@
 name: Parameters
 description: A ruleset that focus on governance applied to the parameter object of the OpenAPI.
 rules:
-  - parameters-default-not-allowed
-  - parameters-description-length
-  - parameters-description-word-check
-  - parameters-description
-  - parameters-example
-  - parameters-in
-  - parameters-name-camel-case
-  - parameters-name-length
-  - parameters-name-pascal-case
-  - parameters-name-snake-case
-  - parameters-name-word-check
-  - parameters-name
-  - parameters-schema-type
-  - parameters-schema
+  - openapi-v3-parameters-default-not-allowed
+  - openapi-v3-parameters-description-length
+  - openapi-v3-parameters-description-word-check
+  - openapi-v3-parameters-description
+  - openapi-v3-parameters-example
+  - openapi-v3-parameters-in
+  - openapi-v3-parameters-name-camel-case
+  - openapi-v3-parameters-name-length
+  - openapi-v3-parameters-name-pascal-case
+  - openapi-v3-parameters-name-snake-case
+  - openapi-v3-parameters-name-word-check
+  - openapi-v3-parameters-name
+  - openapi-v3-parameters-schema-type
+  - openapi-v3-parameters-schema
 image: /images/parameters-icon.png
 tags:
-  - OpenAPI
+  - openapi-v3-OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/15
 ...

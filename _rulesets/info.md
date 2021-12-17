@@ -2,32 +2,29 @@
 name: Info
 description: A ruleset that focus on governance applied to the info object of the OpenAPI.
 rules:
-  - info-title
-  - info-title-max-length
-  - info-title-word-check
-  - info-title-in-kebab-case
-  - info-summary
-  - info-summary-max-length
-  - info-summary-word-check
-  - info-description
-  - info-description-max-length
-  - info-description-word-check
-  - info-contact
-  - info-contact-name
-  - info-contact-email
-  - info-contact-url
-  - info-license
-  - info-license-name
-  - info-license-url
-  - info-license-url-apache
-  - info-license-url-mit
-  - info-terms-of-service
-  - info-version
-  - info-x-api-id
-  - info-x-audience
-  - info-x-summary
+  - openapi-v3-info-title
+  - openapi-v3-info-title-max-length
+  - openapi-v3-info-title-word-check
+  - openapi-v3-info-title-in-kebab-case
+  - openapi-v3-info-summary
+  - openapi-v3-info-summary-max-length
+  - openapi-v3-info-summary-word-check
+  - openapi-v3-info-description
+  - openapi-v3-info-description-max-length
+  - openapi-v3-info-description-word-check
+  - openapi-v3-info-contact
+  - openapi-v3-info-contact-name
+  - openapi-v3-info-contact-email
+  - openapi-v3-info-contact-url
+  - openapi-v3-info-license
+  - openapi-v3-info-license-name
+  - openapi-v3-info-license-url
+  - openapi-v3-info-license-url-apache
+  - openapi-v3-info-license-url-mit
+  - openapi-v3-info-terms-of-service
+  - openapi-v3-info-version
 image: /images/info-icon.png
 tags:
-  - OpenAPI
+  - openapi-v3-OpenAPI
 discussion: https://github.com/postman-open-technologies/linting-rules/discussions/15
 ...
