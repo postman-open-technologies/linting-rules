@@ -1,11 +1,11 @@
 ---
 swagger-v2-produce-xml-media-type:
-  description: Ensures that an API produces application/xml media type.
-  message: APIs should produce a application/xml media type.
+  description: Ensures that application/xml media types are able to be produced.
+  message: The APIs should be able to produce application/xml media types.
   severity: error
   recommended: true
   format: oas2
-  given: $..consumes.*
+  given: $..produces.*
   then:
     function: schema
     functionOptions:
@@ -15,12 +15,12 @@ swagger-v2-produce-xml-media-type:
           - application/xml
 ...
 swagger-v2-produce-xml-media-type:
-  description: Ensures that an API produces application/xml media type.
-  message: APIs should produce a application/xml media type.
+  description: Ensures that application/xml media types are able to be produced.
+  message: The APIs should be able to produce application/xml media types.
   severity: error
   recommended: true
   format: oas2
-  given: $..consumes.*
+  given: $..produces.*
   then:
     function: schema
     functionOptions:
