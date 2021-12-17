@@ -1,11 +1,7 @@
-# Linting Rules
-This is a proof of concept for managing linting rules that can be used via a linting API as well natively as a collection in a modular way that can be can be evolve using Github.
+# Governance Linting Rules
+This is a project for managing linting rules that can be used via a linting API as well natively as a collection in a modular way that can be can be evolve using Github. There are two workspaces currently available for engaging with this projects:
 
-**URL:** https://postman-open-technologies.github.io/linting-rules/
+- [Rules]() - A workspace of OpenAPI and Swagger rules you can learn from, execute, fork, and share.
+- [Collections] - A workspace with a handful of collections for executing rules in different ways.
 
-You can apply these rules using a variety of methods, helping realize linting at different stages of the API lifecycle:
-
-- **[Linting API](https://postman.postman.co/workspace/OpenAPI-Linting~f8227475-4001-406c-b048-78ab9035ae1d/documentation/12959542-93cd90de-9f3c-4ed0-9c57-cc5a7712cf19)** - An open source API for posting an OpenAPI and link to rules to lint an OpenAPI at any point along the API lifeycle.
-
-
-If you have any questions about rules you can submit an issue or start a discussion within this repo, and if you have specific questions about applying rules as part of the API lifecycle you can comment on one of the collections in the [OpenAPI Linting workspace](https://postman.postman.co/workspace/OpenAPI-Linting~f8227475-4001-406c-b048-78ab9035ae1d/overview).
+If you have any questions about rules you can submit an issue or start a discussion within this repo, and if you have specific questions about applying rules as part of the API lifecycle you can comment on one of the collections in either of the workspaces.
