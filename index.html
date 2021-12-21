@@ -1,0 +1,71 @@
+---
+layout: default
+---
+<div class="container-fluid hero v5_starfield-small-night-sky pb-4">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 hero_title">
+            <h1>{{ site.title }}</h1>
+         </div>
+         <div class="col-md-6 hero_image"><img src="{{ site.image }}" alt=""></div>
+      </div>
+   </div>
+</div>
+
+<div class="collection__wrapper">
+   <div class="container">
+
+			<div class="row collection__header text-center">
+         <div class="col-md-12">
+            <h2 class="h1">Linting Rules</h2>
+            <p>This is project for managing linting rules that can be applied as part of API governance during design, development in the CLI, IDE, or in Postman, as well as via a Ci/CD pipeline. To use, just grab the link to one of rulesets, or individual rules and add as a parameter to this <a href="https://www.postman.com/postman/workspace/openapi-linting/overview">a collection in this public workspace</a> pass in an OpenAPI, and the rules will be applied.</p>        
+         </div>
+      </div>
+
+      <div>
+        
+
+        <hr><br>
+        {% assign rules = site.rules %}
+
+        <h3>Base Rulesets</h3>
+        <p>These are base rulesets that can be used to jumpstart your linting.</p>
+        {% assign rulesets = site.rulesets %}
+        {% assign display_tag = "Base" %}
+        {% include rulesets.html %} 
+
+        <h3>Open API Rulesets</h3>
+        <p>These are rulesets organized to apply to specific OpenAPI objects.</p>
+        {% assign rulesets = site.rulesets %}
+        {% assign display_tag = "OpenAPI" %}   
+        {% include rulesets.html %}     
+
+         <h3>Rules (Validated)</h3>
+          <p>These are a list of the rules which have been validated as functional, are able to be used individually, or used as part of rulesets.</p>        
+         {% for rule in rules %}  
+            {% assign status = rule[rule.slug]['x-status'] %}
+            {% if status == 'validated' %}
+            {% include rules.html %} 
+            {% endif %}                                                    
+         {% endfor %}    
+         <hr><br>
+         <h3>Rules (draft)</h3>
+          <p>These are a list of the rules which have not been validated as functional, and are used for inspiration, or just need more work before they can be used.</p>        
+         {% for rule in rules %}  
+            {% assign status = rule[rule.slug]['x-status'] %}
+            {% if status == 'draft' %}
+            {% include rules.html %} 
+            {% endif %}                                                    
+         {% endfor %}                  
+   </div>
+</div>
+
+<div class="container-fluid">
+   <div class="row blurb text-center">
+      <div class="col-md-12">
+         <h2>About this Linting Rules</h2>
+         <p class="collection__end_p">This project is meant to make linting rules more accessible and usable when it comes to governing the design of our API using OpenAPI.</p>
+      </div>
+      <div class="col-md-12 blurb_padding"><a class="btn btn__secondary-light" href="https://github.com/{{ site.github_user }}/{{ site.github_repo }}">Join the Conversation on GitHub</a></div>
+   </div>
+</div>
