@@ -18,5 +18,5 @@ openapi-v3-version-semantic:
   given: $.info.version
   then:
     function: pattern
-    functionOptions: null
-    match: ^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?
+    functionOptions:
+         match: ^[0-9]+.[0-9]+.[0-9]+(-[a-z0-9+.-]+)?
