@@ -1,5 +1,5 @@
 ---
-oopenapi-v3-perations-operation-ids-pascal-case:
+openapi-v3-operations-operation-ids-pascal-case:
   description: Ensures that each of the operations IDs are pascal case.
   message: Your operations IDs need to be pascal case.
   given: $.paths.*[get,post,patch,put,delete].operationId
@@ -10,7 +10,7 @@ oopenapi-v3-perations-operation-ids-pascal-case:
       type: pascal
   type: style
 ...
-oopenapi-v3-perations-operation-ids-pascal-case:
+openapi-v3-operations-operation-ids-pascal-case:
   description: Ensures that each of the operations IDs are pascal case.
   message: Your operations IDs need to be pascal case.
   given: $.paths.*[get,post,patch,put,delete].operationId
